@@ -1,0 +1,254 @@
+ingredient_id,u_desc,multiplier,ing_name,base_unit,,
+1,qb,0,sal,g,,
+2,g,0.01,carne picada (vaca),g,,
+3,g,0.01,aipo,g,,
+4,g,0.01,cenoura,g,,
+5,g,0.01,cebola amarela,g,,
+6,g,0.01,pancetta,g,,
+7,tbsp,0.14,concentrado de tomate,g,,
+8,c,0.4,vinho tinto,ml,,
+9,qb,0,pimenta preta,g,,
+10,tbsp,0.15,azeite,ml,,
+11,g,0.01,passata,ml,,
+12,g,0.01,caldo de vegetais,ml,,
+13,ml,0.01,leite,ml,,
+14,U,1.2,tagliatele,g,120,0.83
+15,U,0.05,alho (dentes),g,5,20.00
+16,U,1.40,cebola,g,1.4,140.00
+17,U,1.50,pimento vermelho,g,1.5,66.67
+18,g,0.01,polpa de tomate,ml,,
+19,U,5,caldo de vaca,ml,,
+20,tsp,0.03,açucar,g,,
+21,tsp,0.03,pimenta cayena,g,,
+22,tsp,0.15,paprika,g,,
+23,tsp,0.03,cominho em pó,g,,
+24,tsp,0.03,paprika fumada,g,,
+25,tsp,0.5,alho em pó,g,,
+26,tsp,0.07,cebola em pó,g,,
+1,tsp,0.15,sal,g,,
+27,tsp,0.2,oregãos,g,5,
+28,tsp,0.15,café em pó,g,,
+29,U,0.1,chocolate negro,g,10,10.00
+30,g,0.01,feijão Frade,g,,
+31,g,0.01,atum (em lata),g,,
+32,qb,0.03,salsa,g,,
+33,U,1,ovos,u,,
+34,U,0.90,ramen,g,90,1.11
+35,tbsp,0.16,miso,g,,
+36,tbsp,0.03,gochujang,g,,
+37,U,0.03,konbu,g,3,33.33
+38,tbsp,0.15,sementes de sesamo,g,,
+39,tbsp,0.15,sake,ml,,
+40,U,0.03,cogumelos shitake secos,g,3,33.33
+41,tsp,0.15,gengibre,g,,
+42,U,0.15,cebolinha,g,15,6.67
+43,U,0.2,caldo de frango,ml,,
+44,tbsp,0.15,molho de soja,ml,,
+45,tsp,0.05,molho de soja escuro,ml,,
+46,qb,0,pimenta branca,g,,
+47,U,0.03,nori,g,1,100.00
+48,U,0.03,wakame,g,3,33.33
+49,tbsp,0.15,doubanjiang,g,,
+50,tbsp,0.05,pimentas sichuan,g,,
+52,tbsp,0.15,vinho shaoxing,ml,,
+51,g,0.01,tofu,g,,
+53,tbsp,0.15,oleo vegetal,ml,,
+54,g,0.01,carne picada (porco),g,,
+19,c,0.4,caldo de vaca,ml,,
+44,tsp,0.05,molho de soja,ml,,
+55,tbsp,0.07,amido de milho,g,14.28571429,
+56,qb,0,chillies secos,g,,
+57,U,2.00,bife de vaca,g,200,0.50
+58,tbsp,0.15,vinagre tinto,ml,,
+59,tsp,0.05,limão (sumo),ml,,
+32,tbsp,0.04,salsa,g,,
+60,U,0.07,piri piri fresco,g,7,14.29
+61,g,0.01,grão cozido,g,,
+62,U,0.15,couve de bruxelas,g,15,6.67
+63,tbsp,0.15,tahini,g,,
+59,U,0.5,limão (sumo),ml,,
+10,qb,0,azeite,ml,,
+64,qb,0,sumac,g,,
+65,qb,0,izote,g,,
+66,g,0.01,feijão preto,g,,
+67,U,1.50,abacate,g,150,0.67
+68,c,0.56,quinoa,g,,
+69,U,0.15,tomate cherry,g,15,6.67
+70,qb,0,coentros,g,,
+71,tbsp,0.15,vinagre balsamico,ml,,
+27,qb,0,oregãos,g,,
+72,U,1.00,salmão,g,100,1.00
+73,c,0.5,arroz de sushi,g,,
+74,tbsp,0.15,vinagre de sushi,ml,,
+75,U,0.60,mimos de pescada,g,60,1.67
+76,qb,0,sriracha,ml,,
+77,U,0.2,queijo vache que ri,g,20,5.00
+78,qb,0,cebolinho,g,,
+44,qb,0,molho de soja,ml,,
+47,qb,0,nori,g,,
+79,c,0.41,iogurte,g,,
+80,U,2.50,beringela,g,250,0.40
+81,tbsp,0.15,pasta de pimentão,g,,
+82,tbsp,0.15,manteiga,g,,
+22,tbsp,0.07,paprika,g,,
+24,tbsp,0.07,paprika fumada,g,,
+84,U,1.25,tomate de cacho,g,125,0.80
+23,tbsp,0.07,cominho em pó,g,,
+85,tbsp,0.07,sementes de coentros em pó,g,,
+86,U,1.50,queijo feta,g,150,0.67
+87,U,0.80,pão artesanal,g,80,1.25
+88,c,0.5,grão seco,g,,
+32,g,0.01,salsa,g,,
+70,g,0.01,coentros,g,,
+89,U,0.60,wraps,g,60,1.67
+90,U,6.00,alface,g,600,0.17
+91,U,1.20,tomate para salada,g,120,0.83
+64,tsp,0.02,sumac,g,50,
+92,U,3.00,pepino,g,300,0.33
+93,tsp,0.01,dill,g,,
+94,U,2.00,peito de frango,g,200,0.50
+96,U,1.50,coxa de frango desossada,g,150,0.67
+95,U,0.60,pitas,g,60,1.67
+7,tsp,0.05,concentrado de tomate,g,,
+81,tsp,0.05,pasta de pimentão,g,,
+97,tsp,0.02,curcuma em pó,g,,
+98,tsp,0.02,pimenta da jamaica em pó,g,,
+99,tsp,0.02,cardamomo em pó,g,,
+100,tsp,0.02,cravinho em pó,g,,
+101,U,0.65,pickles,g,65,1.54
+102,g,0.01,arroz carolino,g,,
+103,U,0.15,camarão,g,15,6.67
+104,g,0.01,ameijoas,g,,
+105,U,1.00,choquinho (limpo),g,100,1.00
+106,U,0.25,delicias de mar,g,25,4.00
+107,tsp,0.02,msg,g,,
+108,tsp,0.02,flocos de malagueta,g,,
+109,U,0.30,chalota,g,30,3.33
+110,c,0.4,vinho branco,ml,,
+111,ml,0.01,caldo de marisco,ml,,
+113,U,0.05,anchovas,g,5,20.00
+112,tbsp,0.11,alcaparras,g,,
+114,tbsp,0.05,azeitona preta,g,,
+115,g,0.01,esparguete,g,,
+116,g,0.01,pecorino,g,,
+117,g,0.01,guanciale,g,,
+84,g,0.01,tomate de cacho,g,,
+118,c,0.53,lentilhas verdes,g,,
+5,U,1.40,cebola amarela,g,140,0.71
+119,tbsp,0.15,vinagre de sidra,ml,,
+120,tbsp,0.07,chipotle em pó,g,,
+121,U,0.30,pimento piquillo (conserva),g,30,3.33
+122,qb,0,queijo para derreter,g,,
+123,U,0.60,tomate roma,g,60,1.67
+124,U,0.33,lima (sumo),ml,,
+125,U,1.40,cebola rouxa,g,140,0.71
+126,c,0.7,couve,g,1.428571429,
+4,U,1.00,cenoura,g,100,1.00
+127,g,0.01,massa chinesa,g,,
+128,c,0.91,rebentos de soja,g,,
+129,tbsp,0.05,bambu,g,,
+55,tsp,0.02,amido de milho,g,,
+130,tbsp,0.18,molho de ostras,g,5.555555556,
+132,tsp,0.05,oleo de sesamo,ml,,
+133,c,0.5,arroz agulha,g,,
+107,tbsp,0.07,msg,g,,
+41,U,0.50,gengibre,g,50,2.00
+134,U,0.1,malagueta vermelha,g,10,10.00
+135,tbsp,0.15,oleo de amendoin,ml,,
+132,tbsp,0.15,oleo de sesamo,ml,,
+138,c,0.53,arroz basmati,g,,
+136,tsp,0.05,pasta de camarão,g,,
+137,tbsp,0.15,kecap manis,ml,,
+139,qb,0,cebola frita,g,,
+140,g,0.01,carne de vaca (estufar),g,,
+141,U,0.00,canela,g,5,20.00
+142,U,0.00,cravinho,g,0.1,1000.00
+143,U,0.00,estrela de anis,g,2,50.00
+144,U,0.00,cardamomo verde,g,0.2,500.00
+145,U,0.03,erva principe,g,3,33.33
+146,c,0.4,leite de coco,ml,,
+147,tsp,0.05,polpa de tamarindo,g,,
+148,U,0.01,folhas de lima kaffir,g,1,100.00
+149,tbsp,0.07,coco ralado,g,,
+150,U,0.2,cogumelos marron,g,20,5.00
+151,c,0.89,queijo cheddar,g,,
+152,c,0.8,farinha,g,,
+153,tsp,0.01,tomilho seco,g,,
+9,tsp,0.02,pimenta preta,g,,
+154,U,0.80,pão de hamburguer,g,80,1.25
+155,tbsp,0.14,maionese,g,,
+156,c,1,pão ralado,g,,
+157,U,0.15,jalapeno,g,15,6.67
+158,U,1.25,tomate,g,125.00,0.80
+159,U,1.4,cebola branca,g,140,0.71
+94,g,0.01,peito de frango,g,,
+160,tbsp,0.07,caril em pó,g,,
+146,g,0.01,leite de coco,ml,,
+161,tsp,0.02,garam masala,g,,
+79,tbsp,0.15,iogurte,g,,
+162,U,0,cardamomo preto,g,0.3,333.33
+163,U,0,louro,g,,#DIV/0!
+85,tsp,0.02,sementes de coentros em pó,g,,
+164,tsp,0.02,kashmiri chilli em pó,g,,
+165,c,0.12,flocos de bonito,g,,
+48,tbsp,0.05,wakame,g,,
+166,tbsp,0.15,teryaki,ml,,
+126,U,1500,couve,g,1500,0.07
+38,tsp,0.02,sementes de sesamo,g,50,
+155,c,0.43,maionese,g,,
+3,U,0.80,aipo,g,80,1.25
+151,U,0.2,queijo cheddar,g,20,5.00
+167,tsp,0.02,sementes de papoila,g,,
+168,tbsp,0.15,pasta de caril vermelho,g,,
+43,ml,0.01,caldo de frango,ml,,
+169,tbsp,0.15,molho de peixe,ml,,
+160,tsp,0.02,caril em pó,g,,
+170,U,1.2,pernas de frango,g,120,0.83
+1,tbsp,0.17,sal,g,5.882352941,
+171,U,0.1,malagueta verde,g,10,10.00
+139,tbsp,0.05,cebola frita,g,,
+172,tbsp,0.05,cominhos,g,,
+142,tsp,0.02,cravinho,g,,
+13,g,0.01,leite,ml,,
+173,qb,0,açafrão,g,,
+70,c,0.25,coentros,g,,
+174,c,0.25,menta,g,,
+175,c,0.8,sementes de coentros,g,,
+176,tsp,0.02,sementes de funcho,g,,
+179,qb,0,noz moscada,g,,
+103,g,0.01,camarão,g,,
+177,g,0.01,mandioca,g,,
+120,tsp,0.02,chipotle em pó,g,,
+15,tsp,0.03,alho (dentes),g,,
+180,U,6,alface iceberg,g,600,0.17
+181,c,0.61,milho,g,,
+122,g,0.01,queijo para derreter,g,,
+182,U,2.20,batata branca para fritar,g,220,0.45
+10,ml,0.01,azeite,ml,,
+183,U,0,piri piri seco,g,,#DIV/0!
+184,U,5.00,baguette,g,500,0.20
+59,qb,0,limão (sumo),ml,,
+185,g,0.01,manjericão,g,,
+186,g,0.01,pinhão,g,,
+187,g,0.01,parmesão,g,,
+188,g,0.01,fusili,g,,
+152,g,0.01,farinha,g,,
+20,tbsp,0.13,açucar,g,,
+189,tbsp,0.07,fermento de padeiro,g,,
+190,U,1.25,mozarela,g,125,0.80
+138,g,0.01,arroz basmati,g,,
+191,g,0.01,polvo,g,,
+87,g,0.01,pão artesanal,g,,
+192,g,0.01,penne rigate,g,,
+165,tsp,0.01,flocos de bonito,g,,
+13,tbsp,0.15,leite,ml,,
+175,tbsp,0.05,sementes de coentros,g,,
+153,tbsp,0.05,tomilho seco,g,,
+96,g,0.01,coxa de frango desossada,g,,
+193,g,0.01,noodles de arroz (largos),g,,
+194,tbsp,0.07,açucar de palma,g,,
+147,tbsp,0.15,polpa de tamarindo,g,,
+45,tbsp,0.15,molho de soja escuro,ml,,
+195,tbsp,0.11,amendoin torrado,g,,
+10,c,0.4,azeite,ml,,
+178,g,0.01,feijão vermelho (cozido),g,,

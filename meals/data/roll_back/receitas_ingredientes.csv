@@ -1,0 +1,613 @@
+meal_id,ingredient_id,quantidade_desc,unit_desc,u_quantity,u_desc,Sub,Notas,Required,ing_name
+1,1,1,qb,1,qb,,,1,sal
+1,2,400,g,400,g,,,1,carne picada (vaca)
+1,3,60,g,60,g,,,1,aipo
+1,4,60,g,60,g,,,1,cenoura
+1,5,60,g,60,g,,,1,cebola amarela
+1,6,150,g,150,g,Bacon,,1,pancetta
+1,7,1,colher de sopa,1,tbsp,,,1,concentrado de tomate
+1,8,1,copo,1,c,,,1,vinho tinto
+1,9,1,qb,1,qb,,,1,pimenta preta
+1,10,3,colher de sopa,3,tbsp,,,1,azeite
+1,11,200,g,200,g,eu gosto de substituir por 3 ou 4 tomates frescos passados num blender,,1,passata
+1,12,200,g,200,g,,,1,caldo de vegetais
+1,13,100,ml,100,ml,,,1,leite
+1,14,8,doses,8,u,Outra massa,,1,tagliatele
+2,10,1,colher de sopa,1,tbsp,,,1,azeite
+2,15,3,dentes,3,U,,,1,alho (dentes)
+2,16,1,unidades,1,U,,,1,cebola
+2,17,1,unidades,1,U,,,1,pimento vermelho
+2,2,500,g,500,g,,,1,carne picada (vaca)
+2,7,3,colher de sopa,3,tbsp,,,1,concentrado de tomate
+2,18,800,g,800,g,,,1,polpa de tomate
+2,19,2,cubos,2,U,,,1,caldo de vaca
+2,20,1.5,tsp,1.5,tsp,,,1,açucar
+2,21,2,tsp,2,tsp,,Ajustar o picante a gosto,1,pimenta cayena
+2,22,3,tsp,3,tsp,,,1,paprika
+2,23,5,tsp,5,tsp,,,1,cominho em pó
+2,24,4,tsp,4,tsp,,,1,paprika fumada
+2,25,2,tsp,2,tsp,,,1,alho em pó
+2,26,2,tsp,2,tsp,,,1,cebola em pó
+2,1,1.5,tsp,1.5,tsp,,,1,sal
+2,27,2,tsp,2,tsp,,,1,oregãos
+2,28,1,tsp,1,tsp,,,1,café em pó
+2,29,2,quadrados,2,U,,,1,chocolate negro
+3,1,1,qb,1,qb,,,1,sal
+3,30,470,g,470,g,,,1,feijão Frade
+3,31,170,g,2,g,,,1,atum (em lata)
+3,32,1,qb,1,qb,,,1,salsa
+3,33,3,unidades,3,U,,,1,ovos
+3,16,0.5,unidades,0.5,U,,,1,cebola
+4,34,2,unidades,2,U,,,1,ramen
+4,33,2,unidades,2,U,,,1,ovos
+4,35,2,colher de sopa,2,tbsp,,,1,miso
+4,36,1.5,colher de sopa,1.5,tbsp,,Ajustar picante a gosto,1,gochujang
+4,37,1,pedaços,1,U,,,1,konbu
+4,38,2,colher de sopa,2,tbsp,,,1,sementes de sesamo
+4,39,1,colher de sopa,1,tbsp,,,1,sake
+4,40,4,unidades,4,U,,"Sim, tem mesmo de ser secos",1,cogumelos shitake secos
+4,41,1.5,tsp,1.5,tsp,,,1,gengibre
+4,15,3,dentes,3,U,,,1,alho (dentes)
+4,42,2,unidades,2,U,,,1,cebolinha
+4,43,1,cubos,1,U,,,1,caldo de frango
+4,44,2,colher de sopa,2,tbsp,,,1,molho de soja
+4,45,1,tsp,1,tsp,,,1,molho de soja escuro
+4,46,1,qb,1,qb,,,1,pimenta branca
+4,47,1,folha,1,U,,,1,nori
+4,48,4,pedaços,4,U,,,1,wakame
+5,49,2.5,colher de sopa,2.5,tbsp,,,1,doubanjiang
+5,50,2,colher de sopa,2,tbsp,,,1,pimentas sichuan
+5,35,1,colher de sopa,1,tbsp,,"Tradicionalmente, usa-se feijao preto fermentando -  Dou Chi",1,miso
+5,52,2,colher de sopa,2,tbsp,,,1,vinho shaoxing
+5,51,500,g,500,g,,De preferencia versão mais suave,1,tofu
+5,1,0.5,tsp,0.5,tsp,,,1,sal
+5,53,3,colher de sopa,3,tbsp,,,1,oleo vegetal
+5,54,300,g,300,g,,,1,carne picada (porco)
+5,42,4,unidades,4,U,,,1,cebolinha
+5,15,5,dentes,5,U,,,1,alho (dentes)
+5,22,1,tsp,1,tsp,,,1,paprika
+5,41,1.5,tsp,1.5,tsp,,,1,gengibre
+5,20,2,tsp,2,tsp,,,1,açucar
+5,19,1.5,canecas,1.5,c,,,1,caldo de vaca
+5,44,3,tsp,3,tsp,,,1,molho de soja
+5,45,0.5,tsp,0.5,tsp,,,1,molho de soja escuro
+5,55,1,colher de sopa,1,tbsp,,,1,amido de milho
+5,56,1,qb,1,qb,,Eu não acrescento. O doubanjiang já é picante. Sugiro rectificar o picante no fim depois de provar com pó de piri piri ou outro picante,1,chillies secos
+6,57,2,unidades,2,U,,,1,bife de vaca
+6,10,5,colher de sopa,5,tbsp,,,1,azeite
+6,58,1,colher de sopa,1,tbsp,,,1,vinagre tinto
+6,59,1,tsp,1,tsp,,,1,limão (sumo)
+6,32,1.5,colher de sopa,1.5,tbsp,,,1,salsa
+6,15,2,dentes,2,U,,,1,alho (dentes)
+6,60,1,unidades,1,U,Outra malagueta fresca,Ajustar a picante a gosto,1,piri piri fresco
+6,27,1,tsp,1,tsp,,,1,oregãos
+6,9,1,qb,1,qb,,,1,pimenta preta
+6,22,0.5,tsp,0.5,tsp,,,1,paprika
+7,61,1,lata grande,1,g,,,1,grão cozido
+7,31,3,latas,3,g,,,1,atum (em lata)
+7,62,15,unidades,15,U,Broculo ou outros legumes (de preferencia cruciveros),Depende do tamanho das couves. Incluir visto que são saudaveis mas a gosto,1,couve de bruxelas
+7,33,3,unidades,3,U,,,1,ovos
+7,63,1.5,colher de sopa,1.5,tbsp,,Por a gosto no hummus,1,tahini
+7,1,1,qb,1,qb,,,1,sal
+7,59,0.5,unidades,0.5,U,,Por a gosto no hummus,1,limão (sumo)
+7,15,1,dentes,1,U,,,1,alho (dentes)
+7,10,1,qb,1,qb,,Por a gosto no hummus e depois por cima no produto final,1,azeite
+7,64,1,qb,1,qb,,Sprinkle por cima do produto final,0,sumac
+7,65,1,qb,1,qb,,Sprinkle por cima do produto final,0,izote
+8,66,1,lata pequena,1,g,,,1,feijão preto
+8,67,1,unidades,1,U,,,1,abacate
+8,68,1,canecas,1,c,,,1,quinoa
+8,33,2,unidades,2,U,,,1,ovos
+8,69,8,unidades,8,U,,,1,tomate cherry
+8,70,1,qb,1,qb,,,1,coentros
+8,10,3,colher de sopa,3,tbsp,,,1,azeite
+8,71,1,colher de sopa,1,tbsp,,,1,vinagre balsamico
+8,1,1,qb,1,qb,,,1,sal
+8,9,1,qb,1,qb,,,1,pimenta preta
+8,27,1,qb,1,qb,,,1,oregãos
+9,72,2,lombos,2,U,,de preferencia sem espinhas,1,salmão
+9,73,1,canecas,1,c,,,1,arroz de sushi
+9,74,3,colher de sopa,3,tbsp,,,1,vinagre de sushi
+9,75,1,medalhões,1,U,,de preferencia sem espinhas,1,mimos de pescada
+9,76,1,qb,1,qb,,,1,sriracha
+9,77,2,unidades,2,U,,,1,queijo vache que ri
+9,78,1,qb,1,qb,,,1,cebolinho
+9,44,1,qb,1,qb,,,1,molho de soja
+9,47,1,qb,1,qb,,,1,nori
+9,38,2,colher de sopa,2,tbsp,podem usar qualquer uma das cores mas mistura das duas é mais visual,,1,sementes de sesamo
+9,37,1,pedaços,1,U,,,1,konbu
+9,67,1,unidades,1,U,,,1,abacate
+10,2,400,g,400,g,pequenos cubos de carne de vaca,,1,carne picada (vaca)
+10,15,2,dentes,2,U,,,1,alho (dentes)
+10,10,3,colher de sopa,3,tbsp,,,1,azeite
+10,79,0.75,canecas,0.75,c,,,1,iogurte
+10,1,1,qb,1,qb,,,1,sal
+10,9,1,qb,1,qb,,,1,pimenta preta
+10,7,1,colher de sopa,1,tbsp,,,1,concentrado de tomate
+10,80,4,unidades,4,U,,,1,beringela
+10,32,1,qb,1,qb,,,0,salsa
+10,81,1,colher de sopa,1,tbsp,,,1,pasta de pimentão
+10,82,2,colher de sopa,2,tbsp,,,1,manteiga
+10,22,1,colher de sopa,1,tbsp,,,1,paprika
+10,24,1,colher de sopa,1,tbsp,,,1,paprika fumada
+10,17,1,unidades,1,U,,"assado com as beringelas. Retirar pele, cortar em tiras e servir",1,pimento vermelho
+11,84,5,unidades,5,U,,,1,tomate de cacho
+11,17,2,unidades,2,U,1 se for muito grande,,1,pimento vermelho
+11,16,1,unidades,1,U,,,1,cebola
+11,15,5,dentes,5,U,,,1,alho (dentes)
+11,22,2,colher de sopa,2,tbsp,,,1,paprika
+11,24,2,colher de sopa,2,tbsp,,,1,paprika fumada
+11,23,3,colher de sopa,3,tbsp,,,1,cominho em pó
+11,85,1.5,colher de sopa,1.5,tbsp,,,1,sementes de coentros em pó
+11,70,1,qb,1,qb,,,0,coentros
+11,86,0.5,unidades,0.5,U,,,0,queijo feta
+11,87,4,fatias,4,U,o tipo não interessa desde que não seja pão de forma e seja bom para torradas,,1,pão artesanal
+11,7,1,colher de sopa,1,tbsp,,,1,concentrado de tomate
+11,10,2,colher de sopa,2,tbsp,,,1,azeite
+11,1,1,qb,1,qb,,,1,sal
+11,9,1,qb,1,qb,,,1,pimenta preta
+11,33,6,unidades,6,U,,,1,ovos
+12,88,1,canecas,1,c,não se pode substituir por grão cozido!!,,1,grão seco
+12,16,1,unidades,1,U,,,1,cebola
+12,15,3,dentes,3,U,,,1,alho (dentes)
+12,1,1,qb,1,qb,,,1,sal
+12,85,1,colher de sopa,1,tbsp,,,1,sementes de coentros em pó
+12,23,1,colher de sopa,1,tbsp,,,1,cominho em pó
+12,32,0.5,molhos,0.5,g,,,1,salsa
+12,70,0.5,molhos,0.5,g,,,1,coentros
+12,89,4,unidades,4,U,,,1,wraps
+12,90,0.5,unidades,0.5,U,,,1,alface
+12,91,0.5,unidades,0.5,U,,,1,tomate para salada
+12,64,1,tsp,1,tsp,,,0,sumac
+12,92,0.5,unidades,0.5,U,"Metade desta quantidade para molho, metade para salada",,1,pepino
+12,79,0.5,canecas,0.5,c,,,1,iogurte
+12,59,0.5,unidades,0.5,U,,,1,limão (sumo)
+12,93,1.5,tsp,1.5,tsp,,,1,dill
+12,10,1,colher de sopa,1,tbsp,,,1,azeite
+12,86,0.5,unidades,0.5,U,,,0,queijo feta
+13,94,1,unidades,1,U,,,1,peito de frango
+13,96,1,unidades,1,U,peito de frango,,1,coxa de frango desossada
+13,95,4,unidades,4,U,,,1,pitas
+13,59,1,unidades,1,U,,,1,limão (sumo)
+13,79,0.75,canecas,0.75,c,,,1,iogurte
+13,7,2,tsp,2,tsp,,,1,concentrado de tomate
+13,81,2,tsp,2,tsp,,,1,pasta de pimentão
+13,25,2,tsp,2,tsp,,,1,alho em pó
+13,97,1,tsp,1,tsp,,,0,curcuma em pó
+13,24,1,colher de sopa,1,tbsp,,,1,paprika fumada
+13,98,1,tsp,1,tsp,,,0,pimenta da jamaica em pó
+13,26,1,tsp,1,tsp,,,1,cebola em pó
+13,99,1,tsp,1,tsp,,,1,cardamomo em pó
+13,100,0.5,tsp,0.5,tsp,,,0,cravinho em pó
+13,1,3,tsp,3,tsp,,,1,sal
+13,64,1,tsp,1,tsp,,,1,sumac
+13,16,0.25,unidades,0.25,U,,,1,cebola
+13,101,2,unidades,2,U,Pode substituir por cornichons mas pôr mais unidades,,1,pickles
+13,15,1,dentes,1,U,,,1,alho (dentes)
+13,90,0.5,unidades,0.5,U,,,1,alface
+13,91,0.5,unidades,0.5,U,,,1,tomate para salada
+13,92,0.5,unidades,0.5,U,,"Metade desta quantidade para molho, metade para salada",1,pepino
+13,93,1.5,tsp,1.5,tsp,,,1,dill
+13,10,1,colher de sopa,1,tbsp,,,1,azeite
+14,102,400,g,400,g,não se pode substituir por arroz agulha ou basmati! Quanto muito arroz bomba ou risotto mas ainda não testei,,1,arroz carolino
+14,103,10,unidades,10,U,,,1,camarão
+14,104,400,g,400,g,,,1,ameijoas
+14,105,3,unidades,3,U,lulas,,1,choquinho (limpo)
+14,106,8,unidades,8,U,,,1,delicias de mar
+14,84,2,unidades,2,U,,,1,tomate de cacho
+14,7,2,colher de sopa,2,tbsp,,,1,concentrado de tomate
+14,107,1.5,tsp,1.5,tsp,,,0,msg
+14,108,0.5,tsp,0.5,tsp,,não por mais! Não é suposto ser picante,1,flocos de malagueta
+14,32,0.5,molhos,0.5,g,,,0,salsa
+14,70,0.5,molhos,0.5,g,,,0,coentros
+14,16,1,unidades,1,U,,,1,cebola
+14,109,1,unidades,1,U,,,0,chalota
+14,1,1,qb,1,qb,,,1,sal
+14,15,4,dentes,4,U,,,1,alho (dentes)
+14,9,1,qb,1,qb,,,0,pimenta preta
+14,110,0.5,copo,0.5,c,,,0,vinho branco
+14,111,1.2,litro,1.2,ML,pode substituir por agua com sal ou caldo de peixe,,1,caldo de marisco
+14,47,1,folha,1,U,,,0,nori
+14,48,4,unidades,4,U,,,0,wakame
+14,37,1,pedaços,1,U,,,0,konbu
+15,113,8,filetes,8,U,,,1,anchovas
+15,112,2,colher de sopa,2,tbsp,,,1,alcaparras
+15,15,3,dentes,3,U,,,1,alho (dentes)
+15,27,1,tsp,1,tsp,,,1,oregãos
+15,7,0.5,colher de sopa,0.5,tbsp,,,1,concentrado de tomate
+15,84,4,unidades,4,U,,,1,tomate de cacho
+15,114,1.5,colher de sopa,1.5,tbsp,,de prefencia em rodelas sem caroço,1,azeitona preta
+15,115,4,doses,4,g,outra massa,,1,esparguete
+15,1,1,qb,1,qb,,por pouco - as anchovas são salgadas,1,sal
+16,115,4,doses,4,g,,,1,esparguete
+16,33,6,unidades,6,U,,,1,ovos
+16,116,75,g,75,g,,,1,pecorino
+16,117,150,g,150,g,bacon ou panceta - não tradicional mas não deixa ser bom. Nem tudo tem de ser como os gurus dizem,,1,guanciale
+16,9,1,qb,1,qb,,,1,pimenta preta
+16,1,1,qb,1,qb,,,1,sal
+17,115,4,doses,4,g,outra massa,,1,esparguete
+17,116,50,g,50,g,parmesão,,1,pecorino
+17,117,150,g,150,g,bacon ou panceta - não tradicional mas não deixa ser bom. Nem tudo tem de ser como os gurus dizem,,1,guanciale
+17,84,400,g,400,g,,,1,tomate de cacho
+17,9,1,qb,1,qb,,,1,pimenta preta
+17,60,1,unidades,1,U,flocos de malagueta secos ou um pepperoncino seco,,1,piri piri fresco
+17,110,0.25,copo,0.25,c,,,1,vinho branco
+17,10,1,qb,1,qb,,pôr pouco se a carne tiver pouca gordura. Se usar guanciale NÃO usar azeite - já é muito gordurento,1,azeite
+18,118,1,canecas,1,c,,,1,lentilhas verdes
+18,10,1,colher de sopa,1,tbsp,,,1,azeite
+18,5,1,unidades,1,U,outra cebola serve,,1,cebola amarela
+18,15,4,dentes,4,U,,,1,alho (dentes)
+18,119,1.5,colher de sopa,1.5,tbsp,talvez lima? Ainda não testei,,1,vinagre de sidra
+18,7,3,colher de sopa,3,tbsp,,,1,concentrado de tomate
+18,120,1,colher de sopa,1,tbsp,chipotle demolhado ou paprika fumada + piri piri em pó,,1,chipotle em pó
+18,23,1.5,colher de sopa,1.5,tbsp,,,1,cominho em pó
+18,85,0.75,colher de sopa,0.75,tbsp,,,1,sementes de coentros em pó
+18,24,2,colher de sopa,2,tbsp,,,1,paprika fumada
+18,1,2,qb,2,qb,,,1,sal
+18,17,1,unidades,1,U,,,1,pimento vermelho
+18,121,1,unidades,1,U,,,1,pimento piquillo (conserva)
+18,9,1,qb,1,qb,,,1,pimenta preta
+18,89,8,unidades,8,U,,,1,wraps
+18,122,8,qb,8,qb,"qualquer queijo serve desde que derreta bem. Já testei com mozarela, queijo da ilha e cheddar",,1,queijo para derreter
+18,67,3,unidades,3,U,,,1,abacate
+18,123,2,unidades,2,U,,,1,tomate roma
+18,124,1,unidades,1,U,,,1,lima (sumo)
+18,15,1,dentes,1,U,,,1,alho (dentes)
+18,125,0.25,unidades,0.25,U,outra cebola serve,,1,cebola rouxa
+18,70,0.33,molhos,0.33,g,,,1,coentros
+19,126,4,canecas,4,c,,"em juliana, diminui muito enquanto cozinha",1,couve
+19,4,1,unidades,1,U,,,1,cenoura
+19,15,2,unidades,2,U,,,1,alho (dentes)
+19,127,200,g,200,g,ramen instantaneo,,1,massa chinesa
+19,128,1,canecas,1,c,,,0,rebentos de soja
+19,42,3,unidades,3,U,,,1,cebolinha
+19,129,1.5,colher de sopa,1.5,tbsp,,,0,bambu
+19,55,2,tsp,2,tsp,,,1,amido de milho
+19,44,1.5,colher de sopa,1.5,tbsp,,,1,molho de soja
+19,130,1.5,colher de sopa,1.5,tbsp,,,1,molho de ostras
+19,45,1,tsp,1,tsp,,,0,molho de soja escuro
+19,131,1.5,colher de sopa,1.5,tbsp,mirin. Em ultimo caso sake,,1,manga
+19,20,2,tsp,2,tsp,"se usar mirin, diminuir só para um. O mirin e mais doce",,1,açucar
+19,132,0.5,tsp,0.5,tsp,,,1,oleo de sesamo
+19,46,1,qb,1,qb,,,1,pimenta branca
+19,33,4,unidades,4,U,,,1,ovos
+19,103,4,unidades,4,U,coxa de frango fatiada ou qualquer outra carne/marisco,,1,camarão
+20,133,1,canecas,1,c,"basmati e jasmin tambem funcionam, só não usar grão curto como risotto, sushi ou carolino",,1,arroz agulha
+20,33,6,unidades,6,U,,,1,ovos
+20,109,2,unidades,2,U,,,1,chalota
+20,15,8,dentes,8,U,,,1,alho (dentes)
+20,42,3,unidades,3,U,,,1,cebolinha
+20,107,1,colher de sopa,1,tbsp,,,1,msg
+20,43,1,cubos,1,U,,,0,caldo de frango
+20,41,2,polegar,2,U,,,1,gengibre
+20,134,1,unidades,1,U,,,1,malagueta vermelha
+20,135,2,colher de sopa,2,tbsp,oleo vegetal é OK,,1,oleo de amendoin
+20,132,1,colher de sopa,1,tbsp,,,0,oleo de sesamo
+21,138,1,canecas,1,c,jasmin ou agulha,pessoalmente gosto de misturar agulha e basmati,1,arroz basmati
+21,135,1,colher de sopa,1,tbsp,,,1,oleo de amendoin
+21,136,2,tsp,2,tsp,molho de peixe ou omitir,cheira muito mal mas é normal,1,pasta de camarão
+21,134,1,unidades,1,U,,,1,malagueta vermelha
+21,137,2,colher de sopa,2,tbsp,molho de soja com açucar mascavado,,1,kecap manis
+21,45,1,tsp,1,tsp,,,1,molho de soja escuro
+21,97,1,tsp,1,tsp,,,1,curcuma em pó
+21,15,4,dentes,4,U,,,1,alho (dentes)
+21,16,1,unidades,1,U,,,1,cebola
+21,43,1,cubos,1,U,,,0,caldo de frango
+21,92,0.5,unidades,0.5,U,,,1,pepino
+21,91,1,unidades,1,U,,,0,tomate para salada
+21,33,6,unidades,6,U,,,0,ovos
+21,124,1,unidades,1,U,,,0,lima (sumo)
+21,139,1,qb,1,qb,,,1,cebola frita
+21,103,6,unidades,6,U,coxa de frango fatiada ou peito de frango,,1,camarão
+22,140,750,g,750,g,,,1,carne de vaca (estufar)
+22,53,5,colher de sopa,5,tbsp,,,1,oleo vegetal
+22,141,1,unidades,1,U,,,1,canela
+22,142,3,unidades,3,U,,,1,cravinho
+22,143,3,unidades,3,U,,,1,estrela de anis
+22,144,3,unidades,3,U,,,1,cardamomo verde
+22,145,4,unidades,4,U,"não é tradicional, mas já substitui por uma raspa de limão e fica bom (mas não igual)",,1,erva principe
+22,146,1,canecas,1,c,,,1,leite de coco
+22,147,2,tsp,2,tsp,pode substituir por METADE de concentrado de tamarindo ou tamarindo fresco,não confundir com o concentrado - é muito mais potente o concentrado,1,polpa de tamarindo
+22,148,6,unidades,6,U,substituir por mais raspa de limão ou a versão seca,,1,folhas de lima kaffir
+22,149,6,colher de sopa,6,tbsp,,,1,coco ralado
+22,1,1,qb,1,qb,,,1,sal
+22,109,5,unidades,5,U,,,1,chalota
+22,15,5,dentes,5,U,,,1,alho (dentes)
+22,41,1,polegar,1,U,,,1,gengibre
+22,134,2,unidades,2,U,,ajustar o picante. Incluir sementes para mais picante,1,malagueta vermelha
+23,150,12,unidades,12,U,cogumelos brancos,,1,cogumelos marron
+23,33,2,unidades,2,U,,,1,ovos
+23,16,0.5,unidades,0.5,U,,,1,cebola
+23,151,0.5,canecas,0.5,c,,,1,queijo cheddar
+23,152,0.25,canecas,0.25,c,,,1,farinha
+23,1,0.5,tsp,0.5,tsp,,,1,sal
+23,153,0.25,tsp,0.25,tsp,tomilho fresco,,0,tomilho seco
+23,9,0.25,tsp,0.25,tsp,,,0,pimenta preta
+23,53,1,colher de sopa,1,tbsp,,,1,oleo vegetal
+23,154,4,unidades,4,U,qualquer pão fofinho - crocante não funciona bem,,1,pão de hamburguer
+23,90,0.25,unidades,0.25,U,,,1,alface
+23,91,1,unidades,1,U,,,0,tomate para salada
+23,155,2,colher de sopa,2,tbsp,,,0,maionese
+23,156,0.5,canecas,0.5,c,panko ou mais farinha,,1,pão ralado
+24,2,500,g,500,g,,,1,carne picada (vaca)
+24,25,1,tsp,1,tsp,,,1,alho em pó
+24,26,1,tsp,1,tsp,,,1,cebola em pó
+24,24,2,tsp,2,tsp,,,1,paprika fumada
+24,23,1,tsp,1,tsp,,,1,cominho em pó
+24,1,1,tsp,1,tsp,,,1,sal
+24,157,1,unidades,1,U,ou meio pimento vermelho (para não picante) ou 1 malagueta vermelha,,1,jalapeno
+24,158,1,unidades,1,U,,,1,tomate
+24,159,0.75,unidades,0.75,U,outra cebola serve,,1,cebola branca
+24,32,0.33,molhos,0.33,g,,,1,salsa
+24,70,0.33,molhos,0.33,g,,,1,coentros
+24,86,0.5,unidades,0.5,U,,,1,queijo feta
+24,89,4,unidades,4,U,pode ser em pitas,,1,wraps
+24,90,0.5,unidades,0.5,U,,,1,alface
+24,91,0.5,unidades,0.5,U,,,1,tomate para salada
+24,64,1,tsp,1,tsp,,,1,sumac
+24,92,0.5,unidades,0.5,U,,,1,pepino
+24,79,0.5,canecas,0.5,c,,,1,iogurte
+24,59,0.5,unidades,0.5,U,,,1,limão (sumo)
+24,93,1.5,tsp,1.5,tsp,,,1,dill
+24,10,1,colher de sopa,1,tbsp,,,1,azeite
+25,94,900,g,900,g,,,1,peito de frango
+25,5,2,unidades,2,U,,,1,cebola amarela
+25,15,4,dentes,4,U,,,1,alho (dentes)
+25,41,1,polegar,1,U,,,1,gengibre
+25,53,3,colher de sopa,3,tbsp,,,1,oleo vegetal
+25,160,3,colher de sopa,3,tbsp,,,1,caril em pó
+25,1,1.5,tsp,1.5,tsp,,,1,sal
+25,9,0.5,tsp,0.5,tsp,,,1,pimenta preta
+25,84,5,unidades,5,U,,quatro se forem muito grandes,1,tomate de cacho
+25,146,400,g,400,g,,,1,leite de coco
+25,161,1,tsp,1,tsp,,,1,garam masala
+25,70,0.33,molhos,0.33,g,,,1,coentros
+26,140,750,g,750,g,,,1,carne de vaca (estufar)
+26,53,3,colher de sopa,3,tbsp,ghee é melhor ainda,,1,oleo vegetal
+26,16,2,unidades,2,U,,,1,cebola
+26,15,4,dentes,4,U,,,1,alho (dentes)
+26,41,1,polegar,1,U,,,1,gengibre
+26,84,2,unidades,2,U,,3 se forem pequenos,1,tomate de cacho
+26,79,3,colher de sopa,3,tbsp,,,1,iogurte
+26,1,1,qb,1,qb,,,1,sal
+26,162,1,unidades,1,U,cardamomo verde,,1,cardamomo preto
+26,142,3,unidades,3,U,,,1,cravinho
+26,141,1,unidades,1,U,,,1,canela
+26,163,1,unidades,1,U,,,1,louro
+26,23,1,tsp,1,tsp,,,1,cominho em pó
+26,85,1.5,tsp,1.5,tsp,,,1,sementes de coentros em pó
+26,97,1,tsp,1,tsp,,,1,curcuma em pó
+26,164,1.5,tsp,1.5,tsp,gochujaru ou paprika com um pouco de cayena - não é muito picante.,Ajustar picante a gosto,1,kashmiri chilli em pó
+26,161,0.5,tsp,0.5,tsp,,,1,garam masala
+27,165,1,canecas,1,c,,,1,flocos de bonito
+27,37,1,pedaços,1,U,,,1,konbu
+27,51,200,g,200,g,,,1,tofu
+27,48,1,colher de sopa,1,tbsp,,,1,wakame
+27,42,1,unidades,1,U,,,1,cebolinha
+27,72,4,lombos,4,U,,,1,salmão
+27,166,2,colher de sopa,2,tbsp,,,1,teryaki
+27,73,1,canecas,1,c,,,1,arroz de sushi
+27,126,0.5,unidades,0.5,U,,,1,couve
+27,4,1,unidades,1,U,,,1,cenoura
+27,38,1,tsp,1,tsp,,,1,sementes de sesamo
+28,155,0.33,canecas,0.33,c,,,1,maionese
+28,31,2,latas,2,g,,,1,atum (em lata)
+28,3,1,talo,1,U,,,1,aipo
+28,101,2,unidades,2,U,cornichons,,1,pickles
+28,125,0.25,unidades,0.25,U,,,1,cebola rouxa
+28,32,2,colher de sopa,2,tbsp,,,1,salsa
+28,1,1,qb,1,qb,,,1,sal
+28,9,1,qb,1,qb,,,1,pimenta preta
+28,108,0.5,tsp,0.5,tsp,,ajustar o picante,1,flocos de malagueta
+28,82,4,colher de sopa,4,tbsp,substitutos de manteiga OK,,1,manteiga
+28,158,1,unidades,1,U,,,1,tomate
+28,151,8,fatias,8,U,,,0,queijo cheddar
+28,59,0.5,unidades,0.5,U,,,1,limão (sumo)
+28,87,8,fatias,8,U,,,1,pão artesanal
+28,27,2,tsp,2,tsp,,,0,oregãos
+28,167,2,tsp,2,tsp,,,0,sementes de papoila
+29,168,1,colher de sopa,1,tbsp,,ajustar o picante,1,pasta de caril vermelho
+29,109,2,unidades,2,U,,,1,chalota
+29,160,1,colher de sopa,1,tbsp,,,1,caril em pó
+29,15,5,dentes,5,U,,,1,alho (dentes)
+29,146,400,g,400,g,,,1,leite de coco
+29,43,1,litro,1,ML,,,1,caldo de frango
+29,103,4,unidades,4,U,,,1,camarão
+29,75,1,unidades,1,U,,"não é tradicional, para uma versao mais tradicional procurar bolos de peixe malaios",0,mimos de pescada
+29,104,150,g,150,g,,,0,ameijoas
+29,169,1,colher de sopa,1,tbsp,,cheira mal mas sem medo,1,molho de peixe
+29,34,2,unidades,2,U,,,1,ramen
+29,53,1,colher de sopa,1,tbsp,,,1,oleo vegetal
+29,70,1,qb,1,qb,,,1,coentros
+29,124,1,unidades,1,U,,,1,lima (sumo)
+30,125,1,unidades,1,U,,,1,cebola rouxa
+30,158,5,unidades,5,U,,eu uso de cacho,1,tomate
+30,53,2,colher de sopa,2,tbsp,ou ghee é melhor ainda,,1,oleo vegetal
+30,15,5,dentes,5,U,,,1,alho (dentes)
+30,161,2,tsp,2,tsp,,,1,garam masala
+30,164,2,tsp,2,tsp,guchujaru ou paprika+cayena,,1,kashmiri chilli em pó
+30,97,2,tsp,2,tsp,,,1,curcuma em pó
+30,23,1.5,tsp,1.5,tsp,,,1,cominho em pó
+30,85,1.5,tsp,1.5,tsp,,,1,sementes de coentros em pó
+30,160,0.5,tsp,0.5,tsp,,,1,caril em pó
+30,1,1.5,tsp,1.5,tsp,,,1,sal
+30,20,0.5,tsp,0.5,tsp,,,1,açucar
+30,79,2,colher de sopa,2,tbsp,,,1,iogurte
+30,94,2,unidades,2,U,"fica melhor com um de peito, um de coxa",,1,peito de frango
+30,70,0.33,molhos,0.33,g,,,1,coentros
+31,170,6,unidades,6,U,,,1,pernas de frango
+31,15,2,dentes,2,U,,,1,alho (dentes)
+31,79,0.75,canecas,0.75,c,,,1,iogurte
+31,97,0.25,tsp,0.25,tsp,,,1,curcuma em pó
+31,164,2,tsp,2,tsp,paprika,,1,kashmiri chilli em pó
+31,99,0.75,tsp,0.75,tsp,,,1,cardamomo em pó
+31,1,2,colher de sopa,2,tbsp,,,1,sal
+31,171,0.5,unidades,0.5,U,,,1,malagueta verde
+31,59,2,tsp,2,tsp,,,1,limão (sumo)
+31,139,1,colher de sopa,1,tbsp,,,1,cebola frita
+31,138,1.5,canecas,1.5,c,,,1,arroz basmati
+31,162,3,unidades,3,U,,,1,cardamomo preto
+31,143,3,unidades,3,U,,,1,estrela de anis
+31,163,1,unidades,1,U,,,1,louro
+31,141,4,unidades,4,U,,,1,canela
+31,144,15,unidades,15,U,,,1,cardamomo verde
+31,172,2.5,colher de sopa,2.5,tbsp,,de preferencia pretos,1,cominhos
+31,142,3,tsp,3,tsp,,,1,cravinho
+31,53,2,colher de sopa,2,tbsp,,,1,oleo vegetal
+31,13,50,g,50,g,,,1,leite
+31,173,1,qb,1,qb,substituir por curcuma que é muito mais barato,,1,açafrão
+31,70,0.25,canecas,0.25,c,,,1,coentros
+31,174,0.33,canecas,0.33,c,,,1,menta
+31,59,0.33,unidades,0.33,U,,,1,limão (sumo)
+31,82,3,colher de sopa,3,tbsp,ghee é melhor ainda,,1,manteiga
+31,175,0.25,canecas,0.25,c,,,1,sementes de coentros
+31,176,2,tsp,2,tsp,,,1,sementes de funcho
+31,9,1,tsp,1,tsp,,,1,pimenta preta
+31,179,1,qb,1,qb,,,1,noz moscada
+32,103,1,kg,1,g,,,1,camarão
+32,124,1,unidades,1,U,,,1,lima (sumo)
+32,9,1,qb,1,qb,,,1,pimenta preta
+32,1,1,qb,1,qb,,,1,sal
+32,177,1,kg,1,g,,,1,mandioca
+32,163,1,unidades,1,U,,,1,louro
+32,16,3,unidades,3,U,,,1,cebola
+32,146,400,g,400,g,,,1,leite de coco
+32,18,400,g,400,g,,,1,polpa de tomate
+32,17,1,unidades,1,U,,,1,pimento vermelho
+32,32,1,molhos,1,g,,,1,salsa
+33,10,2,colher de sopa,2,tbsp,,,1,azeite
+33,94,2,unidades,2,U,mais coxas de frango,,1,peito de frango
+33,96,2,unidades,2,U,mais peitos de frango,,1,coxa de frango desossada
+33,125,1,unidades,1,U,,,1,cebola rouxa
+33,1,1,qb,1,qb,,,1,sal
+33,5,1,unidades,1,U,,,1,cebola amarela
+33,23,1.5,tsp,1.5,tsp,,,1,cominho em pó
+33,85,1.5,tsp,1.5,tsp,,,1,sementes de coentros em pó
+33,24,1,tsp,1,tsp,,,1,paprika fumada
+33,120,1.5,tsp,1.5,tsp,por mais paprika fumada + flocos de malagueta,,0,chipotle em pó
+33,15,4,dentes,4,U,,,1,alho (dentes)
+33,70,0.5,molhos,0.5,g,,,1,coentros
+33,89,4,unidades,4,U,,,1,wraps
+33,18,400,g,400,g,,,1,polpa de tomate
+33,79,4,colher de sopa,4,tbsp,vache que ri,,1,iogurte
+34,1,1,tsp,1,tsp,,,1,sal
+34,27,1,tsp,1,tsp,,,1,oregãos
+34,26,1,tsp,1,tsp,,,1,cebola em pó
+34,23,2,tsp,2,tsp,,,1,cominho em pó
+34,24,2,tsp,2,tsp,,,1,paprika fumada
+34,120,2,tsp,2,tsp,1 tsp de cayena ou outro picante em pó,,1,chipotle em pó
+34,10,0.5,colher de sopa,0.5,tbsp,,,1,azeite
+34,9,0.25,tsp,0.25,tsp,,,1,pimenta preta
+34,15,2,tsp,2,tsp,,,1,alho (dentes)
+34,125,1,unidades,1,U,,,1,cebola rouxa
+34,2,500,g,500,g,,,1,carne picada (vaca)
+34,7,2,colher de sopa,2,tbsp,,,1,concentrado de tomate
+34,180,0.5,unidades,0.5,U,couve rouxa,,1,alface iceberg
+34,181,0.5,canecas,0.5,c,,,1,milho
+34,66,1,lata pequena,1,g,,,1,feijão preto
+34,158,3,unidades,3,U,,,1,tomate
+34,70,1,qb,1,qb,,,0,coentros
+34,133,1,canecas,1,c,,,1,arroz agulha
+34,122,150,g,150,g,,,0,queijo para derreter
+34,17,1,unidades,1,U,,,1,pimento vermelho
+35,182,3,unidades,3,U,,,1,batata branca para fritar
+35,5,1,unidades,1,U,,,1,cebola amarela
+35,33,5,unidades,5,U,,,1,ovos
+35,10,3,canecas,3,c,,depende do tamanho da frigideira,1,azeite
+36,103,16,unidades,16,U,,,1,camarão
+36,15,8,dentes,8,U,,,1,alho (dentes)
+36,183,4,unidades,4,U,,,1,piri piri seco
+36,110,0.33,copo,0.33,c,,,1,vinho branco
+36,1,1,qb,1,qb,,,1,sal
+36,184,0.5,unidades,0.5,U,ou outro pão artesanal,,1,baguette
+36,10,0.33,copo,0.33,c,,,1,azeite
+37,104,1,kg,1,g,,,1,ameijoas
+37,15,6,dentes,6,U,,,1,alho (dentes)
+37,70,1,molhos,1,g,,,1,coentros
+37,110,0.5,copo,0.5,c,,,1,vinho branco
+37,10,1.5,colher de sopa,1.5,tbsp,,,1,azeite
+37,59,1,qb,1,qb,,eu ponho metade de um limão mal espremido e provo. Depois corrijo se quiser mais,1,limão (sumo)
+37,87,6,fatias,6,U,de preferencia rustico e fatiado mas algo como baguette pode funcionar,,1,pão artesanal
+37,1,1,qb,1,qb,,,1,sal
+37,9,1,qb,1,qb,,,1,pimenta preta
+38,185,60,g,60,g,,,1,manjericão
+38,186,26,g,26,g,eu uso caju porque sou alergico a pinhão,,1,pinhão
+38,1,0.5,tsp,0.5,tsp,,,1,sal
+38,9,0.25,tsp,0.25,tsp,,,1,pimenta preta
+38,15,2,dentes,2,U,,,1,alho (dentes)
+38,10,0.25,canecas,0.25,c,,,1,azeite
+38,187,20,g,20,g,,,1,parmesão
+38,188,2,doses,2,g,ou outra massa. Massa curta funciona melhor mas até esparguete serve,,1,fusili
+39,152,650,g,650,g,,,1,farinha
+39,1,1,colher de sopa,1,tbsp,,,1,sal
+39,20,1.3,colher de sopa,1.3,tbsp,,,1,açucar
+39,189,1,colher de sopa,1,tbsp,,,1,fermento de padeiro
+39,10,4,colher de sopa,4,tbsp,,,1,azeite
+39,18,800,g,800,g,,,1,polpa de tomate
+39,27,2,tsp,2,tsp,,,1,oregãos
+39,190,5,unidades,5,U,,,1,mozarela
+39,187,32,g,32,g,,,1,parmesão
+39,185,40,g,40,g,,,1,manjericão
+40,138,250,g,250,g,,,1,arroz basmati
+40,191,1,kg,1,g,,,1,polvo
+40,1,1,qb,1,qb,,,1,sal
+40,15,5,dentes,5,U,,,1,alho (dentes)
+40,16,1,unidades,1,U,,,1,cebola
+40,163,2,unidades,2,U,,,1,louro
+40,84,1,unidades,1,U,,,1,tomate de cacho
+40,7,0.5,colher de sopa,0.5,tbsp,,,1,concentrado de tomate
+40,9,1,qb,1,qb,,,1,pimenta preta
+40,10,1,qb,1,qb,,,1,azeite
+41,87,1,kg,1,g,,,1,pão artesanal
+41,103,800,g,800,g,,,1,camarão
+41,70,1,qb,1,qb,,,1,coentros
+41,108,0.2,tsp,0.2,tsp,,não é para ser picante!!,1,flocos de malagueta
+41,15,4,dentes,4,U,,,1,alho (dentes)
+41,33,2,unidades,2,U,,,1,ovos
+41,10,1,qb,1,qb,,,1,azeite
+41,84,1,unidades,1,U,,,1,tomate de cacho
+41,7,0.5,colher de sopa,0.5,tbsp,,,1,concentrado de tomate
+41,9,1,qb,1,qb,,,1,pimenta preta
+41,1,1,qb,1,qb,,,1,sal
+42,192,250,g,250,g,,,1,penne rigate
+42,165,2,tsp,2,tsp,,,1,flocos de bonito
+42,31,1,latas,1,g,,,1,atum (em lata)
+42,113,8,filetes,8,U,,,1,anchovas
+42,84,2,unidades,2,U,,,1,tomate de cacho
+42,7,1,colher de sopa,1,tbsp,,,1,concentrado de tomate
+42,10,1,qb,1,qb,,,1,azeite
+42,15,2,dentes,2,U,,,1,alho (dentes)
+42,125,1,unidades,1,U,,,1,cebola rouxa
+42,3,1,talo,1,U,,,1,aipo
+42,27,0.5,tsp,0.5,tsp,,,1,oregãos
+42,13,2,colher de sopa,2,tbsp,,,1,leite
+43,175,1,colher de sopa,1,tbsp,"sementes de coentros em pó, ",,1,sementes de coentros
+43,15,1,dentes,1,U,,,1,alho (dentes)
+43,1,1,qb,1,qb,,,1,sal
+43,59,1.5,unidades,1.5,U,,,1,limão (sumo)
+43,24,1,colher de sopa,1,tbsp,,,1,paprika fumada
+43,153,1,colher de sopa,1,tbsp,,,1,tomilho seco
+43,9,1,qb,1,qb,,,1,pimenta preta
+43,10,100,ml,100,ML,,,1,azeite
+43,96,600,g,600,g,,,1,coxa de frango desossada
+43,90,0.5,unidades,0.5,U,,,1,alface
+43,91,0.5,unidades,0.5,U,,,1,tomate para salada
+43,64,1,tsp,1,tsp,,,1,sumac
+43,92,0.5,unidades,0.5,U,,,1,pepino
+43,79,0.5,canecas,0.5,c,,,1,iogurte
+43,93,1.5,tsp,1.5,tsp,,,1,dill
+43,89,3,unidades,3,U,,,1,wraps
+43,182,2,unidades,2,U,,,1,batata branca para fritar
+44,193,200,g,200,g,,,1,noodles de arroz (largos)
+44,42,2,unidades,2,U,,,1,cebolinha
+44,109,1,unidades,1,U,,,1,chalota
+44,194,2,colher de sopa,2,tbsp,açucar de cana,,1,açucar de palma
+44,169,2.5,colher de sopa,2.5,tbsp,,,1,molho de peixe
+44,147,2,colher de sopa,2,tbsp,concentrado de tamarindo mas metade ou tamarindo fresco ,,1,polpa de tamarindo
+44,45,0.5,colher de sopa,0.5,tbsp,,,1,molho de soja escuro
+44,96,2,unidades,2,U,,,1,coxa de frango desossada
+44,103,6,unidades,6,U,,,1,camarão
+44,128,1,canecas,1,c,,,1,rebentos de soja
+44,195,2,colher de sopa,2,tbsp,,,1,amendoin torrado
+44,33,4,unidades,4,U,pode substituir 2 por tofu,,1,ovos
+2,178,420,g,420,g,,,1,feijão vermelho (cozido)

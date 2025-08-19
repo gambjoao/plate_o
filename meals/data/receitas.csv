@@ -1,0 +1,54 @@
+id,name,description,instructions,serves,overnight_prep?,time,nuisance_factor
+1,Esparguete à Bolonhesa,placeholder,placeholder,8,0,60,1
+2,Chili com Carne,placeholder,placeholder,8,0,60,1
+3,Salada de Atum,placeholder,placeholder,4,0,60,1
+4,Veggie Ramen,placeholder,placeholder,2,0,60,1
+5,Mapo Tofu,placeholder,placeholder,6,0,60,1
+6,Bife com Chimichurri,placeholder,placeholder,2,0,60,1
+7,Bowl de Hummus e Atum,placeholder,placeholder,3,0,60,1
+8,Quinoa Bowls,placeholder,placeholder,2,0,60,1
+9,Sushi Bowls,placeholder,placeholder,2,0,60,1
+10,Alinazik Kebab,placeholder,placeholder,6,0,60,1
+11,Shakshuka,placeholder,placeholder,4,0,60,1
+12,Falafel Wraps com Tatziki,placeholder,placeholder,4,1,60,1
+13,Pita Shawarma,placeholder,placeholder,4,0,60,1
+14,Arroz de Marisco,placeholder,placeholder,8,0,60,1
+15,Esparguete Putanesca,placeholder,placeholder,4,0,60,1
+16,Esparguete a la Carbonara,placeholder,placeholder,4,0,60,1
+17,Esparguete Amatriciana,placeholder,placeholder,4,0,60,1
+18,Vegetarian Crunchwraps,placeholder,placeholder,8,0,60,1
+19,Chow mein ,placeholder,placeholder,3,0,60,1
+20,Arroz Frito,placeholder,placeholder,3,0,60,1
+21,Nasi Goreng,placeholder,placeholder,3,0,60,1
+22,Rendang de Vaca,placeholder,placeholder,4,0,60,1
+23,Hamburgueres de Cogumelos,placeholder,placeholder,4,0,60,1
+24,Wraps de Kebabs,placeholder,placeholder,4,0,60,1
+25,Caril de Frango Simples,placeholder,placeholder,6,0,60,1
+26,Beef Bhuna,placeholder,placeholder,4,0,60,1
+27,Combo Japonês,placeholder,placeholder,4,0,60,1
+28,Tuna Melts,placeholder,placeholder,4,0,60,1
+29,Laksa,placeholder,placeholder,2,0,60,1
+30,Butter Chicken,placeholder,placeholder,4,0,60,1
+31,Chicken Biryani,placeholder,placeholder,6,1,60,1
+32,Bóbó de Camarão,placeholder,placeholder,8,0,60,1
+33,Fajitas,placeholder,placeholder,4,0,60,1
+34,Burritos,placeholder,placeholder,6,0,60,1
+35,Tortilla de Patata,placeholder,placeholder,3,0,60,1
+36,Gambas al Ajillo,placeholder,placeholder,2,0,60,1
+37,Ameijoas à Bulhão Pato,placeholder,placeholder,2,0,60,1
+38,Esparguete al Pesto,placeholder,placeholder,2,0,60,1
+39,Pizza Marguerita,placeholder,placeholder,4,0,60,1
+40,Arroz de Polvo,placeholder,placeholder,5,0,60,1
+41,Açorda de Marisco,placeholder,placeholder,6,0,60,1
+42,Three Fishy Pasta,placeholder,placeholder,3,0,60,1
+43,Gyros,placeholder,placeholder,3,0,60,1
+43,Pad Thai,placeholder,placeholder,2,0,60,1
+44,Chicken Adobo,placeholder,placeholder,4,0,60,1
+45,Peixe Grelhado,placeholder,placeholder,2,0,60,1
+46,Pho,placeholder,placeholder,6,0,60,1
+47,Frango desfiado à LDB,placeholder,placeholder,6,0,60,1
+48,Massa de Atum,placeholder,placeholder,4,0,60,1
+49,Bife Grelhado,placeholder,placeholder,2,0,60,1
+50,Lulas Grelhadas,placeholder,placeholder,2,0,60,1
+51,Beef Carbonnade,placeholder,placeholder,6,0,60,1
+52,Paella de Marisco,placeholder,placeholder,4,0,60,1
