@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from meals.models import Meal, Ingredient, MealIngredient
+from meals.models import Meal, Ingredient, MealIngredient, HouseholdIngredient
 
 
 
@@ -19,5 +19,14 @@ class MealIngredientSerializer(serializers.ModelSerializer):
     class Meta:
         model = MealIngredient
         fields = ['ingredient', 'quantidade_desc', 'unit_desc', 'u_quantity', 'u_desc', 'sub', 'notas', 'required']
+
+class HouseholdIngredientSerializer(serializers.ModelSerializer):
+    ingredient_id = serializers.IntegerField(source="ingredient.id")
+    ingredient_name = serializers.CharField(source="ingredient.name")
+    status_display = serializers.CharField(source="get_status_display")
+
+    class Meta:
+        model = HouseholdIngredient
+        fields = ["ingredient_id", "ingredient_name", "status", "status_display"]
 
 

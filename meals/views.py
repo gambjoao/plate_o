@@ -4,8 +4,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.shortcuts import get_object_or_404
 
-from meals.models import Meal, MealIngredient, IngredientNutritionToken, IngredientMeasure
-from meals.serializers import MealIngredientSerializer, MealSerializer
+from meals.models import Meal, MealIngredient, IngredientNutritionToken, IngredientMeasure, Household, HouseholdIngredient
+from meals.serializers import MealIngredientSerializer, MealSerializer, HouseholdIngredientSerializer
 from django.db.models import Count, Q
 from decimal import Decimal, InvalidOperation
 from .services.token_calculator import compute_token_profile
@@ -91,3 +91,14 @@ class MealTokensAPIView(APIView):
 
         response = {k: float(v.quantize(Decimal("0.01"))) for k, v in token_totals.items()}
         return Response(response)
+    
+class HouseholdIngredientListView(APIView):
+    def get(self, request, household_id):
+        try:
+            household = Household.objects.get(id=household_id)
+        except Household.DoesNotExist:
+            return Response({"error": "Household not found"}, status=status.HTTP_404_NOT_FOUND)
+
+        ingredients = HouseholdIngredient.objects.filter(household=household)
+        serializer = HouseholdIngredientSerializer(ingredients, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
