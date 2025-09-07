@@ -3,6 +3,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.shortcuts import get_object_or_404
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from .models import HouseholdIngredient
 
 from meals.models import Meal, MealIngredient, IngredientNutritionToken, IngredientMeasure, Household, HouseholdIngredient
 from meals.serializers import MealIngredientSerializer, MealSerializer, HouseholdIngredientSerializer
@@ -102,3 +105,28 @@ class HouseholdIngredientListView(APIView):
         ingredients = HouseholdIngredient.objects.filter(household=household)
         serializer = HouseholdIngredientSerializer(ingredients, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+@api_view(['POST'])
+def adjust_ingredient(request, household_id, ingredient_id):
+    action = request.data.get('action')
+
+    try:
+        hi = HouseholdIngredient.objects.get(
+            household_id=household_id,
+            ingredient_id=ingredient_id
+        )
+    except HouseholdIngredient.DoesNotExist:
+        return Response({"error": "Ingredient not found for this household."},
+                        status=status.HTTP_404_NOT_FOUND)
+
+    if action == "increment" and hi.status < 2:
+        hi.status += 1
+        hi.save()
+    elif action == "decrement" and hi.status > 0:
+        hi.status -= 1
+        hi.save()
+    else:
+        return Response({"error": "Invalid action or status limit reached."},
+                        status=status.HTTP_400_BAD_REQUEST)
+
+    return Response({"status": hi.get_status_display()})

@@ -72,8 +72,6 @@ class IngredientNutritionToken(models.Model):
     class Meta:
         unique_together = ('ingredient', 'token')
 
-
-#Pantry management - we are still missing the signal to add ingredients when new HH is added
 class Household(models.Model):
     name = models.CharField(max_length=255, default="Default Household")
 
