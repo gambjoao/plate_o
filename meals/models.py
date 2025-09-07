@@ -4,15 +4,20 @@ from django.db import models
 
 class Ingredient(models.Model):
     name = models.CharField(max_length=255)
-    base_unit = models.CharField(max_length=10, choices=[
-        ('g', 'Grams'),
-        ('ml', 'Milliliters'),
-        ('u', 'Unit')],
-        )
+    base_unit = models.CharField(
+        max_length=10,
+        choices=[
+            ('g', 'Grams'),
+            ('ml', 'Milliliters'),
+            ('u', 'Unit')
+        ],
+    )
     portion_description = models.CharField(max_length=100, null=True, blank=True)
+    icon = models.ImageField(upload_to='ingredient_icons/', null=True, blank=True)
 
     def __str__(self):
         return self.name
+    
     
 class Meal(models.Model):
     name = models.CharField(max_length=255)

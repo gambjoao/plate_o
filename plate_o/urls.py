@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path
 from meals.views import RandomMealsAPIView, MealIngredientsAPIView, MealsByIngredientsAPIView, MealTokensAPIView, HouseholdIngredientListView, adjust_ingredient
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -11,3 +13,6 @@ urlpatterns = [
     path("api/pantry/<int:household_id>/ingredients/", HouseholdIngredientListView.as_view(), name="household-ingredients"),
     path('api/pantry/<int:household_id>/ingredients/<int:ingredient_id>/adjust/', adjust_ingredient),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
