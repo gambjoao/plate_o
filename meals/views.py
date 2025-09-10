@@ -103,8 +103,28 @@ class HouseholdIngredientListView(APIView):
             return Response({"error": "Household not found"}, status=status.HTTP_404_NOT_FOUND)
 
         ingredients = HouseholdIngredient.objects.filter(household=household)
-        serializer = HouseholdIngredientSerializer(ingredients, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        ingredients_list = HouseholdIngredientSerializer(ingredients, many=True).data
+
+
+
+        formatted_ingredients = {
+            "Level 1": {
+                "Level 2": {
+                    "Level 3": [
+                        {
+                            "id": ing["ingredient_id"],
+                            "name": ing["ingredient_name"],
+                            "image": ing["ingredient_icon"],
+                            "quantity": ing["status"]
+                        }
+                        for ing in ingredients_list
+                    ]
+                }
+            }
+        }
+
+        return Response(formatted_ingredients, status=status.HTTP_200_OK)
+
     
 @api_view(['POST'])
 def adjust_ingredient(request, household_id, ingredient_id):

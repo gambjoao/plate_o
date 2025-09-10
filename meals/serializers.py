@@ -21,7 +21,7 @@ class MealIngredientSerializer(serializers.ModelSerializer):
         fields = ['ingredient', 'quantidade_desc', 'unit_desc', 'u_quantity', 'u_desc', 'sub', 'notas', 'required']
 
 class HouseholdIngredientSerializer(serializers.ModelSerializer):
-    ingredient_id = serializers.IntegerField(source="ingredient.id")
+    ingredient_id = serializers.CharField(source="ingredient.id")
     ingredient_name = serializers.CharField(source="ingredient.name")
     ingredient_icon = serializers.CharField(source="ingredient.icon")
     status_display = serializers.CharField(source="get_status_display")
@@ -29,5 +29,6 @@ class HouseholdIngredientSerializer(serializers.ModelSerializer):
     class Meta:
         model = HouseholdIngredient
         fields = ["ingredient_id", "ingredient_name", "ingredient_icon", "status", "status_display"]
+
 
 
