@@ -1,7 +1,5 @@
 from django.db import models
 
-
-
 class Ingredient(models.Model):
     name = models.CharField(max_length=255)
     base_unit = models.CharField(
@@ -27,6 +25,7 @@ class Meal(models.Model):
     overnight_prep = models.BooleanField(default=False)
     time = models.PositiveIntegerField(help_text="Time in minutes")
     nuisance_factor = models.FloatField()
+    image = models.ImageField(upload_to='meal_images/', null=True, blank=True)
     ingredients = models.ManyToManyField(
         Ingredient,
         through='MealIngredient',
@@ -99,3 +98,67 @@ class HouseholdIngredient(models.Model):
 
     def __str__(self):
         return f"{self.household.name} - {self.ingredient.name}: {self.get_status_display()}"
+
+class Menu(models.Model):
+    household = models.ForeignKey(
+        Household,
+        on_delete=models.CASCADE,
+        related_name="menus"
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+
+    def __str__(self):
+        return f"Menu for {self.household.name} ({self.created_at.date()})"
+
+
+class MenuMeal(models.Model):
+    STATE_CHOICES = [
+        ("planned", "Planned"),
+        ("done", "Done"),
+        ("rejected", "Rejected"),
+    ]
+
+    MEAL_TYPE_CHOICES = [
+        (1, "Breakfast"),
+        (2, "Lunch"),
+        (3, "Dinner"),
+    ]
+
+    menu = models.ForeignKey(Menu, on_delete=models.CASCADE, related_name="menu_meals")
+    meal = models.ForeignKey(Meal, on_delete=models.CASCADE, related_name="menu_entries")
+    state = models.CharField(
+        max_length=10,
+        choices=STATE_CHOICES,
+        default="planned"
+    )
+    state_updated_at = models.DateTimeField(auto_now=True)
+
+    # New fields
+    day_number = models.PositiveIntegerField(
+        help_text="Day index relative to menu start (1,2,3...)"
+    )
+    meal_type = models.PositiveSmallIntegerField(
+        choices=MEAL_TYPE_CHOICES,
+        default=3  # Dinner as default
+    )
+
+    class Meta:
+        constraints = [
+            # prevent duplicates: only one recipe per day_number + meal_type
+            models.UniqueConstraint(
+                fields=["menu", "day_number", "meal_type"],
+                name="unique_meal_per_day_and_slot"
+            ),
+            # avoid duplicates of the same meal in the same menu
+            models.UniqueConstraint(
+                fields=["menu", "meal"],
+                name="unique_meal_per_menu"
+            ),
+        ]
+
+    def __str__(self):
+        return f"Day {self.day_number} {self.get_meal_type_display()} - {self.meal.name} ({self.get_state_display()})"

@@ -129,12 +129,14 @@ class HouseholdIngredientListView(APIView):
 @api_view(['POST'])
 def adjust_ingredient(request, household_id, ingredient_id):
     action = request.data.get('action')
+    print(request.data)
 
     try:
         hi = HouseholdIngredient.objects.get(
             household_id=household_id,
             ingredient_id=ingredient_id
         )
+        print(action)
     except HouseholdIngredient.DoesNotExist:
         return Response({"error": "Ingredient not found for this household."},
                         status=status.HTTP_404_NOT_FOUND)
