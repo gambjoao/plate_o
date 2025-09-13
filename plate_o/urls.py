@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from meals.views import RandomMealsAPIView, MealIngredientsAPIView, MealsByIngredientsAPIView, MealTokensAPIView, HouseholdIngredientListView, adjust_ingredient
+from meals.views import RandomMealsAPIView, MealIngredientsAPIView, MealsByIngredientsAPIView, MealTokensAPIView, HouseholdIngredientListView, adjust_ingredient, CurrentMenuView
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -12,6 +12,7 @@ urlpatterns = [
     path('api/meals/<int:meal_id>/tokens/', MealTokensAPIView.as_view(), name='meal-tokens'),
     path("api/pantry/<int:household_id>/ingredients/", HouseholdIngredientListView.as_view(), name="household-ingredients"),
     path('api/pantry/<int:household_id>/ingredients/<int:ingredient_id>/adjust/', adjust_ingredient),
+    path('api/meals/<int:household_id>/current-menu/', CurrentMenuView.as_view(), name='current-menu'),
 ]
 
 if settings.DEBUG:

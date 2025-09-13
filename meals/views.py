@@ -12,7 +12,8 @@ from meals.serializers import MealIngredientSerializer, MealSerializer, Househol
 from django.db.models import Count, Q
 from decimal import Decimal, InvalidOperation
 from .services.token_calculator import compute_token_profile
-
+from .models import Menu
+from .serializers import MenuSerializer
 
 # Returns a given (input) amount of random recipe names
 class RandomMealsAPIView(APIView):
@@ -152,3 +153,14 @@ def adjust_ingredient(request, household_id, ingredient_id):
                         status=status.HTTP_400_BAD_REQUEST)
 
     return Response({"status": hi.get_status_display()})
+
+# Returns the current active menu for a household and its evaluation
+
+class CurrentMenuView(APIView):
+    def get(self, request, household_id):
+        menu = Menu.objects.filter(household_id=household_id, is_active=True).first()
+        if not menu:
+            return Response({"detail": "No active menu found"}, status=404)
+
+        serializer = MenuSerializer(menu)
+        return Response(serializer.data)
