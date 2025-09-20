@@ -19,7 +19,7 @@ def optimize_meal_plan(
     starting_recipe: a Recipe object to use as first meal (optional)
     forbidden_ids: set of recipe IDs to avoid repeats
     """
-
+    print(f"!!!!!!!!!!!!!!!!!!Optimizing meal plan for {total_meals} meals with heat {heat}")
     forbidden_ids = set(forbidden_ids) if forbidden_ids else set()
     available_recipes = [r for r in recipes if r.id not in forbidden_ids]
 
@@ -56,6 +56,10 @@ def optimize_meal_plan(
 
     if debug:
         return meal_plan, token_progress
+    print(token_progress)
+    print("Final meal plan:")
+    for meal in meal_plan:
+        print(f"- {meal.name}")
     return meal_plan
 
 

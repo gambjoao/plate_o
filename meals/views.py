@@ -6,6 +6,10 @@ from django.shortcuts import get_object_or_404
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from .models import HouseholdIngredient
+from django.db import transaction
+from django.utils import timezone
+from .services.meal_plan_optimizer import optimize_meal_plan
+from meals.models import MenuMeal
 
 from meals.models import Meal, MealIngredient, IngredientNutritionToken, IngredientMeasure, Household, HouseholdIngredient
 from meals.serializers import MealIngredientSerializer, MealSerializer, HouseholdIngredientSerializer
@@ -164,3 +168,55 @@ class CurrentMenuView(APIView):
 
         serializer = MenuSerializer(menu)
         return Response(serializer.data)
+    
+class GenerateMenuView(APIView):
+    """
+    POST endpoint to generate a new optimized menu for a household.
+    """
+
+    def post(self, request, *args, **kwargs):
+        household_id = 1  # TODO: replace with real household logic
+        days = int(request.data.get("days", 7))
+
+        # Step 1: deactivate old menus
+        Menu.objects.filter(household_id=household_id, is_active=True).update(is_active=False)
+
+        # Step 2: fetch available recipes (wrap Meals into adapters for optimizer)
+        recipes = []
+        for meal in Meal.objects.all():
+            adapter = type("RecipeAdapter", (), {})()
+            adapter.id = meal.id
+            adapter.name = meal.name
+            adapter.token_profile = compute_token_profile(meal)
+            adapter._meal = meal  # keep reference to real Meal object
+            recipes.append(adapter)
+
+        rules = {
+            "red_meat": 2,  # example rule
+        }
+
+        meal_plan = optimize_meal_plan(
+            recipes=recipes,
+            rules=rules,
+            total_meals=days,
+            heat=3,
+        )
+
+        # Step 3: create new menu & insert menu meals
+        with transaction.atomic():
+            menu = Menu.objects.create(
+                household_id=household_id,
+                is_active=True,
+                created_at=timezone.now()
+            )
+
+            for idx, recipe in enumerate(meal_plan, start=1):
+                MenuMeal.objects.create(
+                    menu=menu,
+                    meal=recipe._meal,   # ✅ use real Meal instance, not adapter
+                    day_number=idx,
+                    meal_type=3,  # Dinner (hardcoded for now)
+                    state="planned",
+                )
+
+        return Response({"detail": "Menu generated successfully."}, status=status.HTTP_201_CREATED)
