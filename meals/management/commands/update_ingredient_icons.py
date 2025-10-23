@@ -43,6 +43,7 @@ class Command(BaseCommand):
 
         for ingredient in Ingredient.objects.all():
             normalized = self.normalize_filename(ingredient.name)
+            print(normalized)
 
             found = False
             for ext in possible_extensions:

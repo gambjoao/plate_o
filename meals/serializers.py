@@ -103,9 +103,9 @@ class MenuSerializer(serializers.ModelSerializer):
                         "id": str(menu_meal.meal.id),
                         "name": menu_meal.meal.name,
                         "image": (
-                            menu_meal.meal.image.url
+                            menu_meal.meal.image.name
                             if menu_meal.meal.image
-                            else "assets/static_images/recipe_placeholder.jpg"
+                            else ""
                         ),
                         "cook_time": menu_meal.meal.time,
                         "times_made": 7,  # placeholder
