@@ -176,7 +176,7 @@ class GenerateMenuView(APIView):
 
     def post(self, request, *args, **kwargs):
         print("----------Got asked for new Menu----------")
-        print(request.data)
+        print(request)
         household_id = 1  # TODO: replace with real household logic
         days = int(request.data.get("days", 7))
 
@@ -193,9 +193,7 @@ class GenerateMenuView(APIView):
             adapter._meal = meal  # keep reference to real Meal object
             recipes.append(adapter)
 
-        rules = {
-            "red_meat": 2,  # example rule
-        }
+        rules = request.data.get("tokens")
 
         meal_plan = optimize_meal_plan(
             recipes=recipes,
