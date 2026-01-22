@@ -175,6 +175,8 @@ class GenerateMenuView(APIView):
     """
 
     def post(self, request, *args, **kwargs):
+        print("----------Got asked for new Menu----------")
+        print(request.data)
         household_id = 1  # TODO: replace with real household logic
         days = int(request.data.get("days", 7))
 
