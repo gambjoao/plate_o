@@ -177,8 +177,20 @@ class GenerateMenuView(APIView):
     def post(self, request, *args, **kwargs):
         print("----------Got asked for new Menu----------")
         print(request.data)
+        
         household_id = 1  # TODO: replace with real household logic
         days = int(request.data.get("days", 7))
+        meals = request.data.get("meals", [2])  # default to lunch only
+        rules = request.data.get("tokens", {})
+        
+        # Validate meals list
+        if not meals or not isinstance(meals, list):
+            return Response(
+                {"error": "meals must be a non-empty list"}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        total_meals = days * len(meals)
 
         # Step 1: deactivate old menus
         Menu.objects.filter(household_id=household_id, is_active=True).update(is_active=False)
@@ -193,12 +205,10 @@ class GenerateMenuView(APIView):
             adapter._meal = meal  # keep reference to real Meal object
             recipes.append(adapter)
 
-        rules = request.data.get("tokens")
-
         meal_plan = optimize_meal_plan(
             recipes=recipes,
             rules=rules,
-            total_meals=days,
+            total_meals=total_meals,
             heat=3,
         )
 
@@ -210,13 +220,19 @@ class GenerateMenuView(APIView):
                 created_at=timezone.now()
             )
 
-            for idx, recipe in enumerate(meal_plan, start=1):
-                MenuMeal.objects.create(
-                    menu=menu,
-                    meal=recipe._meal,   # ✅ use real Meal instance, not adapter
-                    day_number=idx,
-                    meal_type=3,  # Dinner (hardcoded for now)
-                    state="planned",
-                )
+            meal_idx = 0
+            for day in range(1, days + 1):
+                for meal_type in meals:
+                    if meal_idx >= len(meal_plan):
+                        break
+                    
+                    MenuMeal.objects.create(
+                        menu=menu,
+                        meal=meal_plan[meal_idx]._meal,
+                        day_number=day,
+                        meal_type=meal_type,
+                        state="planned",
+                    )
+                    meal_idx += 1
 
         return Response({"detail": "Menu generated successfully."}, status=status.HTTP_201_CREATED)
