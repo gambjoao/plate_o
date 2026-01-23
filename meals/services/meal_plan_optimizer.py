@@ -45,10 +45,10 @@ def optimize_meal_plan(
         # Sort by score (lower is better)
         scored.sort(key=lambda x: x[1])
         top_n = scored[:min(heat, len(scored))]
-        print(top_n)
+        #print(top_n)
         selected = random.choice(top_n)[0]
-        print(selected.name)
-        print(selected.token_profile)
+        #print(selected.name)
+        #print(selected.token_profile)
 
         meal_plan.append(selected)
         token_progress = _merge_token_profiles(token_progress, selected.token_profile)
@@ -56,7 +56,7 @@ def optimize_meal_plan(
 
     if debug:
         return meal_plan, token_progress
-    print(token_progress)
+    #print(token_progress)
     print("Final meal plan:")
     for meal in meal_plan:
         print(f"- {meal.name}")

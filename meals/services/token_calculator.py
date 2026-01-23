@@ -32,5 +32,5 @@ def compute_token_profile(meal):
                 continue
 
             token_totals[token.token.name] = token_totals.get(token.token.name, Decimal(0)) + scaled_token
-    print(token_totals)
+    #print(token_totals)
     return token_totals
