@@ -12,7 +12,7 @@ from .services.meal_plan_optimizer import optimize_meal_plan
 from meals.models import MenuMeal
 
 from meals.models import Meal, MealIngredient, IngredientNutritionToken, IngredientMeasure, Household, HouseholdIngredient
-from meals.serializers import MealIngredientSerializer, MealSerializer, HouseholdIngredientSerializer
+from meals.serializers import MealIngredientSerializer, MealSerializer, HouseholdIngredientSerializer, RecipeSerializer
 from django.db.models import Count, Q
 from decimal import Decimal, InvalidOperation
 from .services.token_calculator import compute_token_profile
@@ -236,3 +236,9 @@ class GenerateMenuView(APIView):
                     meal_idx += 1
 
         return Response({"detail": "Menu generated successfully."}, status=status.HTTP_201_CREATED)
+    
+class RecipeDetailView(APIView):
+    def get(self, request, recipe_id):
+        meal = get_object_or_404(Meal, id=recipe_id)
+        serializer = RecipeSerializer(meal, context={'request': request})
+        return Response(serializer.data)
