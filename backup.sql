@@ -1874,2022 +1874,1014 @@ COPY public.meals_meal (id, name, description, instructions, serves, overnight_p
 --
 
 COPY public.meals_mealingredient (id, quantidade_desc, unit_desc, u_quantity, u_desc, sub, notas, required, ingredient_id, meal_id) FROM stdin;
-4887	1	qb	1	qb			t	1	1
-4888	400	g	400	g			t	2	1
-4889	60	g	60	g			t	3	1
-4890	60	g	60	g			t	4	1
-4891	60	g	60	g			t	5	1
-4892	150	g	150	g	Bacon		t	6	1
-4893	1	colher de sopa	1	tbsp			t	7	1
-4894	1	copo	1	c			t	8	1
-4895	1	qb	1	qb			t	9	1
-4896	3	colher de sopa	3	tbsp			t	10	1
-4897	200	g	200	g	eu gosto de substituir por 3 ou 4 tomates frescos passados num blender		t	11	1
-4898	200	g	200	g			t	12	1
-4899	100	ml	100	ml			t	13	1
-4900	8	doses	8	u	Outra massa		t	14	1
-4901	1	colher de sopa	1	tbsp			t	10	2
-4902	3	dentes	3	U			t	15	2
-4903	1	unidades	1	U			t	16	2
-4904	1	unidades	1	U			t	17	2
-4905	500	g	500	g			t	2	2
-4906	3	colher de sopa	3	tbsp			t	7	2
-4907	800	g	800	g			t	18	2
-4908	2	cubos	2	U			t	19	2
-4909	1.5	tsp	1.5	tsp			t	20	2
-4910	2	tsp	2	tsp		Ajustar o picante a gosto	t	21	2
-4911	3	tsp	3	tsp			t	22	2
-4912	5	tsp	5	tsp			t	23	2
-4913	4	tsp	4	tsp			t	24	2
-4914	2	tsp	2	tsp			t	25	2
-4915	2	tsp	2	tsp			t	26	2
-4916	1.5	tsp	1.5	tsp			t	1	2
-4917	2	tsp	2	tsp			t	27	2
-4918	1	tsp	1	tsp			t	28	2
-4919	2	quadrados	2	U			t	29	2
-4920	1	qb	1	qb			t	1	3
-4921	470	g	470	g			t	30	3
-4922	170	g	2	g			t	31	3
-4923	1	qb	1	qb			t	32	3
-4924	3	unidades	3	U			t	33	3
-4925	0.5	unidades	0.5	U			t	16	3
-4926	2	unidades	2	U			t	34	4
-4927	2	unidades	2	U			t	33	4
-4928	2	colher de sopa	2	tbsp			t	35	4
-4929	1.5	colher de sopa	1.5	tbsp		Ajustar picante a gosto	t	36	4
-4930	1	pedaços	1	U			t	37	4
-4931	2	colher de sopa	2	tbsp			t	38	4
-4932	1	colher de sopa	1	tbsp			t	39	4
-4933	4	unidades	4	U		Sim, tem mesmo de ser secos	t	40	4
-4934	1.5	tsp	1.5	tsp			t	41	4
-4935	3	dentes	3	U			t	15	4
-4936	2	unidades	2	U			t	42	4
-4937	1	cubos	1	U			t	43	4
-4938	2	colher de sopa	2	tbsp			t	44	4
-4939	1	tsp	1	tsp			t	45	4
-4940	1	qb	1	qb			t	46	4
-4941	1	folha	1	U			t	47	4
-4942	4	pedaços	4	U			t	48	4
-4943	2.5	colher de sopa	2.5	tbsp			t	49	5
-4944	2	colher de sopa	2	tbsp			t	50	5
-4945	1	colher de sopa	1	tbsp		Tradicionalmente, usa-se feijao preto fermentando -  Dou Chi	t	35	5
-4946	2	colher de sopa	2	tbsp			t	52	5
-4947	500	g	500	g		De preferencia versão mais suave	t	51	5
-4948	0.5	tsp	0.5	tsp			t	1	5
-4949	3	colher de sopa	3	tbsp			t	53	5
-4950	300	g	300	g			t	54	5
-4951	4	unidades	4	U			t	42	5
-4952	5	dentes	5	U			t	15	5
-4953	1	tsp	1	tsp			t	22	5
-4954	1.5	tsp	1.5	tsp			t	41	5
-4955	2	tsp	2	tsp			t	20	5
-4956	1.5	canecas	1.5	c			t	19	5
-4957	3	tsp	3	tsp			t	44	5
-4958	0.5	tsp	0.5	tsp			t	45	5
-4959	1	colher de sopa	1	tbsp			t	55	5
-4960	1	qb	1	qb		Eu não acrescento. O doubanjiang já é picante. Sugiro rectificar o picante no fim depois de provar com pó de piri piri ou outro picante	t	56	5
-4961	2	unidades	2	U			t	57	6
-4962	5	colher de sopa	5	tbsp			t	10	6
-4963	1	colher de sopa	1	tbsp			t	58	6
-4964	1	tsp	1	tsp			t	59	6
-4965	1.5	colher de sopa	1.5	tbsp			t	32	6
-4966	2	dentes	2	U			t	15	6
-4967	1	unidades	1	U	Outra malagueta fresca	Ajustar a picante a gosto	t	60	6
-4968	1	tsp	1	tsp			t	27	6
-4969	1	qb	1	qb			t	9	6
-4970	0.5	tsp	0.5	tsp			t	22	6
-4971	1	lata grande	1	g			t	61	7
-4972	3	latas	3	g			t	31	7
-4973	15	unidades	15	U	Broculo ou outros legumes (de preferencia cruciveros)	Depende do tamanho das couves. Incluir visto que são saudaveis mas a gosto	t	62	7
-4974	3	unidades	3	U			t	33	7
-4975	1.5	colher de sopa	1.5	tbsp		Por a gosto no hummus	t	63	7
-4976	1	qb	1	qb			t	1	7
-4977	0.5	unidades	0.5	U		Por a gosto no hummus	t	59	7
-4978	1	dentes	1	U			t	15	7
-4979	1	qb	1	qb		Por a gosto no hummus e depois por cima no produto final	t	10	7
-4980	1	qb	1	qb		Sprinkle por cima do produto final	f	64	7
-4981	1	qb	1	qb		Sprinkle por cima do produto final	f	65	7
-4982	1	lata pequena	1	g			t	66	8
-4983	1	unidades	1	U			t	67	8
-4984	1	canecas	1	c			t	68	8
-4985	2	unidades	2	U			t	33	8
-4986	8	unidades	8	U			t	69	8
-4987	1	qb	1	qb			t	70	8
-4988	3	colher de sopa	3	tbsp			t	10	8
-4989	1	colher de sopa	1	tbsp			t	71	8
-4990	1	qb	1	qb			t	1	8
-4991	1	qb	1	qb			t	9	8
-4992	1	qb	1	qb			t	27	8
-4993	2	lombos	2	U		de preferencia sem espinhas	t	72	9
-4994	1	canecas	1	c			t	73	9
-4995	3	colher de sopa	3	tbsp			t	74	9
-4996	1	medalhões	1	U		de preferencia sem espinhas	t	75	9
-4997	1	qb	1	qb			t	76	9
-4998	2	unidades	2	U			t	77	9
-4999	1	qb	1	qb			t	78	9
-5000	1	qb	1	qb			t	44	9
-5001	1	qb	1	qb			t	47	9
-5002	2	colher de sopa	2	tbsp	podem usar qualquer uma das cores mas mistura das duas é mais visual		t	38	9
-5003	1	pedaços	1	U			t	37	9
-5004	1	unidades	1	U			t	67	9
-5005	400	g	400	g	pequenos cubos de carne de vaca		t	2	10
-5006	2	dentes	2	U			t	15	10
-5007	3	colher de sopa	3	tbsp			t	10	10
-5008	0.75	canecas	0.75	c			t	79	10
-5009	1	qb	1	qb			t	1	10
-5010	1	qb	1	qb			t	9	10
-5011	1	colher de sopa	1	tbsp			t	7	10
-5012	4	unidades	4	U			t	80	10
-5013	1	qb	1	qb			f	32	10
-5014	1	colher de sopa	1	tbsp			t	81	10
-5015	2	colher de sopa	2	tbsp			t	82	10
-5016	1	colher de sopa	1	tbsp			t	22	10
-5017	1	colher de sopa	1	tbsp			t	24	10
-5018	1	unidades	1	U		assado com as beringelas. Retirar pele, cortar em tiras e servir	t	17	10
-5019	5	unidades	5	U			t	84	11
-5020	2	unidades	2	U	1 se for muito grande		t	17	11
-5021	1	unidades	1	U			t	16	11
-5022	5	dentes	5	U			t	15	11
-5023	2	colher de sopa	2	tbsp			t	22	11
-5024	2	colher de sopa	2	tbsp			t	24	11
-5025	3	colher de sopa	3	tbsp			t	23	11
-5026	1.5	colher de sopa	1.5	tbsp			t	85	11
-5027	1	qb	1	qb			f	70	11
-5028	0.5	unidades	0.5	U			f	86	11
-5029	4	fatias	4	U	o tipo não interessa desde que não seja pão de forma e seja bom para torradas		t	87	11
-5030	1	colher de sopa	1	tbsp			t	7	11
-5031	2	colher de sopa	2	tbsp			t	10	11
-5032	1	qb	1	qb			t	1	11
-5033	1	qb	1	qb			t	9	11
-5034	6	unidades	6	U			t	33	11
-5035	1	canecas	1	c	não se pode substituir por grão cozido!!		t	88	12
-5036	1	unidades	1	U			t	16	12
-5037	3	dentes	3	U			t	15	12
-5038	1	qb	1	qb			t	1	12
-5039	1	colher de sopa	1	tbsp			t	85	12
-5040	1	colher de sopa	1	tbsp			t	23	12
-5041	0.5	molhos	0.5	u			t	32	12
-5042	0.5	molhos	0.5	g			t	70	12
-5043	4	unidades	4	U			t	89	12
-5044	0.5	unidades	0.5	U			t	90	12
-5045	0.5	unidades	0.5	U			t	91	12
-5046	1	tsp	1	tsp			f	64	12
-5047	0.5	unidades	0.5	U	Metade desta quantidade para molho, metade para salada		t	92	12
-5048	0.5	canecas	0.5	c			t	79	12
-5049	0.5	unidades	0.5	U			t	59	12
-5050	1.5	tsp	1.5	tsp			t	93	12
-5051	1	colher de sopa	1	tbsp			t	10	12
-5052	0.5	unidades	0.5	U			f	86	12
-5053	1	unidades	1	U			t	94	13
-5054	1	unidades	1	U	peito de frango		t	96	13
-5055	4	unidades	4	U			t	95	13
-5056	1	unidades	1	U			t	59	13
-5057	0.75	canecas	0.75	c			t	79	13
-5058	2	tsp	2	tsp			t	7	13
-5059	2	tsp	2	tsp			t	81	13
-5060	2	tsp	2	tsp			t	25	13
-5061	1	tsp	1	tsp			f	97	13
-5062	1	colher de sopa	1	tbsp			t	24	13
-5063	1	tsp	1	tsp			f	98	13
-5064	1	tsp	1	tsp			t	26	13
-5065	1	tsp	1	tsp			t	99	13
-5066	0.5	tsp	0.5	tsp			f	100	13
-5067	3	tsp	3	tsp			t	1	13
-5068	1	tsp	1	tsp			t	64	13
-5069	0.25	unidades	0.25	U			t	16	13
-5070	2	unidades	2	U	Pode substituir por cornichons mas pôr mais unidades		t	101	13
-5071	1	dentes	1	U			t	15	13
-5072	0.5	unidades	0.5	U			t	90	13
-5073	0.5	unidades	0.5	U			t	91	13
-5074	0.5	unidades	0.5	U		Metade desta quantidade para molho, metade para salada	t	92	13
-5075	1.5	tsp	1.5	tsp			t	93	13
-5076	1	colher de sopa	1	tbsp			t	10	13
-5077	400	g	400	g	não se pode substituir por arroz agulha ou basmati! Quanto muito arroz bomba ou risotto mas ainda não testei		t	102	14
-5078	10	unidades	10	U			t	103	14
-5079	400	g	400	g			t	104	14
-5080	3	unidades	3	U	lulas		t	105	14
-5081	8	unidades	8	U			t	106	14
-5082	2	unidades	2	U			t	84	14
-5083	2	colher de sopa	2	tbsp			t	7	14
-5084	1.5	tsp	1.5	tsp			f	107	14
-5085	0.5	tsp	0.5	tsp		não por mais! Não é suposto ser picante	t	108	14
-5086	0.5	molhos	0.5	u			f	32	14
-5087	0.5	molhos	0.5	g			f	70	14
-5088	1	unidades	1	U			t	16	14
-5089	1	unidades	1	U			f	109	14
-5090	1	qb	1	qb			t	1	14
-5091	4	dentes	4	U			t	15	14
-5092	1	qb	1	qb			f	9	14
-5093	0.5	copo	0.5	c			f	110	14
-5094	1.2	litro	1.2	ML	pode substituir por agua com sal ou caldo de peixe		t	111	14
-5095	1	folha	1	U			f	47	14
-5096	4	unidades	4	U			f	48	14
-5097	1	pedaços	1	U			f	37	14
-5098	8	filetes	8	U			t	113	15
-5099	2	colher de sopa	2	tbsp			t	112	15
-5100	3	dentes	3	U			t	15	15
-5101	1	tsp	1	tsp			t	27	15
-5102	0.5	colher de sopa	0.5	tbsp			t	7	15
-5103	4	unidades	4	U			t	84	15
-5104	1.5	colher de sopa	1.5	tbsp		de prefencia em rodelas sem caroço	t	114	15
-5105	4	doses	4	u	outra massa		t	115	15
-5106	1	qb	1	qb		por pouco - as anchovas são salgadas	t	1	15
-5107	4	doses	4	u			t	115	16
-5108	6	unidades	6	U			t	33	16
-5109	75	g	75	g			t	116	16
-5110	150	g	150	g	bacon ou panceta - não tradicional mas não deixa ser bom. Nem tudo tem de ser como os gurus dizem		t	117	16
-5111	1	qb	1	qb			t	9	16
-5112	1	qb	1	qb			t	1	16
-5113	4	doses	4	u	outra massa		t	115	17
-5114	50	g	50	g	parmesão		t	116	17
-5115	150	g	150	g	bacon ou panceta - não tradicional mas não deixa ser bom. Nem tudo tem de ser como os gurus dizem		t	117	17
-5116	400	g	400	g			t	84	17
-5117	1	qb	1	qb			t	9	17
-5118	1	unidades	1	U	flocos de malagueta secos ou um pepperoncino seco		t	60	17
-5119	0.25	copo	0.25	c			t	110	17
-5120	1	qb	1	qb		pôr pouco se a carne tiver pouca gordura. Se usar guanciale NÃO usar azeite - já é muito gordurento	t	10	17
-5121	1	canecas	1	c			t	118	18
-5122	1	colher de sopa	1	tbsp			t	10	18
-5123	1	unidades	1	U	outra cebola serve		t	5	18
-5124	4	dentes	4	U			t	15	18
-5125	1.5	colher de sopa	1.5	tbsp	talvez lima? Ainda não testei		t	119	18
-5126	3	colher de sopa	3	tbsp			t	7	18
-5127	1	colher de sopa	1	tbsp	chipotle demolhado ou paprika fumada + piri piri em pó		t	120	18
-5128	1.5	colher de sopa	1.5	tbsp			t	23	18
-5129	0.75	colher de sopa	0.75	tbsp			t	85	18
-5130	2	colher de sopa	2	tbsp			t	24	18
-5131	2	qb	2	qb			t	1	18
-5132	1	unidades	1	U			t	17	18
-5133	1	unidades	1	U			t	121	18
-5134	1	qb	1	qb			t	9	18
-5135	8	unidades	8	U			t	89	18
-5136	8	qb	8	qb	qualquer queijo serve desde que derreta bem. Já testei com mozarela, queijo da ilha e cheddar		t	122	18
-5137	3	unidades	3	U			t	67	18
-5138	2	unidades	2	U			t	123	18
-5139	1	unidades	1	U			t	124	18
-5140	1	dentes	1	U			t	15	18
-5141	0.25	unidades	0.25	U	outra cebola serve		t	125	18
-5142	0.33	molhos	0.33	g			t	70	18
-5143	4	canecas	4	c		em juliana, diminui muito enquanto cozinha	t	126	19
-5144	1	unidades	1	U			t	4	19
-5145	2	unidades	2	U			t	15	19
-5146	200	g	200	g	ramen instantaneo		t	127	19
-5147	1	canecas	1	c			f	128	19
-5148	3	unidades	3	U			t	42	19
-5149	1.5	colher de sopa	1.5	tbsp			f	129	19
-5150	2	tsp	2	tsp			t	55	19
-5151	1.5	colher de sopa	1.5	tbsp			t	44	19
-5152	1.5	colher de sopa	1.5	tbsp			t	130	19
-5153	1	tsp	1	tsp			f	45	19
-5154	1.5	colher de sopa	1.5	tbsp	mirin. Em ultimo caso sake		t	52	19
-5155	2	tsp	2	tsp	se usar mirin, diminuir só para um. O mirin e mais doce		t	20	19
-5156	0.5	tsp	0.5	tsp			t	132	19
-5157	1	qb	1	qb			t	46	19
-5158	4	unidades	4	U			t	33	19
-5159	4	unidades	4	U	coxa de frango fatiada ou qualquer outra carne/marisco		t	103	19
-5160	1	canecas	1	c	basmati e jasmin tambem funcionam, só não usar grão curto como risotto, sushi ou carolino		t	133	20
-5161	6	unidades	6	U			t	33	20
-5162	2	unidades	2	U			t	109	20
-5163	8	dentes	8	U			t	15	20
-5164	3	unidades	3	U			t	42	20
-5165	1	colher de sopa	1	tbsp			t	107	20
-5166	1	cubos	1	U			f	43	20
-5167	2	polegar	2	U			t	41	20
-5168	1	unidades	1	U			t	134	20
-5169	2	colher de sopa	2	tbsp	oleo vegetal é OK		t	135	20
-5170	1	colher de sopa	1	tbsp			f	132	20
-5171	1	canecas	1	c	jasmin ou agulha	pessoalmente gosto de misturar agulha e basmati	t	138	21
-5172	1	colher de sopa	1	tbsp			t	135	21
-5173	2	tsp	2	tsp	molho de peixe ou omitir	cheira muito mal mas é normal	t	136	21
-5174	1	unidades	1	U			t	134	21
-5175	2	colher de sopa	2	tbsp	molho de soja com açucar mascavado		t	137	21
-5176	1	tsp	1	tsp			t	45	21
-5177	1	tsp	1	tsp			t	97	21
-5178	4	dentes	4	U			t	15	21
-5179	1	unidades	1	U			t	16	21
-5180	1	cubos	1	U			f	43	21
-5181	0.5	unidades	0.5	U			t	92	21
-5182	1	unidades	1	U			f	91	21
-5183	6	unidades	6	U			f	33	21
-5184	1	unidades	1	U			f	124	21
-5185	1	qb	1	qb			t	139	21
-5186	6	unidades	6	U	coxa de frango fatiada ou peito de frango		t	103	21
-5187	750	g	750	g			t	140	22
-5188	5	colher de sopa	5	tbsp			t	53	22
-5189	1	unidades	1	U			t	141	22
-5190	3	unidades	3	U			t	142	22
-5191	3	unidades	3	U			t	143	22
-5192	3	unidades	3	U			t	144	22
-5193	4	unidades	4	U	não é tradicional, mas já substitui por uma raspa de limão e fica bom (mas não igual)		t	145	22
-5194	1	canecas	1	c			t	146	22
-5195	2	tsp	2	tsp	pode substituir por METADE de concentrado de tamarindo ou tamarindo fresco	não confundir com o concentrado - é muito mais potente o concentrado	t	147	22
-5196	6	unidades	6	U	substituir por mais raspa de limão ou a versão seca		t	148	22
-5197	6	colher de sopa	6	tbsp			t	149	22
-5198	1	qb	1	qb			t	1	22
-5199	5	unidades	5	U			t	109	22
-5200	5	dentes	5	U			t	15	22
-5201	1	polegar	1	U			t	41	22
-5202	2	unidades	2	U		ajustar o picante. Incluir sementes para mais picante	t	134	22
-5203	12	unidades	12	U	cogumelos brancos		t	150	23
-5204	2	unidades	2	U			t	33	23
-5205	0.5	unidades	0.5	U			t	16	23
-5206	0.5	canecas	0.5	c			t	151	23
-5207	0.25	canecas	0.25	c			t	152	23
-5208	0.5	tsp	0.5	tsp			t	1	23
-5209	0.25	tsp	0.25	tsp	tomilho fresco		f	153	23
-5210	0.25	tsp	0.25	tsp			f	9	23
-5211	1	colher de sopa	1	tbsp			t	53	23
-5212	4	unidades	4	U	qualquer pão fofinho - crocante não funciona bem		t	154	23
-5213	0.25	unidades	0.25	U			t	90	23
-5214	1	unidades	1	U			f	91	23
-5215	2	colher de sopa	2	tbsp			f	155	23
-5216	0.5	canecas	0.5	c	panko ou mais farinha		t	156	23
-5217	500	g	500	g			t	2	24
-5218	1	tsp	1	tsp			t	25	24
-5219	1	tsp	1	tsp			t	26	24
-5220	2	tsp	2	tsp			t	24	24
-5221	1	tsp	1	tsp			t	23	24
-5222	1	tsp	1	tsp			t	1	24
-5223	1	unidades	1	U	ou meio pimento vermelho (para não picante) ou 1 malagueta vermelha		t	157	24
-5224	1	unidades	1	U			t	158	24
-5225	0.75	unidades	0.75	U	outra cebola serve		t	159	24
-5226	0.33	molhos	0.33	u			t	32	24
-5227	0.33	molhos	0.33	g			t	70	24
-5228	0.5	unidades	0.5	U			t	86	24
-5229	4	unidades	4	U	pode ser em pitas		t	89	24
-5230	0.5	unidades	0.5	U			t	90	24
-5231	0.5	unidades	0.5	U			t	91	24
-5232	1	tsp	1	tsp			t	64	24
-5233	0.5	unidades	0.5	U			t	92	24
-5234	0.5	canecas	0.5	c			t	79	24
-5235	0.5	unidades	0.5	U			t	59	24
-5236	1.5	tsp	1.5	tsp			t	93	24
-5237	1	colher de sopa	1	tbsp			t	10	24
-5238	900	g	900	g			t	94	25
-5239	2	unidades	2	U			t	5	25
-5240	4	dentes	4	U			t	15	25
-5241	1	polegar	1	U			t	41	25
-5242	3	colher de sopa	3	tbsp			t	53	25
-5243	3	colher de sopa	3	tbsp			t	160	25
-5244	1.5	tsp	1.5	tsp			t	1	25
-5245	0.5	tsp	0.5	tsp			t	9	25
-5246	5	unidades	5	U		quatro se forem muito grandes	t	84	25
-5247	400	g	400	g			t	146	25
-5248	1	tsp	1	tsp			t	161	25
-5249	0.33	molhos	0.33	g			t	70	25
-5250	750	g	750	g			t	140	26
-5251	3	colher de sopa	3	tbsp	ghee é melhor ainda		t	53	26
-5252	2	unidades	2	U			t	16	26
-5253	4	dentes	4	U			t	15	26
-5254	1	polegar	1	U			t	41	26
-5255	2	unidades	2	U		3 se forem pequenos	t	84	26
-5256	3	colher de sopa	3	tbsp			t	79	26
-5257	1	qb	1	qb			t	1	26
-5258	1	unidades	1	U	cardamomo verde		t	162	26
-5259	3	unidades	3	U			t	142	26
-5260	1	unidades	1	U			t	141	26
-5261	1	unidades	1	U			t	163	26
-5262	1	tsp	1	tsp			t	23	26
-5263	1.5	tsp	1.5	tsp			t	85	26
-5264	1	tsp	1	tsp			t	97	26
-5265	1.5	tsp	1.5	tsp	gochujaru ou paprika com um pouco de cayena - não é muito picante.	Ajustar picante a gosto	t	164	26
-5266	0.5	tsp	0.5	tsp			t	161	26
-5267	1	canecas	1	c			t	165	27
-5268	1	pedaços	1	U			t	37	27
-5269	200	g	200	g			t	51	27
-5270	1	colher de sopa	1	tbsp			t	48	27
-5271	1	unidades	1	U			t	42	27
-5272	4	lombos	4	U			t	72	27
-5273	2	colher de sopa	2	tbsp			t	166	27
-5274	1	canecas	1	c			t	73	27
-5275	0.5	unidades	0.5	U			t	126	27
-5276	1	unidades	1	U			t	4	27
-5277	1	tsp	1	tsp			t	38	27
-5278	0.33	canecas	0.33	c			t	155	28
-5279	2	latas	2	g			t	31	28
-5280	1	talo	1	U			t	3	28
-5281	2	unidades	2	U	cornichons		t	101	28
-5282	0.25	unidades	0.25	U			t	125	28
-5283	2	colher de sopa	2	tbsp			t	32	28
-5284	1	qb	1	qb			t	1	28
-5285	1	qb	1	qb			t	9	28
-5286	0.5	tsp	0.5	tsp		ajustar o picante	t	108	28
-5287	4	colher de sopa	4	tbsp	substitutos de manteiga OK		t	82	28
-5288	1	unidades	1	U			t	158	28
-5289	8	fatias	8	U			f	151	28
-5290	0.5	unidades	0.5	U			t	59	28
-5291	8	fatias	8	U			t	87	28
-5292	2	tsp	2	tsp			f	27	28
-5293	2	tsp	2	tsp			f	167	28
-5294	1	colher de sopa	1	tbsp		ajustar o picante	t	168	29
-5295	2	unidades	2	U			t	109	29
-5296	1	colher de sopa	1	tbsp			t	160	29
-5297	5	dentes	5	U			t	15	29
-5298	400	g	400	g			t	146	29
-5299	1	litro	1	ML			t	43	29
-5300	4	unidades	4	U			t	103	29
-5301	1	unidades	1	U		não é tradicional, para uma versao mais tradicional procurar bolos de peixe malaios	f	75	29
-5302	150	g	150	g			f	104	29
-5303	1	colher de sopa	1	tbsp		cheira mal mas sem medo	t	169	29
-5304	2	unidades	2	U			t	34	29
-5305	1	colher de sopa	1	tbsp			t	53	29
-5306	1	qb	1	qb			t	70	29
-5307	1	unidades	1	U			t	124	29
-5308	1	unidades	1	U			t	125	30
-5309	5	unidades	5	U		eu uso de cacho	t	158	30
-5310	2	colher de sopa	2	tbsp	ou ghee é melhor ainda		t	53	30
-5311	5	dentes	5	U			t	15	30
-5312	2	tsp	2	tsp			t	161	30
-5313	2	tsp	2	tsp	guchujaru ou paprika+cayena		t	164	30
-5314	2	tsp	2	tsp			t	97	30
-5315	1.5	tsp	1.5	tsp			t	23	30
-5316	1.5	tsp	1.5	tsp			t	85	30
-5317	0.5	tsp	0.5	tsp			t	160	30
-5318	1.5	tsp	1.5	tsp			t	1	30
-5319	0.5	tsp	0.5	tsp			t	20	30
-5320	2	colher de sopa	2	tbsp			t	79	30
-5321	2	unidades	2	U	fica melhor com um de peito, um de coxa		t	94	30
-5322	0.33	molhos	0.33	g			t	70	30
-5323	6	unidades	6	U			t	170	31
-5324	2	dentes	2	U			t	15	31
-5325	0.75	canecas	0.75	c			t	79	31
-5326	0.25	tsp	0.25	tsp			t	97	31
-5327	2	tsp	2	tsp	paprika		t	164	31
-5328	0.75	tsp	0.75	tsp			t	99	31
-5329	2	colher de sopa	2	tbsp			t	1	31
-5330	0.5	unidades	0.5	U			t	171	31
-5331	2	tsp	2	tsp			t	59	31
-5332	1	colher de sopa	1	tbsp			t	139	31
-5333	1.5	canecas	1.5	c			t	138	31
-5334	3	unidades	3	U			t	162	31
-5335	3	unidades	3	U			t	143	31
-5336	1	unidades	1	U			t	163	31
-5337	4	unidades	4	U			t	141	31
-5338	15	unidades	15	U			t	144	31
-5339	2.5	colher de sopa	2.5	tbsp		de preferencia pretos	t	172	31
-5340	3	tsp	3	tsp			t	142	31
-5341	2	colher de sopa	2	tbsp			t	53	31
-5342	50	g	50	g			t	13	31
-5343	1	qb	1	qb	substituir por curcuma que é muito mais barato		t	173	31
-5344	0.25	canecas	0.25	c			t	70	31
-5345	0.33	canecas	0.33	c			t	174	31
-5346	0.33	unidades	0.33	U			t	59	31
-5347	3	colher de sopa	3	tbsp	ghee é melhor ainda		t	82	31
-5348	0.25	canecas	0.25	c			t	175	31
-5349	2	tsp	2	tsp			t	176	31
-5350	1	tsp	1	tsp			t	9	31
-5351	1	qb	1	qb			t	179	31
-5352	1	kg	1	g			t	103	32
-5353	1	unidades	1	U			t	124	32
-5354	1	qb	1	qb			t	9	32
-5355	1	qb	1	qb			t	1	32
-5356	1	kg	1	g			t	177	32
-5357	1	unidades	1	U			t	163	32
-5358	3	unidades	3	U			t	16	32
-5359	400	g	400	g			t	146	32
-5360	400	g	400	g			t	18	32
-5361	1	unidades	1	U			t	17	32
-5362	1	molhos	1	u			t	32	32
-5363	2	colher de sopa	2	tbsp			t	10	33
-5364	2	unidades	2	U	mais coxas de frango		t	94	33
-5365	2	unidades	2	U	mais peitos de frango		t	96	33
-5366	1	unidades	1	U			t	125	33
-5367	1	qb	1	qb			t	1	33
-5368	1	unidades	1	U			t	5	33
-5369	1.5	tsp	1.5	tsp			t	23	33
-5370	1.5	tsp	1.5	tsp			t	85	33
-5371	1	tsp	1	tsp			t	24	33
-5372	1.5	tsp	1.5	tsp	por mais paprika fumada + flocos de malagueta		f	120	33
-5373	4	dentes	4	U			t	15	33
-5374	0.5	molhos	0.5	g			t	70	33
-5375	4	unidades	4	U			t	89	33
-5376	400	g	400	g			t	18	33
-5377	4	colher de sopa	4	tbsp	vache que ri		t	79	33
-5378	1	tsp	1	tsp			t	1	34
-5379	1	tsp	1	tsp			t	27	34
-5380	1	tsp	1	tsp			t	26	34
-5381	2	tsp	2	tsp			t	23	34
-5382	2	tsp	2	tsp			t	24	34
-5383	2	tsp	2	tsp	1 tsp de cayena ou outro picante em pó		t	120	34
-5384	0.5	colher de sopa	0.5	tbsp			t	10	34
-5385	0.25	tsp	0.25	tsp			t	9	34
-5386	2	tsp	2	tsp			t	15	34
-5387	1	unidades	1	U			t	125	34
-5388	500	g	500	g			t	2	34
-5389	2	colher de sopa	2	tbsp			t	7	34
-5390	0.5	unidades	0.5	U	couve rouxa		t	180	34
-5391	0.5	canecas	0.5	c			t	181	34
-5392	1	lata pequena	1	g			t	66	34
-5393	3	unidades	3	U			t	158	34
-5394	1	qb	1	qb			f	70	34
-5395	1	canecas	1	c			t	133	34
-5396	150	g	150	g			f	122	34
-5397	1	unidades	1	U			t	17	34
-5398	3	unidades	3	U			t	182	35
-5399	1	unidades	1	U			t	5	35
-5400	5	unidades	5	U			t	33	35
-5401	3	canecas	3	c		depende do tamanho da frigideira	t	10	35
-5402	16	unidades	16	U			t	103	36
-5403	8	dentes	8	U			t	15	36
-5404	4	unidades	4	U			t	183	36
-5405	0.33	copo	0.33	c			t	110	36
-5406	1	qb	1	qb			t	1	36
-5407	0.5	unidades	0.5	U	ou outro pão artesanal		t	184	36
-5408	0.33	copo	0.33	c			t	10	36
-5409	1	kg	1	g			t	104	37
-5410	6	dentes	6	U			t	15	37
-5411	1	molhos	1	g			t	70	37
-5412	0.5	copo	0.5	c			t	110	37
-5413	1.5	colher de sopa	1.5	tbsp			t	10	37
-5414	1	qb	1	qb		eu ponho metade de um limão mal espremido e provo. Depois corrijo se quiser mais	t	59	37
-5415	6	fatias	6	U	de preferencia rustico e fatiado mas algo como baguette pode funcionar		t	87	37
-5416	1	qb	1	qb			t	1	37
-5417	1	qb	1	qb			t	9	37
-5418	60	g	60	g			t	185	38
-5419	26	g	26	g	eu uso caju porque sou alergico a pinhão		t	186	38
-5420	0.5	tsp	0.5	tsp			t	1	38
-5421	0.25	tsp	0.25	tsp			t	9	38
-5422	2	dentes	2	U			t	15	38
-5423	0.25	canecas	0.25	c			t	10	38
-5424	20	g	20	g			t	187	38
-5425	2	doses	2	g	ou outra massa. Massa curta funciona melhor mas até esparguete serve		t	188	38
-5426	650	g	650	g			t	152	39
-5427	1	colher de sopa	1	tbsp			t	1	39
-5428	1.3	colher de sopa	1.3	tbsp			t	20	39
-5429	1	colher de sopa	1	tbsp			t	189	39
-5430	4	colher de sopa	4	tbsp			t	10	39
-5431	800	g	800	g			t	18	39
-5432	2	tsp	2	tsp			t	27	39
-5433	5	unidades	5	U			t	190	39
-5434	32	g	32	g			t	187	39
-5435	40	g	40	g			t	185	39
-5436	250	g	250	g			t	138	40
-5437	1	kg	1	g			t	191	40
-5438	1	qb	1	qb			t	1	40
-5439	5	dentes	5	U			t	15	40
-5440	1	unidades	1	U			t	16	40
-5441	2	unidades	2	U			t	163	40
-5442	1	unidades	1	U			t	84	40
-5443	0.5	colher de sopa	0.5	tbsp			t	7	40
-5444	1	qb	1	qb			t	9	40
-5445	1	qb	1	qb			t	10	40
-5446	1	kg	1	g			t	87	41
-5447	800	g	800	g			t	103	41
-5448	1	qb	1	qb			t	70	41
-5449	0.2	tsp	0.2	tsp		não é para ser picante!!	t	108	41
-5450	4	dentes	4	U			t	15	41
-5451	2	unidades	2	U			t	33	41
-5452	1	qb	1	qb			t	10	41
-5453	1	unidades	1	U			t	84	41
-5454	0.5	colher de sopa	0.5	tbsp			t	7	41
-5455	1	qb	1	qb			t	9	41
-5456	1	qb	1	qb			t	1	41
-5457	250	g	250	g			t	192	42
-5458	2	tsp	2	tsp			t	165	42
-5459	1	latas	1	g			t	31	42
-5460	8	filetes	8	U			t	113	42
-5461	2	unidades	2	U			t	84	42
-5462	1	colher de sopa	1	tbsp			t	7	42
-5463	1	qb	1	qb			t	10	42
-5464	2	dentes	2	U			t	15	42
-5465	1	unidades	1	U			t	125	42
-5466	1	talo	1	U			t	3	42
-5467	0.5	tsp	0.5	tsp			t	27	42
-5468	2	colher de sopa	2	tbsp			t	13	42
-5469	1	colher de sopa	1	tbsp	sementes de coentros em pó,		t	175	43
-5470	1	dentes	1	U			t	15	43
-5471	1	qb	1	qb			t	1	43
-5472	1.5	unidades	1.5	U			t	59	43
-5473	1	colher de sopa	1	tbsp			t	24	43
-5474	1	colher de sopa	1	tbsp			t	153	43
-5475	1	qb	1	qb			t	9	43
-5476	100	ml	100	ML			t	10	43
-5477	600	g	600	g			t	96	43
-5478	0.5	unidades	0.5	U			t	90	43
-5479	0.5	unidades	0.5	U			t	91	43
-5480	1	tsp	1	tsp			t	64	43
-5481	0.5	unidades	0.5	U			t	92	43
-5482	0.5	canecas	0.5	c			t	79	43
-5483	1.5	tsp	1.5	tsp			t	93	43
-5484	3	unidades	3	U			t	89	43
-5485	2	unidades	2	U			t	182	43
-5486	200	g	200	g			t	193	44
-5487	2	unidades	2	U			t	42	44
-5488	1	unidades	1	U			t	109	44
-5489	2	colher de sopa	2	tbsp	açucar de cana		t	194	44
-5490	2.5	colher de sopa	2.5	tbsp			t	169	44
-5491	2	colher de sopa	2	tbsp	concentrado de tamarindo mas metade ou tamarindo fresco		t	147	44
-5492	0.5	colher de sopa	0.5	tbsp			t	45	44
-5493	2	unidades	2	U			t	96	44
-5494	6	unidades	6	U			t	103	44
-5495	1	canecas	1	c			t	128	44
-5496	2	colher de sopa	2	tbsp			t	195	44
-5497	4	unidades	4	U	pode substituir 2 por tofu		t	33	44
-5498	420	g	420	g			t	178	2
-5499	2	postas	2	U			t	196	46
-5500	500	g	500	g			t	197	47
-5501	3000	g	3000	g			t	198	47
-5502	450	g	450	g			t	199	47
-5503	2	unidades	2	u			t	5	47
-5504	1	unidades	1	u		grande	t	41	47
-5505	1	unidades	1	u			t	141	47
-5506	4	unidades	4	u			t	143	47
-5507	5	unidades	5	u			t	142	47
-5508	20	g	20	g			t	175	47
-5509	2	colheres de sopa	2	tbsp			t	169	47
-5510	30	g	30	g			t	20	47
-5511	1	qb	1	qb			t	70	47
-5512	1	unidades	1	u			t	134	47
-5513	1	tsp	1	tsp			t	176	47
-5514	2	unidades	2	u			t	144	47
-5515	2	unidades	1	u			t	162	47
-5516	2	tbsp	2	tbsp			t	53	47
-5517	0.5	cups	0.5	c			f	128	47
-5518	1	unidades	1	u			f	124	47
-5519	1	unidades	1	u			f	159	47
-5520	2	unidades	2	u			f	94	48
-5521	1	unidades	1	u			f	121	48
-5522	1	unidades	1	u			f	17	48
-5523	200	ml	200	ml			f	18	48
-5524	1	unidades	1	u	outra cebola serve		f	125	48
-5525	4	unidades	4	u			f	15	48
-5526	1	tbsp	1	tbsp			f	25	48
-5527	1	tbsp	1	tbsp			f	26	48
-5528	1	tsp	1	tsp			f	27	48
-5529	1	tbsp	1	tbsp			f	24	48
-5530	1	tbsp	1	tbsp			f	22	48
-5531	1	tbsp	1	tbsp			f	23	48
-5532	6	unidades	6	u			f	89	48
-5533	1	qb	1	qb			f	122	48
-5534	1	tbsp	1	tbsp			f	119	48
-5535	2	tbsp	1	tbsp			f	120	48
-5536	1	unidades	1	u			f	124	48
-5537	4	doses	4	u			f	115	49
-5538	3	unidades	3	u			f	84	49
-5539	1	unidades	1	u			f	3	49
-5540	1	unidades	1	u			f	4	49
-5541	1	unidades	1	u			f	5	49
-5542	1	tbsp	1	tbsp			f	7	49
-5543	1	lata	1	u			f	31	49
-5544	2	unidades	2	u			f	57	50
-5545	600	g	600	g			f	200	51
-5546	500	g	500	g			f	140	52
-5547	330	ml	330	ml			f	201	52
-5548	2	unidades	2	u			f	5	52
-5549	1	unidades	1	u			f	142	52
-5550	1	fatias	1	u			f	87	52
-5551	1	tbsp	1	tbsp			f	202	52
-5552	1	tbsp	1	tbsp			f	58	52
-5553	2	unidades	2	u			f	163	52
-5554	1	tsp	1	tsp			f	153	52
-5555	2	unidades	2	u			f	15	52
-5556	2	tbsp	2	tbsp			f	82	52
-5557	2	tbsp	2	tbsp			f	19	52
-5558	1	quadrado	1	u			f	29	52
-5559	650	g	650	g			t	152	55
-5560	1	colher de sopa	1	tbsp			t	1	55
-5561	1.3	colher de sopa	1.3	tbsp			t	20	55
-5562	1	colher de sopa	1	tbsp			t	189	55
-5563	4	colher de sopa	4	tbsp			t	10	55
-5564	800	g	800	g			t	18	55
-5565	2	tsp	2	tsp			t	27	55
-5566	5	unidades	5	U			t	190	55
-5567	32	g	32	g			t	187	55
-5568	2	latas	2	u			f	31	55
-5569	1	unidades	1	u			f	125	55
-5570	1	tbsp	1	tbsp			f	9	54
-5571	0.5	tbsp	0.5	tbsp			f	46	54
-5572	2	unidades	2	u			f	57	54
-5573	0.25	tbsp	0.25	tbsp			f	203	54
-5574	0.5	tbsp	0.5	tbsp			f	204	54
-5575	1	tsp	1	tsp			f	1	54
-5576	2	tbsp	2	tbsp			f	82	54
-5577	1	unidades	1	u			f	109	54
-5578	1	tsp	1	tsp			f	202	54
-5579	0.5	cups	0.5	c	cream		f	13	54
-5580	0.25	cups	0.25	c			f	205	54
-5581	2	tbsp	2	tbsp			f	53	54
-5582	20	unidades	8	u	pode substituir 6 por lagostins		f	103	53
-5583	200	g	200	g			f	200	53
-5584	100	g	100	g			f	104	53
-5585	3	unidades	2	u			f	15	53
-5586	1	unidades	1	u			f	5	53
-5587	20	g	20	g			f	32	53
-5588	1	unidades	1	u			f	84	53
-5589	1	unidades	1	u	pode substituir por outro pimento seco		f	206	53
-5590	1	qb	1	qb			f	1	53
-5591	2	tbsp	2	tbsp			f	10	53
-5592	320	g	320	g			f	102	53
-5593	3	cups	3	c			f	111	53
-5594	1	qb	1	qb			t	1	56
-5595	400	g	400	g			t	2	56
-5596	60	g	60	g			t	3	56
-5597	60	g	60	g			t	4	56
-5598	60	g	60	g			t	5	56
-5599	150	g	150	g	Bacon		t	6	56
-5600	1	colher de sopa	1	tbsp			t	7	56
-5601	1	copo	1	c			t	8	56
-5602	1	qb	1	qb			t	9	56
-5603	3	colher de sopa	3	tbsp			t	10	56
-5604	200	g	200	g	eu gosto de substituir por 3 ou 4 tomates frescos passados num blender		t	11	56
-5605	200	g	200	g			t	12	56
-5606	100	ml	100	ml			t	13	56
-5607	500	g	500	g			f	207	56
-5608	400	ml	400	ml			f	208	56
-5609	2	cups	2	c			f	122	56
-5610	1	kg	1000	g			f	104	57
-5611	1	unidades	1	u			f	15	57
-5612	1	tbsp	1	tbsp			f	10	57
-5613	1	qb	1	qb			f	1	57
-5614	1	qb	1	qb			f	9	57
-5615	1	molhos	1	u			f	32	57
-5616	1	bunch	1	u			f	185	58
-5617	250	g	250	g			f	84	58
-5618	400	g	400	g			f	17	58
-5619	1	qb	1	qb			f	9	58
-5620	1	qb	1	qb			f	1	58
-5621	1	qb	1	qb			f	10	58
-5622	1	unidades	1	u			f	15	58
-5623	320	g	320	g			f	192	58
-5624	2	unidades	2	u			f	94	59
-5625	3	tbsp	3	tbsp			f	53	59
-5626	1	unidades	1	u			f	33	59
-5627	0.5	cups	0.5	c			f	55	59
-5628	0.5	tsp	0.5	tsp			f	1	59
-5629	1	unidades	1	u			f	209	59
-5630	2	dentes	2	u			f	15	59
-5631	0.5	unidades	0.5	u			f	159	59
-5632	1	unidades	1	u			f	17	59
-5633	3	unidades	3	u	pode substituir por outra massa de trigo		f	34	60
-5634	1	tbsp	1	tbsp			f	53	60
-5635	250	g	250	g			f	54	60
-5636	2	tbsp	2	tbsp			f	52	60
-5637	2.5	tbsp	2.5	tbsp			f	44	60
-5638	0.5	tsp	0.5	tsp			f	45	60
-5639	1	tbsp	1	tbsp			f	195	60
-5640	1	unidades	1	u			f	210	60
-5641	3	tsp	3	tsp			f	211	60
-5642	1	tbsp	1	tbsp			f	212	60
-5643	2	dentes	2	u			f	15	60
-5644	1	tsp	1	tsp			f	50	60
-5645	1	tsp	1	tsp			f	52	61
-5646	1	unidades	1	u			f	33	61
-5647	1.5	tbsp	1.5	tbsp			f	55	61
-5648	3	tbsp	1	tbsp			f	53	61
-5649	1	tbsp	1	tbsp			f	44	61
-5650	1	tsp	1	tsp			f	45	61
-5651	1	tbsp	1	tbsp			f	130	61
-5652	1	tsp	1	tsp			f	132	61
-5653	0.5	tsp	0.5	tsp			f	20	61
-5654	2	unidades	2	u			f	94	61
-5655	1	unidades	1	u			f	4	61
-5656	1	unidades	1	u			f	5	61
-5657	2	unidades	2	u			f	15	61
-5658	5	unidades	5	u			f	214	61
-5659	0.5	cups	0.5	c			f	43	61
-5660	1	unidades	1	u			f	17	61
-5661	250	g	250	g			f	54	62
-5662	250	g	150	g		e so 150 em carne camarao	f	103	62
-5663	0.5	tbsp	0.5	tbsp			f	52	62
-5664	1	qb	1	qb			f	46	62
-5665	1	tsp	1	tsp			f	20	62
-5666	1	tbsp	1	tbsp			f	55	62
-5667	4	unidades	4	u			f	40	62
-5668	1	tsp	1	tsp			f	215	62
-5669	1	tbsp	1	tbsp			f	132	62
-5670	20	unidades	20	u			f	216	62
-5671	1	tbsp	1	tbsp			f	44	62
-5672	1	tbsp	1	tbsp			f	212	62
-5673	1	tbsp	1	tbsp			f	213	62
-5674	10	unidades	10	u			f	217	63
-5675	1	cups	1	c			f	73	63
-5676	1	folha	1	u			f	47	63
-5677	0.5	tsp	0.5	tsp			f	220	63
-5678	3	tbsp	3	tbsp			f	219	63
-5679	1	tsp	1	tsp			f	44	63
-5680	1	qb	1	qb			f	132	63
-5681	2	tsp	2	tsp			f	76	63
-5682	1	unidades	1	u			f	42	63
-5683	1	tbsp	1	tbsp			f	38	63
-5684	1	unidades	1	U			f	84	64
-5685	1	unidades	1	u			f	42	64
-5686	0.25	tsp	0.25	tsp			f	25	64
-5687	0.25	tsp	0.25	tsp			f	9	64
-5688	4	fatias	4	u			f	221	64
-5689	2	tsp	2	tsp			f	82	64
-5690	4	folhas	60	g			f	90	64
-5691	120	g	120	g			f	222	64
-5692	0.5	unidades	0.5	u			f	67	64
-5693	4	fatias	4	u			f	224	64
-5694	1	tbsp	1	tbsp		o molho nao leva mas fica melhor	f	223	65
-5695	0.25	cups	0.25	c			f	155	65
-5696	0.5	unidades	0.5	u			f	5	65
-5697	1	tsp	1	tsp			f	225	65
-5698	0.5	tsp	0.5	tsp			f	226	65
-5699	0.5	tsp	0.5	tsp			f	20	65
-5700	0.5	tsp	0.5	tsp			f	22	65
-5701	0.125	tsp	0.125	tsp			f	1	65
-5702	0.125	tsp	0.125	tsp			f	25	65
-5703	0.125	tsp	0.125	tsp			f	26	65
-5704	2	unidades	2	u			f	154	65
-5705	2	unidades	2	u	ou carne picada		f	227	65
-5706	2	unidades	2	u			f	101	65
-5707	0.5	unidades	0.5	u			f	84	65
-5708	2	folhas	30	g			f	90	65
-5709	1	cups	1	c			f	79	66
-5710	3	tsp	3	tsp			f	1	66
-5711	2	tsp	2	tsp			f	22	66
-5712	2.25	tbsp	2.25	tbsp			f	161	66
-5713	8	dentes	8	u			f	15	66
-5714	2	tbsp	2	tbsp			f	41	66
-5715	900	g	900	g	ou coxas		f	94	66
-5716	3	tbsp	3	tbsp			f	53	66
-5717	2	tsp	2	tsp			f	20	66
-5718	425	g	425	g			f	18	66
-5719	240	ml	240	ml			f	228	66
-5720	1	qb	1	qb			f	70	66
-5721	4	unidades	4	u			f	229	67
-5722	8	fatias	8	u			f	230	67
-5723	6	unidades	6	u			f	69	67
-5724	120	g	120	g			f	231	67
-5725	2	unidades	2	u			f	94	68
-5726	100	g	100	g		tem de ser em oleo	f	232	68
-5727	5	dentes	5	u			f	15	68
-5728	1	tbsp	1	tbsp			f	202	68
-5729	250	ml	250	ml			f	228	68
-5730	1	tbsp	1	tbsp			f	10	68
-5731	2	cups	2	c			f	233	68
-5732	0.5	cups	0.5	c			f	187	68
-5733	30	g	30	g			f	10	70
-5734	1	dentes	1	u			f	15	70
-5735	1	qb	1	qb			f	1	70
-5736	1	bunch	1	u			f	185	70
-5737	500	g	500	g			f	234	70
-5738	800	g	800	g			f	18	70
-5739	2	unidades	2	u			f	235	71
-5740	240	g	240	g			f	61	71
-5741	300	g	300	g		crua, deve perder peso depois de cozida	f	236	71
-5742	2	unidades	2	u			f	33	71
-5743	2	unidades	2	u			f	4	71
-5744	1	qb	1	qb			f	10	71
-5745	1	unidades	1	u			f	235	72
-5746	5	unidades	5	u			f	33	72
-5747	2	unidades	2	u		1 se for muito grande	f	5	72
-5748	4	unidades	4	u			f	15	72
-5749	1	tbsp	1	tbsp			f	114	72
-5750	1	qb	1	qb			f	32	72
-5751	200	g	200	g			f	237	72
-5752	24	unidades	24	u			f	238	73
-5753	3	unidades	3	u			f	84	73
-5754	1	tbsp	1	tbsp			f	7	73
-5755	1.5	tbsp	1.5	tbsp			f	22	73
-5756	1	unidades	1	u			f	5	73
-5757	4	unidades	4	u			f	15	73
-5758	0.25	cups	0.25	c	mais agulha		f	138	73
-5759	0.5	cups	0.5	c			f	133	73
-5760	0.25	cups	0.25	c	mais agulha		f	239	73
-5761	1.5	tbsp	1.5	tbsp			f	10	73
-5762	500	g	500	g		devem ser 4 mimos	f	75	74
-5763	2	cups	2	c			f	240	74
-5764	1	qb	1	qb		de preferencia spray	f	53	74
-5765	4	fatias	4	u			f	241	74
-5766	4	unidades	4	u			f	242	74
-5767	1	unidades	1	u			f	33	74
-5768	1	tbsp	1	tbsp			f	202	74
-5769	1	tbsp	1	tbsp			f	152	74
-5770	0.75	tsp	0.75	tsp			f	1	74
-5771	1	qb	1	qb			f	9	74
-5772	220	g	220	g			f	155	74
-5773	1	pickle grande	1	u			f	101	74
-5774	1	tsp	1	tsp			f	32	74
-5775	1	tsp	1	tsp			f	112	74
-5776	1.5	tbsp	1.5	tbsp			f	59	74
-5777	1	tsp	1	tsp			f	226	74
-5778	2	unidades	2	u			f	57	75
-5779	2	tbsp	2	tbsp			f	82	75
-5780	1	qb	1	qb			f	10	75
-5781	3	unidades	3	u			f	15	75
-5782	1	qb	1	qb			f	110	75
-5783	3	unidades	3	u			f	163	75
-5784	1	tbsp	1	tbsp			f	225	75
-5785	2	unidades	2	u			f	33	75
-5786	2	unidades	2	u			f	182	75
-5787	1	cups	1	c			f	19	75
-5788	1	qb	1	qb			f	1	75
-5789	500	g	500	g			f	2	76
-5790	1	unidades	1	u			f	5	76
-5791	1	unidades	0.5	u			f	17	76
-5792	1	unidades	1	u			f	32	76
-5793	6	unidades	6	u			f	89	76
-5794	1	unidades	1	u			f	123	76
-5795	1	tsp	1	tsp			f	243	76
-5796	1	tsp	1	tsp			f	172	76
-5797	1	tsp	1	tsp			f	175	76
-5798	1	tsp	1	tsp			f	22	76
-5799	1	tsp	1	tsp			f	24	76
-5800	1	tsp	1	tsp			f	120	76
-5801	1	tsp	1	tsp			f	65	76
-5802	2	unidades	2	u			f	15	76
-5803	1	tsp	1	tsp			f	1	76
-5804	0.5	unidades	0.5	u			f	86	76
-5805	4	unidades	4	u			f	94	69
-5806	200	ml	200	ml			f	228	69
-5807	1	unidades	1	u			f	244	69
-5808	1	unidades	1	u			f	245	69
-5809	250	g	250	g			f	152	77
-5810	1	g	1	g			f	189	77
-5811	1	qb	1	qb			f	1	77
-5812	250	g	250	g			f	2	77
-5813	1	unidades	1	u			f	5	77
-5814	1	unidades	1	u			f	246	77
-5815	1	unidades	1	u			f	32	77
-5816	2	g	2	g			f	153	77
-5817	1	unidades	1	u		grande	f	158	77
-5818	0.5	cups	0.5	c			f	133	78
-5819	0.5	cups	0.5	c			f	138	78
-5820	0.75	cups	0.75	c			f	118	78
-5821	0.5	cups	0.5	c			f	10	78
-5822	1	unidades	1	u			f	141	78
-5823	1	tsp	1	tsp			f	175	78
-5824	0.5	tsp	0.5	tsp			f	97	78
-5825	0.25	tsp	0.25	tsp			f	9	78
-5826	1.5	unidades	1.5	u			f	5	78
-5827	1	tbsp	1	tbsp			f	226	78
-5828	1	tbsp	1	tbsp			f	59	78
-5829	1	bunch	1	u			f	70	78
-5830	2	tbsp	2	tbsp			f	247	78
-5831	2	tbsp	2	tbsp			f	248	78
-5832	1	qb	1	qb			f	53	79
-5833	0.5	cups	0.5	c			f	248	79
-5834	2	unidades	2	u			f	4	79
-5835	1	unidades	1	u			f	141	79
-5836	3	unidades	3	u			f	163	79
-5837	2	unidades	2	u			f	249	79
-5838	4	unidades	4	u			f	170	79
-5839	4	unidades	4	u			f	250	79
-5840	1	tsp	1	tsp			f	172	79
-5841	1	tsp	1	tsp			f	175	79
-5842	2	unidades	2	u			f	158	79
-5843	1	tsp	1	tsp			f	97	79
-5844	3	tsp	3	tsp			f	1	79
-5845	1	unidades	1	u			f	43	79
-5846	2	tbsp	2	tbsp			f	7	79
-5847	2	unidades	2	u			f	80	80
-5848	1	qb	1	qb			f	10	80
-5849	0.5	tsp	0.5	tsp			f	24	80
-5850	1	qb	1	qb			f	1	80
-5851	180	g	180	g		drained	f	61	80
-5852	0.5	tsp	0.5	tsp			f	172	80
-5853	0.5	tsp	0.5	tsp			f	175	80
-5854	1	qb	1	qb			f	9	80
-5855	3	unidades	3	u			f	95	80
-5856	1	cups	1	c			f	79	80
-5857	1.5	tbsp	1.5	tbsp			f	63	80
-5858	1	unidades	1	u			f	15	80
-5859	0.5	unidades	0.5	u			f	59	80
-5860	1	qb	1	qb			f	251	80
-5861	1	unidades	1	u			f	252	80
-5862	1	tsp	1	tsp			f	64	80
-5863	8	unidades	8	u			f	247	80
-5864	500	g	500	g		pode ser peito	f	96	81
-5865	4	tbsp	4	tbsp			f	10	81
-5866	1	tbsp	1	tbsp			f	79	81
-5867	2	unidades	2	u			f	15	81
-5868	1	tsp	1	tsp			f	172	81
-5869	1	tsp	1	tsp			f	175	81
-5870	1	tsp	1	tsp			f	22	81
-5871	0.5	tsp	0.5	tsp			f	97	81
-5872	0.5	tsp	0.5	tsp			f	141	81
-5873	0.5	tsp	0.5	tsp			f	9	81
-5874	0.5	tsp	0.5	tsp			f	1	81
-5875	1.5	unidades	1.5	u			f	59	81
-5876	2	unidades	2	u			f	80	81
-5877	2	tbsp	2	tbsp			f	63	81
-5878	1	qb	1	qb			f	251	81
-5879	4	unidades	4	u			f	229	82
-5880	3	unidades	3	u			f	190	82
-5881	1	bunch	1	u			f	185	82
-5882	1	qb	1	qb			f	10	82
-5883	1	tbsp	1	tbsp			f	232	82
-5884	6	unidades	6	u			f	69	82
-5885	1	tsp	1	tsp			f	9	45
-5886	4	unidades	4	u		mais coxas	f	170	45
-5887	4	unidades	4	u		mais pernas	f	250	45
-5888	0.3	cups	0.3	c			f	44	45
-5889	3	unidades	3	u			f	163	45
-5890	0.25	cups	0.25	c			f	226	45
-5891	1	unidades	1	u			f	42	45
-5892	3	unidades	3	u			f	15	45
-5893	2.5	tbsp	2.5	tbsp	mascavado, amarelo ou cana de preferencia		f	20	45
-5894	1	unidades	1	u	grande		f	16	45
-5895	1	qb	1	qb			t	1	1
-5896	400	g	400	g			t	2	1
-5897	60	g	60	g			t	3	1
-5898	60	g	60	g			t	4	1
-5899	60	g	60	g			t	5	1
-5900	150	g	150	g	Bacon		t	6	1
-5901	1	colher de sopa	1	tbsp			t	7	1
-5902	1	copo	1	c			t	8	1
-5903	1	qb	1	qb			t	9	1
-5904	3	colher de sopa	3	tbsp			t	10	1
-5905	200	g	200	g	eu gosto de substituir por 3 ou 4 tomates frescos passados num blender		t	11	1
-5906	200	g	200	g			t	12	1
-5907	100	ml	100	ml			t	13	1
-5908	8	doses	8	u	Outra massa		t	14	1
-5909	1	colher de sopa	1	tbsp			t	10	2
-5910	3	dentes	3	U			t	15	2
-5911	1	unidades	1	U			t	16	2
-5912	1	unidades	1	U			t	17	2
-5913	500	g	500	g			t	2	2
-5914	3	colher de sopa	3	tbsp			t	7	2
-5915	800	g	800	g			t	18	2
-5916	2	cubos	2	U			t	19	2
-5917	1.5	tsp	1.5	tsp			t	20	2
-5918	2	tsp	2	tsp		Ajustar o picante a gosto	t	21	2
-5919	3	tsp	3	tsp			t	22	2
-5920	5	tsp	5	tsp			t	23	2
-5921	4	tsp	4	tsp			t	24	2
-5922	2	tsp	2	tsp			t	25	2
-5923	2	tsp	2	tsp			t	26	2
-5924	1.5	tsp	1.5	tsp			t	1	2
-5925	2	tsp	2	tsp			t	27	2
-5926	1	tsp	1	tsp			t	28	2
-5927	2	quadrados	2	U			t	29	2
-5928	1	qb	1	qb			t	1	3
-5929	470	g	470	g			t	30	3
-5930	170	g	2	g			t	31	3
-5931	1	qb	1	qb			t	32	3
-5932	3	unidades	3	U			t	33	3
-5933	0.5	unidades	0.5	U			t	16	3
-5934	2	unidades	2	U			t	34	4
-5935	2	unidades	2	U			t	33	4
-5936	2	colher de sopa	2	tbsp			t	35	4
-5937	1.5	colher de sopa	1.5	tbsp		Ajustar picante a gosto	t	36	4
-5938	1	pedaços	1	U			t	37	4
-5939	2	colher de sopa	2	tbsp			t	38	4
-5940	1	colher de sopa	1	tbsp			t	39	4
-5941	4	unidades	4	U		Sim, tem mesmo de ser secos	t	40	4
-5942	1.5	tsp	1.5	tsp			t	41	4
-5943	3	dentes	3	U			t	15	4
-5944	2	unidades	2	U			t	42	4
-5945	1	cubos	1	U			t	43	4
-5946	2	colher de sopa	2	tbsp			t	44	4
-5947	1	tsp	1	tsp			t	45	4
-5948	1	qb	1	qb			t	46	4
-5949	1	folha	1	U			t	47	4
-5950	4	pedaços	4	U			t	48	4
-5951	2.5	colher de sopa	2.5	tbsp			t	49	5
-5952	2	colher de sopa	2	tbsp			t	50	5
-5953	1	colher de sopa	1	tbsp		Tradicionalmente, usa-se feijao preto fermentando -  Dou Chi	t	35	5
-5954	2	colher de sopa	2	tbsp			t	52	5
-5955	500	g	500	g		De preferencia versão mais suave	t	51	5
-5956	0.5	tsp	0.5	tsp			t	1	5
-5957	3	colher de sopa	3	tbsp			t	53	5
-5958	300	g	300	g			t	54	5
-5959	4	unidades	4	U			t	42	5
-5960	5	dentes	5	U			t	15	5
-5961	1	tsp	1	tsp			t	22	5
-5962	1.5	tsp	1.5	tsp			t	41	5
-5963	2	tsp	2	tsp			t	20	5
-5964	1.5	canecas	1.5	c			t	19	5
-5965	3	tsp	3	tsp			t	44	5
-5966	0.5	tsp	0.5	tsp			t	45	5
-5967	1	colher de sopa	1	tbsp			t	55	5
-5968	1	qb	1	qb		Eu não acrescento. O doubanjiang já é picante. Sugiro rectificar o picante no fim depois de provar com pó de piri piri ou outro picante	t	56	5
-5969	2	unidades	2	U			t	57	6
-5970	5	colher de sopa	5	tbsp			t	10	6
-5971	1	colher de sopa	1	tbsp			t	58	6
-5972	1	tsp	1	tsp			t	59	6
-5973	1.5	colher de sopa	1.5	tbsp			t	32	6
-5974	2	dentes	2	U			t	15	6
-5975	1	unidades	1	U	Outra malagueta fresca	Ajustar a picante a gosto	t	60	6
-5976	1	tsp	1	tsp			t	27	6
-5977	1	qb	1	qb			t	9	6
-5978	0.5	tsp	0.5	tsp			t	22	6
-5979	1	lata grande	1	g			t	61	7
-5980	3	latas	3	g			t	31	7
-5981	15	unidades	15	U	Broculo ou outros legumes (de preferencia cruciveros)	Depende do tamanho das couves. Incluir visto que são saudaveis mas a gosto	t	62	7
-5982	3	unidades	3	U			t	33	7
-5983	1.5	colher de sopa	1.5	tbsp		Por a gosto no hummus	t	63	7
-5984	1	qb	1	qb			t	1	7
-5985	0.5	unidades	0.5	U		Por a gosto no hummus	t	59	7
-5986	1	dentes	1	U			t	15	7
-5987	1	qb	1	qb		Por a gosto no hummus e depois por cima no produto final	t	10	7
-5988	1	qb	1	qb		Sprinkle por cima do produto final	f	64	7
-5989	1	qb	1	qb		Sprinkle por cima do produto final	f	65	7
-5990	1	lata pequena	1	g			t	66	8
-5991	1	unidades	1	U			t	67	8
-5992	1	canecas	1	c			t	68	8
-5993	2	unidades	2	U			t	33	8
-5994	8	unidades	8	U			t	69	8
-5995	1	qb	1	qb			t	70	8
-5996	3	colher de sopa	3	tbsp			t	10	8
-5997	1	colher de sopa	1	tbsp			t	71	8
-5998	1	qb	1	qb			t	1	8
-5999	1	qb	1	qb			t	9	8
-6000	1	qb	1	qb			t	27	8
-6001	2	lombos	2	U		de preferencia sem espinhas	t	72	9
-6002	1	canecas	1	c			t	73	9
-6003	3	colher de sopa	3	tbsp			t	74	9
-6004	1	medalhões	1	U		de preferencia sem espinhas	t	75	9
-6005	1	qb	1	qb			t	76	9
-6006	2	unidades	2	U			t	77	9
-6007	1	qb	1	qb			t	78	9
-6008	1	qb	1	qb			t	44	9
-6009	1	qb	1	qb			t	47	9
-6010	2	colher de sopa	2	tbsp	podem usar qualquer uma das cores mas mistura das duas é mais visual		t	38	9
-6011	1	pedaços	1	U			t	37	9
-6012	1	unidades	1	U			t	67	9
-6013	400	g	400	g	pequenos cubos de carne de vaca		t	2	10
-6014	2	dentes	2	U			t	15	10
-6015	3	colher de sopa	3	tbsp			t	10	10
-6016	0.75	canecas	0.75	c			t	79	10
-6017	1	qb	1	qb			t	1	10
-6018	1	qb	1	qb			t	9	10
-6019	1	colher de sopa	1	tbsp			t	7	10
-6020	4	unidades	4	U			t	80	10
-6021	1	qb	1	qb			f	32	10
-6022	1	colher de sopa	1	tbsp			t	81	10
-6023	2	colher de sopa	2	tbsp			t	82	10
-6024	1	colher de sopa	1	tbsp			t	22	10
-6025	1	colher de sopa	1	tbsp			t	24	10
-6026	1	unidades	1	U		assado com as beringelas. Retirar pele, cortar em tiras e servir	t	17	10
-6027	5	unidades	5	U			t	84	11
-6028	2	unidades	2	U	1 se for muito grande		t	17	11
-6029	1	unidades	1	U			t	16	11
-6030	5	dentes	5	U			t	15	11
-6031	2	colher de sopa	2	tbsp			t	22	11
-6032	2	colher de sopa	2	tbsp			t	24	11
-6033	3	colher de sopa	3	tbsp			t	23	11
-6034	1.5	colher de sopa	1.5	tbsp			t	85	11
-6035	1	qb	1	qb			f	70	11
-6036	0.5	unidades	0.5	U			f	86	11
-6037	4	fatias	4	U	o tipo não interessa desde que não seja pão de forma e seja bom para torradas		t	87	11
-6038	1	colher de sopa	1	tbsp			t	7	11
-6039	2	colher de sopa	2	tbsp			t	10	11
-6040	1	qb	1	qb			t	1	11
-6041	1	qb	1	qb			t	9	11
-6042	6	unidades	6	U			t	33	11
-6043	1	canecas	1	c	não se pode substituir por grão cozido!!		t	88	12
-6044	1	unidades	1	U			t	16	12
-6045	3	dentes	3	U			t	15	12
-6046	1	qb	1	qb			t	1	12
-6047	1	colher de sopa	1	tbsp			t	85	12
-6048	1	colher de sopa	1	tbsp			t	23	12
-6049	0.5	molhos	0.5	u			t	32	12
-6050	0.5	molhos	0.5	g			t	70	12
-6051	4	unidades	4	U			t	89	12
-6052	0.5	unidades	0.5	U			t	90	12
-6053	0.5	unidades	0.5	U			t	91	12
-6054	1	tsp	1	tsp			f	64	12
-6055	0.5	unidades	0.5	U	Metade desta quantidade para molho, metade para salada		t	92	12
-6056	0.5	canecas	0.5	c			t	79	12
-6057	0.5	unidades	0.5	U			t	59	12
-6058	1.5	tsp	1.5	tsp			t	93	12
-6059	1	colher de sopa	1	tbsp			t	10	12
-6060	0.5	unidades	0.5	U			f	86	12
-6061	1	unidades	1	U			t	94	13
-6062	1	unidades	1	U	peito de frango		t	96	13
-6063	4	unidades	4	U			t	95	13
-6064	1	unidades	1	U			t	59	13
-6065	0.75	canecas	0.75	c			t	79	13
-6066	2	tsp	2	tsp			t	7	13
-6067	2	tsp	2	tsp			t	81	13
-6068	2	tsp	2	tsp			t	25	13
-6069	1	tsp	1	tsp			f	97	13
-6070	1	colher de sopa	1	tbsp			t	24	13
-6071	1	tsp	1	tsp			f	98	13
-6072	1	tsp	1	tsp			t	26	13
-6073	1	tsp	1	tsp			t	99	13
-6074	0.5	tsp	0.5	tsp			f	100	13
-6075	3	tsp	3	tsp			t	1	13
-6076	1	tsp	1	tsp			t	64	13
-6077	0.25	unidades	0.25	U			t	16	13
-6078	2	unidades	2	U	Pode substituir por cornichons mas pôr mais unidades		t	101	13
-6079	1	dentes	1	U			t	15	13
-6080	0.5	unidades	0.5	U			t	90	13
-6081	0.5	unidades	0.5	U			t	91	13
-6082	0.5	unidades	0.5	U		Metade desta quantidade para molho, metade para salada	t	92	13
-6083	1.5	tsp	1.5	tsp			t	93	13
-6084	1	colher de sopa	1	tbsp			t	10	13
-6085	400	g	400	g	não se pode substituir por arroz agulha ou basmati! Quanto muito arroz bomba ou risotto mas ainda não testei		t	102	14
-6086	10	unidades	10	U			t	103	14
-6087	400	g	400	g			t	104	14
-6088	3	unidades	3	U	lulas		t	105	14
-6089	8	unidades	8	U			t	106	14
-6090	2	unidades	2	U			t	84	14
-6091	2	colher de sopa	2	tbsp			t	7	14
-6092	1.5	tsp	1.5	tsp			f	107	14
-6093	0.5	tsp	0.5	tsp		não por mais! Não é suposto ser picante	t	108	14
-6094	0.5	molhos	0.5	u			f	32	14
-6095	0.5	molhos	0.5	g			f	70	14
-6096	1	unidades	1	U			t	16	14
-6097	1	unidades	1	U			f	109	14
-6098	1	qb	1	qb			t	1	14
-6099	4	dentes	4	U			t	15	14
-6100	1	qb	1	qb			f	9	14
-6101	0.5	copo	0.5	c			f	110	14
-6102	1.2	litro	1.2	ML	pode substituir por agua com sal ou caldo de peixe		t	111	14
-6103	1	folha	1	U			f	47	14
-6104	4	unidades	4	U			f	48	14
-6105	1	pedaços	1	U			f	37	14
-6106	8	filetes	8	U			t	113	15
-6107	2	colher de sopa	2	tbsp			t	112	15
-6108	3	dentes	3	U			t	15	15
-6109	1	tsp	1	tsp			t	27	15
-6110	0.5	colher de sopa	0.5	tbsp			t	7	15
-6111	4	unidades	4	U			t	84	15
-6112	1.5	colher de sopa	1.5	tbsp		de prefencia em rodelas sem caroço	t	114	15
-6113	4	doses	4	u	outra massa		t	115	15
-6114	1	qb	1	qb		por pouco - as anchovas são salgadas	t	1	15
-6115	4	doses	4	u			t	115	16
-6116	6	unidades	6	U			t	33	16
-6117	75	g	75	g			t	116	16
-6208	5	dentes	5	U			t	15	22
-6209	1	polegar	1	U			t	41	22
-6118	150	g	150	g	bacon ou panceta - não tradicional mas não deixa ser bom. Nem tudo tem de ser como os gurus dizem		t	117	16
-6119	1	qb	1	qb			t	9	16
-6120	1	qb	1	qb			t	1	16
-6121	4	doses	4	u	outra massa		t	115	17
-6122	50	g	50	g	parmesão		t	116	17
-6123	150	g	150	g	bacon ou panceta - não tradicional mas não deixa ser bom. Nem tudo tem de ser como os gurus dizem		t	117	17
-6124	400	g	400	g			t	84	17
-6125	1	qb	1	qb			t	9	17
-6126	1	unidades	1	U	flocos de malagueta secos ou um pepperoncino seco		t	60	17
-6127	0.25	copo	0.25	c			t	110	17
-6128	1	qb	1	qb		pôr pouco se a carne tiver pouca gordura. Se usar guanciale NÃO usar azeite - já é muito gordurento	t	10	17
-6129	1	canecas	1	c			t	118	18
-6130	1	colher de sopa	1	tbsp			t	10	18
-6131	1	unidades	1	U	outra cebola serve		t	5	18
-6132	4	dentes	4	U			t	15	18
-6133	1.5	colher de sopa	1.5	tbsp	talvez lima? Ainda não testei		t	119	18
-6134	3	colher de sopa	3	tbsp			t	7	18
-6135	1	colher de sopa	1	tbsp	chipotle demolhado ou paprika fumada + piri piri em pó		t	120	18
-6136	1.5	colher de sopa	1.5	tbsp			t	23	18
-6137	0.75	colher de sopa	0.75	tbsp			t	85	18
-6138	2	colher de sopa	2	tbsp			t	24	18
-6139	2	qb	2	qb			t	1	18
-6140	1	unidades	1	U			t	17	18
-6141	1	unidades	1	U			t	121	18
-6142	1	qb	1	qb			t	9	18
-6143	8	unidades	8	U			t	89	18
-6144	8	qb	8	qb	qualquer queijo serve desde que derreta bem. Já testei com mozarela, queijo da ilha e cheddar		t	122	18
-6145	3	unidades	3	U			t	67	18
-6146	2	unidades	2	U			t	123	18
-6147	1	unidades	1	U			t	124	18
-6148	1	dentes	1	U			t	15	18
-6149	0.25	unidades	0.25	U	outra cebola serve		t	125	18
-6150	0.33	molhos	0.33	g			t	70	18
-6151	4	canecas	4	c		em juliana, diminui muito enquanto cozinha	t	126	19
-6152	1	unidades	1	U			t	4	19
-6153	2	unidades	2	U			t	15	19
-6154	200	g	200	g	ramen instantaneo		t	127	19
-6155	1	canecas	1	c			f	128	19
-6156	3	unidades	3	U			t	42	19
-6157	1.5	colher de sopa	1.5	tbsp			f	129	19
-6158	2	tsp	2	tsp			t	55	19
-6159	1.5	colher de sopa	1.5	tbsp			t	44	19
-6160	1.5	colher de sopa	1.5	tbsp			t	130	19
-6161	1	tsp	1	tsp			f	45	19
-6162	1.5	colher de sopa	1.5	tbsp	mirin. Em ultimo caso sake		t	52	19
-6163	2	tsp	2	tsp	se usar mirin, diminuir só para um. O mirin e mais doce		t	20	19
-6164	0.5	tsp	0.5	tsp			t	132	19
-6165	1	qb	1	qb			t	46	19
-6166	4	unidades	4	U			t	33	19
-6167	4	unidades	4	U	coxa de frango fatiada ou qualquer outra carne/marisco		t	103	19
-6168	1	canecas	1	c	basmati e jasmin tambem funcionam, só não usar grão curto como risotto, sushi ou carolino		t	133	20
-6169	6	unidades	6	U			t	33	20
-6170	2	unidades	2	U			t	109	20
-6171	8	dentes	8	U			t	15	20
-6172	3	unidades	3	U			t	42	20
-6173	1	colher de sopa	1	tbsp			t	107	20
-6174	1	cubos	1	U			f	43	20
-6175	2	polegar	2	U			t	41	20
-6176	1	unidades	1	U			t	134	20
-6177	2	colher de sopa	2	tbsp	oleo vegetal é OK		t	135	20
-6178	1	colher de sopa	1	tbsp			f	132	20
-6179	1	canecas	1	c	jasmin ou agulha	pessoalmente gosto de misturar agulha e basmati	t	138	21
-6180	1	colher de sopa	1	tbsp			t	135	21
-6181	2	tsp	2	tsp	molho de peixe ou omitir	cheira muito mal mas é normal	t	136	21
-6182	1	unidades	1	U			t	134	21
-6183	2	colher de sopa	2	tbsp	molho de soja com açucar mascavado		t	137	21
-6184	1	tsp	1	tsp			t	45	21
-6185	1	tsp	1	tsp			t	97	21
-6186	4	dentes	4	U			t	15	21
-6187	1	unidades	1	U			t	16	21
-6188	1	cubos	1	U			f	43	21
-6189	0.5	unidades	0.5	U			t	92	21
-6190	1	unidades	1	U			f	91	21
-6191	6	unidades	6	U			f	33	21
-6192	1	unidades	1	U			f	124	21
-6193	1	qb	1	qb			t	139	21
-6194	6	unidades	6	U	coxa de frango fatiada ou peito de frango		t	103	21
-6195	750	g	750	g			t	140	22
-6196	5	colher de sopa	5	tbsp			t	53	22
-6197	1	unidades	1	U			t	141	22
-6198	3	unidades	3	U			t	142	22
-6199	3	unidades	3	U			t	143	22
-6200	3	unidades	3	U			t	144	22
-6201	4	unidades	4	U	não é tradicional, mas já substitui por uma raspa de limão e fica bom (mas não igual)		t	145	22
-6202	1	canecas	1	c			t	146	22
-6203	2	tsp	2	tsp	pode substituir por METADE de concentrado de tamarindo ou tamarindo fresco	não confundir com o concentrado - é muito mais potente o concentrado	t	147	22
-6204	6	unidades	6	U	substituir por mais raspa de limão ou a versão seca		t	148	22
-6205	6	colher de sopa	6	tbsp			t	149	22
-6206	1	qb	1	qb			t	1	22
-6207	5	unidades	5	U			t	109	22
-6210	2	unidades	2	U		ajustar o picante. Incluir sementes para mais picante	t	134	22
-6211	12	unidades	12	U	cogumelos brancos		t	150	23
-6212	2	unidades	2	U			t	33	23
-6213	0.5	unidades	0.5	U			t	16	23
-6214	0.5	canecas	0.5	c			t	151	23
-6215	0.25	canecas	0.25	c			t	152	23
-6216	0.5	tsp	0.5	tsp			t	1	23
-6217	0.25	tsp	0.25	tsp	tomilho fresco		f	153	23
-6218	0.25	tsp	0.25	tsp			f	9	23
-6219	1	colher de sopa	1	tbsp			t	53	23
-6220	4	unidades	4	U	qualquer pão fofinho - crocante não funciona bem		t	154	23
-6221	0.25	unidades	0.25	U			t	90	23
-6222	1	unidades	1	U			f	91	23
-6223	2	colher de sopa	2	tbsp			f	155	23
-6224	0.5	canecas	0.5	c	panko ou mais farinha		t	156	23
-6225	500	g	500	g			t	2	24
-6226	1	tsp	1	tsp			t	25	24
-6227	1	tsp	1	tsp			t	26	24
-6228	2	tsp	2	tsp			t	24	24
-6229	1	tsp	1	tsp			t	23	24
-6230	1	tsp	1	tsp			t	1	24
-6231	1	unidades	1	U	ou meio pimento vermelho (para não picante) ou 1 malagueta vermelha		t	157	24
-6232	1	unidades	1	U			t	158	24
-6233	0.75	unidades	0.75	U	outra cebola serve		t	159	24
-6234	0.33	molhos	0.33	u			t	32	24
-6235	0.33	molhos	0.33	g			t	70	24
-6236	0.5	unidades	0.5	U			t	86	24
-6237	4	unidades	4	U	pode ser em pitas		t	89	24
-6238	0.5	unidades	0.5	U			t	90	24
-6239	0.5	unidades	0.5	U			t	91	24
-6240	1	tsp	1	tsp			t	64	24
-6241	0.5	unidades	0.5	U			t	92	24
-6242	0.5	canecas	0.5	c			t	79	24
-6243	0.5	unidades	0.5	U			t	59	24
-6244	1.5	tsp	1.5	tsp			t	93	24
-6245	1	colher de sopa	1	tbsp			t	10	24
-6246	900	g	900	g			t	94	25
-6247	2	unidades	2	U			t	5	25
-6248	4	dentes	4	U			t	15	25
-6249	1	polegar	1	U			t	41	25
-6250	3	colher de sopa	3	tbsp			t	53	25
-6251	3	colher de sopa	3	tbsp			t	160	25
-6252	1.5	tsp	1.5	tsp			t	1	25
-6253	0.5	tsp	0.5	tsp			t	9	25
-6254	5	unidades	5	U		quatro se forem muito grandes	t	84	25
-6255	400	g	400	g			t	146	25
-6256	1	tsp	1	tsp			t	161	25
-6257	0.33	molhos	0.33	g			t	70	25
-6258	750	g	750	g			t	140	26
-6259	3	colher de sopa	3	tbsp	ghee é melhor ainda		t	53	26
-6260	2	unidades	2	U			t	16	26
-6261	4	dentes	4	U			t	15	26
-6262	1	polegar	1	U			t	41	26
-6263	2	unidades	2	U		3 se forem pequenos	t	84	26
-6264	3	colher de sopa	3	tbsp			t	79	26
-6265	1	qb	1	qb			t	1	26
-6266	1	unidades	1	U	cardamomo verde		t	162	26
-6267	3	unidades	3	U			t	142	26
-6268	1	unidades	1	U			t	141	26
-6269	1	unidades	1	U			t	163	26
-6270	1	tsp	1	tsp			t	23	26
-6271	1.5	tsp	1.5	tsp			t	85	26
-6272	1	tsp	1	tsp			t	97	26
-6273	1.5	tsp	1.5	tsp	gochujaru ou paprika com um pouco de cayena - não é muito picante.	Ajustar picante a gosto	t	164	26
-6274	0.5	tsp	0.5	tsp			t	161	26
-6275	1	canecas	1	c			t	165	27
-6276	1	pedaços	1	U			t	37	27
-6277	200	g	200	g			t	51	27
-6278	1	colher de sopa	1	tbsp			t	48	27
-6279	1	unidades	1	U			t	42	27
-6280	4	lombos	4	U			t	72	27
-6281	2	colher de sopa	2	tbsp			t	166	27
-6282	1	canecas	1	c			t	73	27
-6283	0.5	unidades	0.5	U			t	126	27
-6284	1	unidades	1	U			t	4	27
-6285	1	tsp	1	tsp			t	38	27
-6286	0.33	canecas	0.33	c			t	155	28
-6287	2	latas	2	g			t	31	28
-6288	1	talo	1	U			t	3	28
-6289	2	unidades	2	U	cornichons		t	101	28
-6290	0.25	unidades	0.25	U			t	125	28
-6291	2	colher de sopa	2	tbsp			t	32	28
-6292	1	qb	1	qb			t	1	28
-6293	1	qb	1	qb			t	9	28
-6294	0.5	tsp	0.5	tsp		ajustar o picante	t	108	28
-6295	4	colher de sopa	4	tbsp	substitutos de manteiga OK		t	82	28
-6296	1	unidades	1	U			t	158	28
-6297	8	fatias	8	U			f	151	28
-6298	0.5	unidades	0.5	U			t	59	28
-6299	8	fatias	8	U			t	87	28
-6300	2	tsp	2	tsp			f	27	28
-6301	2	tsp	2	tsp			f	167	28
-6302	1	colher de sopa	1	tbsp		ajustar o picante	t	168	29
-6303	2	unidades	2	U			t	109	29
-6304	1	colher de sopa	1	tbsp			t	160	29
-6305	5	dentes	5	U			t	15	29
-6306	400	g	400	g			t	146	29
-6307	1	litro	1	ML			t	43	29
-6308	4	unidades	4	U			t	103	29
-6309	1	unidades	1	U		não é tradicional, para uma versao mais tradicional procurar bolos de peixe malaios	f	75	29
-6310	150	g	150	g			f	104	29
-6629	1	qb	1	qb			f	10	58
-6311	1	colher de sopa	1	tbsp		cheira mal mas sem medo	t	169	29
-6312	2	unidades	2	U			t	34	29
-6313	1	colher de sopa	1	tbsp			t	53	29
-6314	1	qb	1	qb			t	70	29
-6315	1	unidades	1	U			t	124	29
-6316	1	unidades	1	U			t	125	30
-6317	5	unidades	5	U		eu uso de cacho	t	158	30
-6318	2	colher de sopa	2	tbsp	ou ghee é melhor ainda		t	53	30
-6319	5	dentes	5	U			t	15	30
-6320	2	tsp	2	tsp			t	161	30
-6321	2	tsp	2	tsp	guchujaru ou paprika+cayena		t	164	30
-6322	2	tsp	2	tsp			t	97	30
-6323	1.5	tsp	1.5	tsp			t	23	30
-6324	1.5	tsp	1.5	tsp			t	85	30
-6325	0.5	tsp	0.5	tsp			t	160	30
-6326	1.5	tsp	1.5	tsp			t	1	30
-6327	0.5	tsp	0.5	tsp			t	20	30
-6328	2	colher de sopa	2	tbsp			t	79	30
-6329	2	unidades	2	U	fica melhor com um de peito, um de coxa		t	94	30
-6330	0.33	molhos	0.33	g			t	70	30
-6331	6	unidades	6	U			t	170	31
-6332	2	dentes	2	U			t	15	31
-6333	0.75	canecas	0.75	c			t	79	31
-6334	0.25	tsp	0.25	tsp			t	97	31
-6335	2	tsp	2	tsp	paprika		t	164	31
-6336	0.75	tsp	0.75	tsp			t	99	31
-6337	2	colher de sopa	2	tbsp			t	1	31
-6338	0.5	unidades	0.5	U			t	171	31
-6339	2	tsp	2	tsp			t	59	31
-6340	1	colher de sopa	1	tbsp			t	139	31
-6341	1.5	canecas	1.5	c			t	138	31
-6342	3	unidades	3	U			t	162	31
-6343	3	unidades	3	U			t	143	31
-6344	1	unidades	1	U			t	163	31
-6345	4	unidades	4	U			t	141	31
-6346	15	unidades	15	U			t	144	31
-6347	2.5	colher de sopa	2.5	tbsp		de preferencia pretos	t	172	31
-6348	3	tsp	3	tsp			t	142	31
-6349	2	colher de sopa	2	tbsp			t	53	31
-6350	50	g	50	g			t	13	31
-6351	1	qb	1	qb	substituir por curcuma que é muito mais barato		t	173	31
-6352	0.25	canecas	0.25	c			t	70	31
-6353	0.33	canecas	0.33	c			t	174	31
-6354	0.33	unidades	0.33	U			t	59	31
-6355	3	colher de sopa	3	tbsp	ghee é melhor ainda		t	82	31
-6356	0.25	canecas	0.25	c			t	175	31
-6357	2	tsp	2	tsp			t	176	31
-6358	1	tsp	1	tsp			t	9	31
-6359	1	qb	1	qb			t	179	31
-6360	1	kg	1	g			t	103	32
-6361	1	unidades	1	U			t	124	32
-6362	1	qb	1	qb			t	9	32
-6363	1	qb	1	qb			t	1	32
-6364	1	kg	1	g			t	177	32
-6365	1	unidades	1	U			t	163	32
-6366	3	unidades	3	U			t	16	32
-6367	400	g	400	g			t	146	32
-6368	400	g	400	g			t	18	32
-6369	1	unidades	1	U			t	17	32
-6370	1	molhos	1	u			t	32	32
-6371	2	colher de sopa	2	tbsp			t	10	33
-6372	2	unidades	2	U	mais coxas de frango		t	94	33
-6373	2	unidades	2	U	mais peitos de frango		t	96	33
-6374	1	unidades	1	U			t	125	33
-6375	1	qb	1	qb			t	1	33
-6376	1	unidades	1	U			t	5	33
-6377	1.5	tsp	1.5	tsp			t	23	33
-6378	1.5	tsp	1.5	tsp			t	85	33
-6379	1	tsp	1	tsp			t	24	33
-6380	1.5	tsp	1.5	tsp	por mais paprika fumada + flocos de malagueta		f	120	33
-6381	4	dentes	4	U			t	15	33
-6382	0.5	molhos	0.5	g			t	70	33
-6383	4	unidades	4	U			t	89	33
-6384	400	g	400	g			t	18	33
-6385	4	colher de sopa	4	tbsp	vache que ri		t	79	33
-6386	1	tsp	1	tsp			t	1	34
-6387	1	tsp	1	tsp			t	27	34
-6388	1	tsp	1	tsp			t	26	34
-6389	2	tsp	2	tsp			t	23	34
-6390	2	tsp	2	tsp			t	24	34
-6391	2	tsp	2	tsp	1 tsp de cayena ou outro picante em pó		t	120	34
-6392	0.5	colher de sopa	0.5	tbsp			t	10	34
-6393	0.25	tsp	0.25	tsp			t	9	34
-6394	2	tsp	2	tsp			t	15	34
-6395	1	unidades	1	U			t	125	34
-6396	500	g	500	g			t	2	34
-6397	2	colher de sopa	2	tbsp			t	7	34
-6398	0.5	unidades	0.5	U	couve rouxa		t	180	34
-6399	0.5	canecas	0.5	c			t	181	34
-6400	1	lata pequena	1	g			t	66	34
-6401	3	unidades	3	U			t	158	34
-6402	1	qb	1	qb			f	70	34
-6403	1	canecas	1	c			t	133	34
-6404	150	g	150	g			f	122	34
-6405	1	unidades	1	U			t	17	34
-6406	3	unidades	3	U			t	182	35
-6407	1	unidades	1	U			t	5	35
-6408	5	unidades	5	U			t	33	35
-6409	3	canecas	3	c		depende do tamanho da frigideira	t	10	35
-6410	16	unidades	16	U			t	103	36
-6411	8	dentes	8	U			t	15	36
-6412	4	unidades	4	U			t	183	36
-6413	0.33	copo	0.33	c			t	110	36
-6414	1	qb	1	qb			t	1	36
-6415	0.5	unidades	0.5	U	ou outro pão artesanal		t	184	36
-6416	0.33	copo	0.33	c			t	10	36
-6417	1	kg	1	g			t	104	37
-6418	6	dentes	6	U			t	15	37
-6419	1	molhos	1	g			t	70	37
-6420	0.5	copo	0.5	c			t	110	37
-6421	1.5	colher de sopa	1.5	tbsp			t	10	37
-6422	1	qb	1	qb		eu ponho metade de um limão mal espremido e provo. Depois corrijo se quiser mais	t	59	37
-6423	6	fatias	6	U	de preferencia rustico e fatiado mas algo como baguette pode funcionar		t	87	37
-6424	1	qb	1	qb			t	1	37
-6425	1	qb	1	qb			t	9	37
-6426	60	g	60	g			t	185	38
-6427	26	g	26	g	eu uso caju porque sou alergico a pinhão		t	186	38
-6428	0.5	tsp	0.5	tsp			t	1	38
-6429	0.25	tsp	0.25	tsp			t	9	38
-6430	2	dentes	2	U			t	15	38
-6431	0.25	canecas	0.25	c			t	10	38
-6432	20	g	20	g			t	187	38
-6433	2	doses	2	g	ou outra massa. Massa curta funciona melhor mas até esparguete serve		t	188	38
-6434	650	g	650	g			t	152	39
-6435	1	colher de sopa	1	tbsp			t	1	39
-6436	1.3	colher de sopa	1.3	tbsp			t	20	39
-6437	1	colher de sopa	1	tbsp			t	189	39
-6438	4	colher de sopa	4	tbsp			t	10	39
-6439	800	g	800	g			t	18	39
-6440	2	tsp	2	tsp			t	27	39
-6441	5	unidades	5	U			t	190	39
-6442	32	g	32	g			t	187	39
-6443	40	g	40	g			t	185	39
-6444	250	g	250	g			t	138	40
-6445	1	kg	1	g			t	191	40
-6446	1	qb	1	qb			t	1	40
-6447	5	dentes	5	U			t	15	40
-6448	1	unidades	1	U			t	16	40
-6449	2	unidades	2	U			t	163	40
-6450	1	unidades	1	U			t	84	40
-6451	0.5	colher de sopa	0.5	tbsp			t	7	40
-6452	1	qb	1	qb			t	9	40
-6453	1	qb	1	qb			t	10	40
-6454	1	kg	1	g			t	87	41
-6455	800	g	800	g			t	103	41
-6456	1	qb	1	qb			t	70	41
-6457	0.2	tsp	0.2	tsp		não é para ser picante!!	t	108	41
-6458	4	dentes	4	U			t	15	41
-6459	2	unidades	2	U			t	33	41
-6460	1	qb	1	qb			t	10	41
-6461	1	unidades	1	U			t	84	41
-6462	0.5	colher de sopa	0.5	tbsp			t	7	41
-6463	1	qb	1	qb			t	9	41
-6464	1	qb	1	qb			t	1	41
-6465	250	g	250	g			t	192	42
-6466	2	tsp	2	tsp			t	165	42
-6467	1	latas	1	g			t	31	42
-6468	8	filetes	8	U			t	113	42
-6469	2	unidades	2	U			t	84	42
-6470	1	colher de sopa	1	tbsp			t	7	42
-6471	1	qb	1	qb			t	10	42
-6472	2	dentes	2	U			t	15	42
-6473	1	unidades	1	U			t	125	42
-6474	1	talo	1	U			t	3	42
-6475	0.5	tsp	0.5	tsp			t	27	42
-6476	2	colher de sopa	2	tbsp			t	13	42
-6477	1	colher de sopa	1	tbsp	sementes de coentros em pó,		t	175	43
-6478	1	dentes	1	U			t	15	43
-6479	1	qb	1	qb			t	1	43
-6480	1.5	unidades	1.5	U			t	59	43
-6481	1	colher de sopa	1	tbsp			t	24	43
-6482	1	colher de sopa	1	tbsp			t	153	43
-6483	1	qb	1	qb			t	9	43
-6484	100	ml	100	ML			t	10	43
-6485	600	g	600	g			t	96	43
-6486	0.5	unidades	0.5	U			t	90	43
-6487	0.5	unidades	0.5	U			t	91	43
-6488	1	tsp	1	tsp			t	64	43
-6489	0.5	unidades	0.5	U			t	92	43
-6490	0.5	canecas	0.5	c			t	79	43
-6491	1.5	tsp	1.5	tsp			t	93	43
-6492	3	unidades	3	U			t	89	43
-6493	2	unidades	2	U			t	182	43
-6494	200	g	200	g			t	193	44
-6495	2	unidades	2	U			t	42	44
-6496	1	unidades	1	U			t	109	44
-6497	2	colher de sopa	2	tbsp	açucar de cana		t	194	44
-6498	2.5	colher de sopa	2.5	tbsp			t	169	44
-6499	2	colher de sopa	2	tbsp	concentrado de tamarindo mas metade ou tamarindo fresco		t	147	44
-6500	0.5	colher de sopa	0.5	tbsp			t	45	44
-6501	2	unidades	2	U			t	96	44
-6502	6	unidades	6	U			t	103	44
-6503	1	canecas	1	c			t	128	44
-6504	2	colher de sopa	2	tbsp			t	195	44
-6505	4	unidades	4	U	pode substituir 2 por tofu		t	33	44
-6506	420	g	420	g			t	178	2
-6507	2	postas	2	U			t	196	46
-6508	500	g	500	g			t	197	47
-6509	3000	g	3000	g			t	198	47
-6510	450	g	450	g			t	199	47
-6511	2	unidades	2	u			t	5	47
-6512	1	unidades	1	u		grande	t	41	47
-6513	1	unidades	1	u			t	141	47
-6514	4	unidades	4	u			t	143	47
-6515	5	unidades	5	u			t	142	47
-6516	20	g	20	g			t	175	47
-6517	2	colheres de sopa	2	tbsp			t	169	47
-6518	30	g	30	g			t	20	47
-6519	1	qb	1	qb			t	70	47
-6520	1	unidades	1	u			t	134	47
-6521	1	tsp	1	tsp			t	176	47
-6522	2	unidades	2	u			t	144	47
-6523	2	unidades	1	u			t	162	47
-6524	2	tbsp	2	tbsp			t	53	47
-6525	0.5	cups	0.5	c			f	128	47
-6526	1	unidades	1	u			f	124	47
-6527	1	unidades	1	u			f	159	47
-6528	2	unidades	2	u			f	94	48
-6529	1	unidades	1	u			f	121	48
-6530	1	unidades	1	u			f	17	48
-6531	200	ml	200	ml			f	18	48
-6532	1	unidades	1	u	outra cebola serve		f	125	48
-6533	4	unidades	4	u			f	15	48
-6534	1	tbsp	1	tbsp			f	25	48
-6535	1	tbsp	1	tbsp			f	26	48
-6536	1	tsp	1	tsp			f	27	48
-6537	1	tbsp	1	tbsp			f	24	48
-6538	1	tbsp	1	tbsp			f	22	48
-6539	1	tbsp	1	tbsp			f	23	48
-6540	6	unidades	6	u			f	89	48
-6541	1	qb	1	qb			f	122	48
-6542	1	tbsp	1	tbsp			f	119	48
-6543	2	tbsp	1	tbsp			f	120	48
-6544	1	unidades	1	u			f	124	48
-6545	4	doses	4	u			f	115	49
-6546	3	unidades	3	u			f	84	49
-6547	1	unidades	1	u			f	3	49
-6548	1	unidades	1	u			f	4	49
-6549	1	unidades	1	u			f	5	49
-6550	1	tbsp	1	tbsp			f	7	49
-6551	1	lata	1	u			f	31	49
-6552	2	unidades	2	u			f	57	50
-6553	600	g	600	g			f	200	51
-6554	500	g	500	g			f	140	52
-6555	330	ml	330	ml			f	201	52
-6556	2	unidades	2	u			f	5	52
-6557	1	unidades	1	u			f	142	52
-6558	1	fatias	1	u			f	87	52
-6559	1	tbsp	1	tbsp			f	202	52
-6560	1	tbsp	1	tbsp			f	58	52
-6561	2	unidades	2	u			f	163	52
-6562	1	tsp	1	tsp			f	153	52
-6563	2	unidades	2	u			f	15	52
-6564	2	tbsp	2	tbsp			f	82	52
-6565	2	tbsp	2	tbsp			f	19	52
-6566	1	quadrado	1	u			f	29	52
-6567	650	g	650	g			t	152	55
-6568	1	colher de sopa	1	tbsp			t	1	55
-6569	1.3	colher de sopa	1.3	tbsp			t	20	55
-6570	1	colher de sopa	1	tbsp			t	189	55
-6571	4	colher de sopa	4	tbsp			t	10	55
-6572	800	g	800	g			t	18	55
-6573	2	tsp	2	tsp			t	27	55
-6574	5	unidades	5	U			t	190	55
-6575	32	g	32	g			t	187	55
-6576	2	latas	2	u			f	31	55
-6577	1	unidades	1	u			f	125	55
-6578	1	tbsp	1	tbsp			f	9	54
-6579	0.5	tbsp	0.5	tbsp			f	46	54
-6580	2	unidades	2	u			f	57	54
-6581	0.25	tbsp	0.25	tbsp			f	203	54
-6582	0.5	tbsp	0.5	tbsp			f	204	54
-6583	1	tsp	1	tsp			f	1	54
-6584	2	tbsp	2	tbsp			f	82	54
-6585	1	unidades	1	u			f	109	54
-6586	1	tsp	1	tsp			f	202	54
-6587	0.5	cups	0.5	c	cream		f	13	54
-6588	0.25	cups	0.25	c			f	205	54
-6589	2	tbsp	2	tbsp			f	53	54
-6590	20	unidades	8	u	pode substituir 6 por lagostins		f	103	53
-6591	200	g	200	g			f	200	53
-6592	100	g	100	g			f	104	53
-6593	3	unidades	2	u			f	15	53
-6594	1	unidades	1	u			f	5	53
-6595	20	g	20	g			f	32	53
-6596	1	unidades	1	u			f	84	53
-6597	1	unidades	1	u	pode substituir por outro pimento seco		f	206	53
-6598	1	qb	1	qb			f	1	53
-6599	2	tbsp	2	tbsp			f	10	53
-6600	320	g	320	g			f	102	53
-6601	3	cups	3	c			f	111	53
-6602	1	qb	1	qb			t	1	56
-6603	400	g	400	g			t	2	56
-6604	60	g	60	g			t	3	56
-6605	60	g	60	g			t	4	56
-6606	60	g	60	g			t	5	56
-6607	150	g	150	g	Bacon		t	6	56
-6608	1	colher de sopa	1	tbsp			t	7	56
-6609	1	copo	1	c			t	8	56
-6610	1	qb	1	qb			t	9	56
-6611	3	colher de sopa	3	tbsp			t	10	56
-6612	200	g	200	g	eu gosto de substituir por 3 ou 4 tomates frescos passados num blender		t	11	56
-6613	200	g	200	g			t	12	56
-6614	100	ml	100	ml			t	13	56
-6615	500	g	500	g			f	207	56
-6616	400	ml	400	ml			f	208	56
-6617	2	cups	2	c			f	122	56
-6618	1	kg	1000	g			f	104	57
-6619	1	unidades	1	u			f	15	57
-6620	1	tbsp	1	tbsp			f	10	57
-6621	1	qb	1	qb			f	1	57
-6622	1	qb	1	qb			f	9	57
-6623	1	molhos	1	u			f	32	57
-6624	1	bunch	1	u			f	185	58
-6625	250	g	250	g			f	84	58
-6626	400	g	400	g			f	17	58
-6627	1	qb	1	qb			f	9	58
-6628	1	qb	1	qb			f	1	58
-6630	1	unidades	1	u			f	15	58
-6631	320	g	320	g			f	192	58
-6632	2	unidades	2	u			f	94	59
-6633	3	tbsp	3	tbsp			f	53	59
-6634	1	unidades	1	u			f	33	59
-6635	0.5	cups	0.5	c			f	55	59
-6636	0.5	tsp	0.5	tsp			f	1	59
-6637	1	unidades	1	u			f	209	59
-6638	2	dentes	2	u			f	15	59
-6639	0.5	unidades	0.5	u			f	159	59
-6640	1	unidades	1	u			f	17	59
-6641	3	unidades	3	u	pode substituir por outra massa de trigo		f	34	60
-6642	1	tbsp	1	tbsp			f	53	60
-6643	250	g	250	g			f	54	60
-6644	2	tbsp	2	tbsp			f	52	60
-6645	2.5	tbsp	2.5	tbsp			f	44	60
-6646	0.5	tsp	0.5	tsp			f	45	60
-6647	1	tbsp	1	tbsp			f	195	60
-6648	1	unidades	1	u			f	210	60
-6649	3	tsp	3	tsp			f	211	60
-6650	1	tbsp	1	tbsp			f	212	60
-6651	2	dentes	2	u			f	15	60
-6652	1	tsp	1	tsp			f	50	60
-6653	1	tsp	1	tsp			f	52	61
-6654	1	unidades	1	u			f	33	61
-6655	1.5	tbsp	1.5	tbsp			f	55	61
-6656	3	tbsp	1	tbsp			f	53	61
-6657	1	tbsp	1	tbsp			f	44	61
-6658	1	tsp	1	tsp			f	45	61
-6659	1	tbsp	1	tbsp			f	130	61
-6660	1	tsp	1	tsp			f	132	61
-6661	0.5	tsp	0.5	tsp			f	20	61
-6662	2	unidades	2	u			f	94	61
-6663	1	unidades	1	u			f	4	61
-6664	1	unidades	1	u			f	5	61
-6665	2	unidades	2	u			f	15	61
-6666	5	unidades	5	u			f	214	61
-6667	0.5	cups	0.5	c			f	43	61
-6668	1	unidades	1	u			f	17	61
-6669	250	g	250	g			f	54	62
-6670	250	g	150	g		e so 150 em carne camarao	f	103	62
-6671	0.5	tbsp	0.5	tbsp			f	52	62
-6672	1	qb	1	qb			f	46	62
-6673	1	tsp	1	tsp			f	20	62
-6674	1	tbsp	1	tbsp			f	55	62
-6675	4	unidades	4	u			f	40	62
-6676	1	tsp	1	tsp			f	215	62
-6677	1	tbsp	1	tbsp			f	132	62
-6678	20	unidades	20	u			f	216	62
-6679	1	tbsp	1	tbsp			f	44	62
-6680	1	tbsp	1	tbsp			f	212	62
-6681	1	tbsp	1	tbsp			f	213	62
-6682	10	unidades	10	u			f	217	63
-6683	1	cups	1	c			f	73	63
-6684	1	folha	1	u			f	47	63
-6685	0.5	tsp	0.5	tsp			f	220	63
-6686	3	tbsp	3	tbsp			f	219	63
-6687	1	tsp	1	tsp			f	44	63
-6688	1	qb	1	qb			f	132	63
-6689	2	tsp	2	tsp			f	76	63
-6690	1	unidades	1	u			f	42	63
-6691	1	tbsp	1	tbsp			f	38	63
-6692	1	unidades	1	U			f	84	64
-6693	1	unidades	1	u			f	42	64
-6694	0.25	tsp	0.25	tsp			f	25	64
-6695	0.25	tsp	0.25	tsp			f	9	64
-6696	4	fatias	4	u			f	221	64
-6697	2	tsp	2	tsp			f	82	64
-6698	4	folhas	60	g			f	90	64
-6699	120	g	120	g			f	222	64
-6700	0.5	unidades	0.5	u			f	67	64
-6701	4	fatias	4	u			f	224	64
-6702	1	tbsp	1	tbsp		o molho nao leva mas fica melhor	f	223	65
-6703	0.25	cups	0.25	c			f	155	65
-6704	0.5	unidades	0.5	u			f	5	65
-6705	1	tsp	1	tsp			f	225	65
-6706	0.5	tsp	0.5	tsp			f	226	65
-6707	0.5	tsp	0.5	tsp			f	20	65
-6708	0.5	tsp	0.5	tsp			f	22	65
-6709	0.125	tsp	0.125	tsp			f	1	65
-6710	0.125	tsp	0.125	tsp			f	25	65
-6711	0.125	tsp	0.125	tsp			f	26	65
-6712	2	unidades	2	u			f	154	65
-6713	2	unidades	2	u	ou carne picada		f	227	65
-6714	2	unidades	2	u			f	101	65
-6715	0.5	unidades	0.5	u			f	84	65
-6716	2	folhas	30	g			f	90	65
-6717	1	cups	1	c			f	79	66
-6718	3	tsp	3	tsp			f	1	66
-6719	2	tsp	2	tsp			f	22	66
-6720	2.25	tbsp	2.25	tbsp			f	161	66
-6721	8	dentes	8	u			f	15	66
-6722	2	tbsp	2	tbsp			f	41	66
-6723	900	g	900	g	ou coxas		f	94	66
-6724	3	tbsp	3	tbsp			f	53	66
-6725	2	tsp	2	tsp			f	20	66
-6726	425	g	425	g			f	18	66
-6727	240	ml	240	ml			f	228	66
-6728	1	qb	1	qb			f	70	66
-6729	4	unidades	4	u			f	229	67
-6730	8	fatias	8	u			f	230	67
-6731	6	unidades	6	u			f	69	67
-6732	120	g	120	g			f	231	67
-6733	2	unidades	2	u			f	94	68
-6734	100	g	100	g		tem de ser em oleo	f	232	68
-6735	5	dentes	5	u			f	15	68
-6736	1	tbsp	1	tbsp			f	202	68
-6737	250	ml	250	ml			f	228	68
-6738	1	tbsp	1	tbsp			f	10	68
-6739	2	cups	2	c			f	233	68
-6740	0.5	cups	0.5	c			f	187	68
-6741	30	g	30	g			f	10	70
-6742	1	dentes	1	u			f	15	70
-6743	1	qb	1	qb			f	1	70
-6744	1	bunch	1	u			f	185	70
-6745	500	g	500	g			f	234	70
-6746	800	g	800	g			f	18	70
-6747	2	unidades	2	u			f	235	71
-6748	240	g	240	g			f	61	71
-6749	300	g	300	g		crua, deve perder peso depois de cozida	f	236	71
-6750	2	unidades	2	u			f	33	71
-6751	2	unidades	2	u			f	4	71
-6752	1	qb	1	qb			f	10	71
-6753	1	unidades	1	u			f	235	72
-6754	5	unidades	5	u			f	33	72
-6755	2	unidades	2	u		1 se for muito grande	f	5	72
-6756	4	unidades	4	u			f	15	72
-6757	1	tbsp	1	tbsp			f	114	72
-6758	1	qb	1	qb			f	32	72
-6759	200	g	200	g			f	237	72
-6760	24	unidades	24	u			f	238	73
-6761	3	unidades	3	u			f	84	73
-6762	1	tbsp	1	tbsp			f	7	73
-6763	1.5	tbsp	1.5	tbsp			f	22	73
-6764	1	unidades	1	u			f	5	73
-6765	4	unidades	4	u			f	15	73
-6766	0.25	cups	0.25	c	mais agulha		f	138	73
-6767	0.5	cups	0.5	c			f	133	73
-6768	0.25	cups	0.25	c	mais agulha		f	239	73
-6769	1.5	tbsp	1.5	tbsp			f	10	73
-6770	500	g	500	g		devem ser 4 mimos	f	75	74
-6771	2	cups	2	c			f	240	74
-6772	1	qb	1	qb		de preferencia spray	f	53	74
-6773	4	fatias	4	u			f	241	74
-6774	4	unidades	4	u			f	242	74
-6775	1	unidades	1	u			f	33	74
-6776	1	tbsp	1	tbsp			f	202	74
-6777	1	tbsp	1	tbsp			f	152	74
-6778	0.75	tsp	0.75	tsp			f	1	74
-6779	1	qb	1	qb			f	9	74
-6780	220	g	220	g			f	155	74
-6781	1	pickle grande	1	u			f	101	74
-6782	1	tsp	1	tsp			f	32	74
-6783	1	tsp	1	tsp			f	112	74
-6784	1.5	tbsp	1.5	tbsp			f	59	74
-6785	1	tsp	1	tsp			f	226	74
-6786	2	unidades	2	u			f	57	75
-6787	2	tbsp	2	tbsp			f	82	75
-6788	1	qb	1	qb			f	10	75
-6789	3	unidades	3	u			f	15	75
-6790	1	qb	1	qb			f	110	75
-6791	3	unidades	3	u			f	163	75
-6792	1	tbsp	1	tbsp			f	225	75
-6793	2	unidades	2	u			f	33	75
-6794	2	unidades	2	u			f	182	75
-6795	1	cups	1	c			f	19	75
-6796	1	qb	1	qb			f	1	75
-6797	500	g	500	g			f	2	76
-6798	1	unidades	1	u			f	5	76
-6799	1	unidades	0.5	u			f	17	76
-6800	1	unidades	1	u			f	32	76
-6801	6	unidades	6	u			f	89	76
-6802	1	unidades	1	u			f	123	76
-6803	1	tsp	1	tsp			f	243	76
-6804	1	tsp	1	tsp			f	172	76
-6805	1	tsp	1	tsp			f	175	76
-6806	1	tsp	1	tsp			f	22	76
-6807	1	tsp	1	tsp			f	24	76
-6808	1	tsp	1	tsp			f	120	76
-6809	1	tsp	1	tsp			f	65	76
-6810	2	unidades	2	u			f	15	76
-6811	1	tsp	1	tsp			f	1	76
-6812	0.5	unidades	0.5	u			f	86	76
-6813	4	unidades	4	u			f	94	69
-6814	200	ml	200	ml			f	228	69
-6815	1	unidades	1	u			f	244	69
-6816	1	unidades	1	u			f	245	69
-6817	250	g	250	g			f	152	77
-6818	1	g	1	g			f	189	77
-6819	1	qb	1	qb			f	1	77
-6820	250	g	250	g			f	2	77
-6821	1	unidades	1	u			f	5	77
-6822	1	unidades	1	u			f	246	77
-6823	1	unidades	1	u			f	32	77
-6824	2	g	2	g			f	153	77
-6825	1	unidades	1	u		grande	f	158	77
-6826	0.5	cups	0.5	c			f	133	78
-6827	0.5	cups	0.5	c			f	138	78
-6828	0.75	cups	0.75	c			f	118	78
-6829	0.5	cups	0.5	c			f	10	78
-6830	1	unidades	1	u			f	141	78
-6831	1	tsp	1	tsp			f	175	78
-6832	0.5	tsp	0.5	tsp			f	97	78
-6833	0.25	tsp	0.25	tsp			f	9	78
-6834	1.5	unidades	1.5	u			f	5	78
-6835	1	tbsp	1	tbsp			f	226	78
-6836	1	tbsp	1	tbsp			f	59	78
-6837	1	bunch	1	u			f	70	78
-6838	2	tbsp	2	tbsp			f	247	78
-6839	2	tbsp	2	tbsp			f	248	78
-6840	1	qb	1	qb			f	53	79
-6841	0.5	cups	0.5	c			f	248	79
-6842	2	unidades	2	u			f	4	79
-6843	1	unidades	1	u			f	141	79
-6844	3	unidades	3	u			f	163	79
-6845	2	unidades	2	u			f	249	79
-6846	4	unidades	4	u			f	170	79
-6847	4	unidades	4	u			f	250	79
-6848	1	tsp	1	tsp			f	172	79
-6849	1	tsp	1	tsp			f	175	79
-6850	2	unidades	2	u			f	158	79
-6851	1	tsp	1	tsp			f	97	79
-6852	3	tsp	3	tsp			f	1	79
-6853	1	unidades	1	u			f	43	79
-6854	2	tbsp	2	tbsp			f	7	79
-6855	2	unidades	2	u			f	80	80
-6856	1	qb	1	qb			f	10	80
-6857	0.5	tsp	0.5	tsp			f	24	80
-6858	1	qb	1	qb			f	1	80
-6859	180	g	180	g		drained	f	61	80
-6860	0.5	tsp	0.5	tsp			f	172	80
-6861	0.5	tsp	0.5	tsp			f	175	80
-6862	1	qb	1	qb			f	9	80
-6863	3	unidades	3	u			f	95	80
-6864	1	cups	1	c			f	79	80
-6865	1.5	tbsp	1.5	tbsp			f	63	80
-6866	1	unidades	1	u			f	15	80
-6867	0.5	unidades	0.5	u			f	59	80
-6868	1	qb	1	qb			f	251	80
-6869	1	unidades	1	u			f	252	80
-6870	1	tsp	1	tsp			f	64	80
-6871	8	unidades	8	u			f	247	80
-6872	500	g	500	g		pode ser peito	f	96	81
-6873	4	tbsp	4	tbsp			f	10	81
-6874	1	tbsp	1	tbsp			f	79	81
-6875	2	unidades	2	u			f	15	81
-6876	1	tsp	1	tsp			f	172	81
-6877	1	tsp	1	tsp			f	175	81
-6878	1	tsp	1	tsp			f	22	81
-6879	0.5	tsp	0.5	tsp			f	97	81
-6880	0.5	tsp	0.5	tsp			f	141	81
-6881	0.5	tsp	0.5	tsp			f	9	81
-6882	0.5	tsp	0.5	tsp			f	1	81
-6883	1.5	unidades	1.5	u			f	59	81
-6884	2	unidades	2	u			f	80	81
-6885	2	tbsp	2	tbsp			f	63	81
-6886	1	qb	1	qb			f	251	81
-6887	4	unidades	4	u			f	229	82
-6888	3	unidades	3	u			f	190	82
-6889	1	bunch	1	u			f	185	82
-6890	1	qb	1	qb			f	10	82
-6891	1	tbsp	1	tbsp			f	232	82
-6892	6	unidades	6	u			f	69	82
-6893	1	tsp	1	tsp			f	9	45
-6894	4	unidades	4	u		mais coxas	f	170	45
-6895	4	unidades	4	u		mais pernas	f	250	45
-6896	0.3	cups	0.3	c			f	44	45
-6897	3	unidades	3	u			f	163	45
-6898	0.25	cups	0.25	c			f	226	45
-6899	1	unidades	1	u			f	42	45
-6900	3	unidades	3	u			f	15	45
-6901	2.5	tbsp	2.5	tbsp	mascavado, amarelo ou cana de preferencia		f	20	45
-6902	1	unidades	1	u	grande		f	16	45
+1	1	qb	1	qb			t	1	1
+2	400	g	400	g			t	2	1
+3	60	g	60	g			t	3	1
+4	60	g	60	g			t	4	1
+5	60	g	60	g			t	5	1
+6	150	g	150	g	Bacon		t	6	1
+7	1	colher de sopa	1	tbsp			t	7	1
+8	1	copo	1	c			t	8	1
+9	1	qb	1	qb			t	9	1
+10	3	colher de sopa	3	tbsp			t	10	1
+11	200	g	200	g	eu gosto de substituir por 3 ou 4 tomates frescos passados num blender		t	11	1
+12	200	g	200	g			t	12	1
+13	100	ml	100	ml			t	13	1
+14	8	doses	8	u	Outra massa		t	14	1
+15	1	colher de sopa	1	tbsp			t	10	2
+16	3	dentes	3	U			t	15	2
+17	1	unidades	1	U			t	16	2
+18	1	unidades	1	U			t	17	2
+19	500	g	500	g			t	2	2
+20	3	colher de sopa	3	tbsp			t	7	2
+21	800	g	800	g			t	18	2
+22	2	cubos	2	U			t	19	2
+23	1.5	tsp	1.5	tsp			t	20	2
+24	2	tsp	2	tsp		Ajustar o picante a gosto	t	21	2
+25	3	tsp	3	tsp			t	22	2
+26	5	tsp	5	tsp			t	23	2
+27	4	tsp	4	tsp			t	24	2
+28	2	tsp	2	tsp			t	25	2
+29	2	tsp	2	tsp			t	26	2
+30	1.5	tsp	1.5	tsp			t	1	2
+31	2	tsp	2	tsp			t	27	2
+32	1	tsp	1	tsp			t	28	2
+33	2	quadrados	2	U			t	29	2
+34	1	qb	1	qb			t	1	3
+35	470	g	470	g			t	30	3
+36	170	g	2	g			t	31	3
+37	1	qb	1	qb			t	32	3
+38	3	unidades	3	U			t	33	3
+39	0.5	unidades	0.5	U			t	16	3
+40	2	unidades	2	U			t	34	4
+41	2	unidades	2	U			t	33	4
+42	2	colher de sopa	2	tbsp			t	35	4
+43	1.5	colher de sopa	1.5	tbsp		Ajustar picante a gosto	t	36	4
+44	1	pedaços	1	U			t	37	4
+45	2	colher de sopa	2	tbsp			t	38	4
+46	1	colher de sopa	1	tbsp			t	39	4
+47	4	unidades	4	U		Sim, tem mesmo de ser secos	t	40	4
+48	1.5	tsp	1.5	tsp			t	41	4
+49	3	dentes	3	U			t	15	4
+50	2	unidades	2	U			t	42	4
+51	1	cubos	1	U			t	43	4
+52	2	colher de sopa	2	tbsp			t	44	4
+53	1	tsp	1	tsp			t	45	4
+54	1	qb	1	qb			t	46	4
+55	1	folha	1	U			t	47	4
+56	4	pedaços	4	U			t	48	4
+57	2.5	colher de sopa	2.5	tbsp			t	49	5
+58	2	colher de sopa	2	tbsp			t	50	5
+59	1	colher de sopa	1	tbsp		Tradicionalmente, usa-se feijao preto fermentando -  Dou Chi	t	35	5
+60	2	colher de sopa	2	tbsp			t	52	5
+61	500	g	500	g		De preferencia versão mais suave	t	51	5
+62	0.5	tsp	0.5	tsp			t	1	5
+63	3	colher de sopa	3	tbsp			t	53	5
+64	300	g	300	g			t	54	5
+65	4	unidades	4	U			t	42	5
+66	5	dentes	5	U			t	15	5
+67	1	tsp	1	tsp			t	22	5
+68	1.5	tsp	1.5	tsp			t	41	5
+69	2	tsp	2	tsp			t	20	5
+70	1.5	canecas	1.5	c			t	19	5
+71	3	tsp	3	tsp			t	44	5
+72	0.5	tsp	0.5	tsp			t	45	5
+73	1	colher de sopa	1	tbsp			t	55	5
+74	1	qb	1	qb		Eu não acrescento. O doubanjiang já é picante. Sugiro rectificar o picante no fim depois de provar com pó de piri piri ou outro picante	t	56	5
+75	2	unidades	2	U			t	57	6
+76	5	colher de sopa	5	tbsp			t	10	6
+77	1	colher de sopa	1	tbsp			t	58	6
+78	1	tsp	1	tsp			t	59	6
+79	1.5	colher de sopa	1.5	tbsp			t	32	6
+80	2	dentes	2	U			t	15	6
+81	1	unidades	1	U	Outra malagueta fresca	Ajustar a picante a gosto	t	60	6
+82	1	tsp	1	tsp			t	27	6
+83	1	qb	1	qb			t	9	6
+84	0.5	tsp	0.5	tsp			t	22	6
+85	1	lata grande	1	g			t	61	7
+86	3	latas	3	g			t	31	7
+87	15	unidades	15	U	Broculo ou outros legumes (de preferencia cruciveros)	Depende do tamanho das couves. Incluir visto que são saudaveis mas a gosto	t	62	7
+88	3	unidades	3	U			t	33	7
+89	1.5	colher de sopa	1.5	tbsp		Por a gosto no hummus	t	63	7
+90	1	qb	1	qb			t	1	7
+91	0.5	unidades	0.5	U		Por a gosto no hummus	t	59	7
+92	1	dentes	1	U			t	15	7
+93	1	qb	1	qb		Por a gosto no hummus e depois por cima no produto final	t	10	7
+94	1	qb	1	qb		Sprinkle por cima do produto final	f	64	7
+95	1	qb	1	qb		Sprinkle por cima do produto final	f	65	7
+96	1	lata pequena	1	g			t	66	8
+97	1	unidades	1	U			t	67	8
+98	1	canecas	1	c			t	68	8
+99	2	unidades	2	U			t	33	8
+100	8	unidades	8	U			t	69	8
+101	1	qb	1	qb			t	70	8
+102	3	colher de sopa	3	tbsp			t	10	8
+103	1	colher de sopa	1	tbsp			t	71	8
+104	1	qb	1	qb			t	1	8
+105	1	qb	1	qb			t	9	8
+106	1	qb	1	qb			t	27	8
+107	2	lombos	2	U		de preferencia sem espinhas	t	72	9
+108	1	canecas	1	c			t	73	9
+109	3	colher de sopa	3	tbsp			t	74	9
+110	1	medalhões	1	U		de preferencia sem espinhas	t	75	9
+111	1	qb	1	qb			t	76	9
+112	2	unidades	2	U			t	77	9
+113	1	qb	1	qb			t	78	9
+114	1	qb	1	qb			t	44	9
+115	1	qb	1	qb			t	47	9
+116	2	colher de sopa	2	tbsp	podem usar qualquer uma das cores mas mistura das duas é mais visual		t	38	9
+117	1	pedaços	1	U			t	37	9
+118	1	unidades	1	U			t	67	9
+119	400	g	400	g	pequenos cubos de carne de vaca		t	2	10
+120	2	dentes	2	U			t	15	10
+121	3	colher de sopa	3	tbsp			t	10	10
+122	0.75	canecas	0.75	c			t	79	10
+123	1	qb	1	qb			t	1	10
+124	1	qb	1	qb			t	9	10
+125	1	colher de sopa	1	tbsp			t	7	10
+126	4	unidades	4	U			t	80	10
+127	1	qb	1	qb			f	32	10
+128	1	colher de sopa	1	tbsp			t	81	10
+129	2	colher de sopa	2	tbsp			t	82	10
+130	1	colher de sopa	1	tbsp			t	22	10
+131	1	colher de sopa	1	tbsp			t	24	10
+132	1	unidades	1	U		assado com as beringelas. Retirar pele, cortar em tiras e servir	t	17	10
+133	5	unidades	5	U			t	84	11
+134	2	unidades	2	U	1 se for muito grande		t	17	11
+135	1	unidades	1	U			t	16	11
+136	5	dentes	5	U			t	15	11
+137	2	colher de sopa	2	tbsp			t	22	11
+138	2	colher de sopa	2	tbsp			t	24	11
+139	3	colher de sopa	3	tbsp			t	23	11
+140	1.5	colher de sopa	1.5	tbsp			t	85	11
+141	1	qb	1	qb			f	70	11
+142	0.5	unidades	0.5	U			f	86	11
+143	4	fatias	4	U	o tipo não interessa desde que não seja pão de forma e seja bom para torradas		t	87	11
+144	1	colher de sopa	1	tbsp			t	7	11
+145	2	colher de sopa	2	tbsp			t	10	11
+146	1	qb	1	qb			t	1	11
+147	1	qb	1	qb			t	9	11
+148	6	unidades	6	U			t	33	11
+149	1	canecas	1	c	não se pode substituir por grão cozido!!		t	88	12
+150	1	unidades	1	U			t	16	12
+151	3	dentes	3	U			t	15	12
+152	1	qb	1	qb			t	1	12
+153	1	colher de sopa	1	tbsp			t	85	12
+154	1	colher de sopa	1	tbsp			t	23	12
+155	0.5	molhos	0.5	u			t	32	12
+156	0.5	molhos	0.5	g			t	70	12
+157	4	unidades	4	U			t	89	12
+158	0.5	unidades	0.5	U			t	90	12
+159	0.5	unidades	0.5	U			t	91	12
+160	1	tsp	1	tsp			f	64	12
+161	0.5	unidades	0.5	U	Metade desta quantidade para molho, metade para salada		t	92	12
+162	0.5	canecas	0.5	c			t	79	12
+163	0.5	unidades	0.5	U			t	59	12
+164	1.5	tsp	1.5	tsp			t	93	12
+165	1	colher de sopa	1	tbsp			t	10	12
+166	0.5	unidades	0.5	U			f	86	12
+167	1	unidades	1	U			t	94	13
+168	1	unidades	1	U	peito de frango		t	96	13
+169	4	unidades	4	U			t	95	13
+170	1	unidades	1	U			t	59	13
+171	0.75	canecas	0.75	c			t	79	13
+172	2	tsp	2	tsp			t	7	13
+173	2	tsp	2	tsp			t	81	13
+174	2	tsp	2	tsp			t	25	13
+175	1	tsp	1	tsp			f	97	13
+176	1	colher de sopa	1	tbsp			t	24	13
+177	1	tsp	1	tsp			f	98	13
+178	1	tsp	1	tsp			t	26	13
+179	1	tsp	1	tsp			t	99	13
+180	0.5	tsp	0.5	tsp			f	100	13
+181	3	tsp	3	tsp			t	1	13
+182	1	tsp	1	tsp			t	64	13
+183	0.25	unidades	0.25	U			t	16	13
+184	2	unidades	2	U	Pode substituir por cornichons mas pôr mais unidades		t	101	13
+185	1	dentes	1	U			t	15	13
+186	0.5	unidades	0.5	U			t	90	13
+187	0.5	unidades	0.5	U			t	91	13
+188	0.5	unidades	0.5	U		Metade desta quantidade para molho, metade para salada	t	92	13
+189	1.5	tsp	1.5	tsp			t	93	13
+190	1	colher de sopa	1	tbsp			t	10	13
+191	400	g	400	g	não se pode substituir por arroz agulha ou basmati! Quanto muito arroz bomba ou risotto mas ainda não testei		t	102	14
+192	10	unidades	10	U			t	103	14
+193	400	g	400	g			t	104	14
+194	3	unidades	3	U	lulas		t	105	14
+195	8	unidades	8	U			t	106	14
+196	2	unidades	2	U			t	84	14
+197	2	colher de sopa	2	tbsp			t	7	14
+198	1.5	tsp	1.5	tsp			f	107	14
+199	0.5	tsp	0.5	tsp		não por mais! Não é suposto ser picante	t	108	14
+200	0.5	molhos	0.5	u			f	32	14
+201	0.5	molhos	0.5	g			f	70	14
+202	1	unidades	1	U			t	16	14
+203	1	unidades	1	U			f	109	14
+204	1	qb	1	qb			t	1	14
+205	4	dentes	4	U			t	15	14
+206	1	qb	1	qb			f	9	14
+207	0.5	copo	0.5	c			f	110	14
+208	1.2	litro	1.2	ML	pode substituir por agua com sal ou caldo de peixe		t	111	14
+209	1	folha	1	U			f	47	14
+210	4	unidades	4	U			f	48	14
+211	1	pedaços	1	U			f	37	14
+212	8	filetes	8	U			t	113	15
+213	2	colher de sopa	2	tbsp			t	112	15
+214	3	dentes	3	U			t	15	15
+215	1	tsp	1	tsp			t	27	15
+216	0.5	colher de sopa	0.5	tbsp			t	7	15
+217	4	unidades	4	U			t	84	15
+218	1.5	colher de sopa	1.5	tbsp		de prefencia em rodelas sem caroço	t	114	15
+219	4	doses	4	u	outra massa		t	115	15
+220	1	qb	1	qb		por pouco - as anchovas são salgadas	t	1	15
+221	4	doses	4	u			t	115	16
+222	6	unidades	6	U			t	33	16
+223	75	g	75	g			t	116	16
+224	150	g	150	g	bacon ou panceta - não tradicional mas não deixa ser bom. Nem tudo tem de ser como os gurus dizem		t	117	16
+225	1	qb	1	qb			t	9	16
+226	1	qb	1	qb			t	1	16
+227	4	doses	4	u	outra massa		t	115	17
+228	50	g	50	g	parmesão		t	116	17
+229	150	g	150	g	bacon ou panceta - não tradicional mas não deixa ser bom. Nem tudo tem de ser como os gurus dizem		t	117	17
+230	400	g	400	g			t	84	17
+231	1	qb	1	qb			t	9	17
+232	1	unidades	1	U	flocos de malagueta secos ou um pepperoncino seco		t	60	17
+233	0.25	copo	0.25	c			t	110	17
+234	1	qb	1	qb		pôr pouco se a carne tiver pouca gordura. Se usar guanciale NÃO usar azeite - já é muito gordurento	t	10	17
+235	1	canecas	1	c			t	118	18
+236	1	colher de sopa	1	tbsp			t	10	18
+237	1	unidades	1	U	outra cebola serve		t	5	18
+238	4	dentes	4	U			t	15	18
+239	1.5	colher de sopa	1.5	tbsp	talvez lima? Ainda não testei		t	119	18
+240	3	colher de sopa	3	tbsp			t	7	18
+241	1	colher de sopa	1	tbsp	chipotle demolhado ou paprika fumada + piri piri em pó		t	120	18
+242	1.5	colher de sopa	1.5	tbsp			t	23	18
+243	0.75	colher de sopa	0.75	tbsp			t	85	18
+244	2	colher de sopa	2	tbsp			t	24	18
+245	2	qb	2	qb			t	1	18
+246	1	unidades	1	U			t	17	18
+247	1	unidades	1	U			t	121	18
+248	1	qb	1	qb			t	9	18
+249	8	unidades	8	U			t	89	18
+250	8	qb	8	qb	qualquer queijo serve desde que derreta bem. Já testei com mozarela, queijo da ilha e cheddar		t	122	18
+251	3	unidades	3	U			t	67	18
+252	2	unidades	2	U			t	123	18
+253	1	unidades	1	U			t	124	18
+254	1	dentes	1	U			t	15	18
+255	0.25	unidades	0.25	U	outra cebola serve		t	125	18
+256	0.33	molhos	0.33	g			t	70	18
+257	4	canecas	4	c		em juliana, diminui muito enquanto cozinha	t	126	19
+258	1	unidades	1	U			t	4	19
+259	2	unidades	2	U			t	15	19
+260	200	g	200	g	ramen instantaneo		t	127	19
+261	1	canecas	1	c			f	128	19
+262	3	unidades	3	U			t	42	19
+263	1.5	colher de sopa	1.5	tbsp			f	129	19
+264	2	tsp	2	tsp			t	55	19
+265	1.5	colher de sopa	1.5	tbsp			t	44	19
+266	1.5	colher de sopa	1.5	tbsp			t	130	19
+267	1	tsp	1	tsp			f	45	19
+268	1.5	colher de sopa	1.5	tbsp	mirin. Em ultimo caso sake		t	52	19
+269	2	tsp	2	tsp	se usar mirin, diminuir só para um. O mirin e mais doce		t	20	19
+270	0.5	tsp	0.5	tsp			t	132	19
+271	1	qb	1	qb			t	46	19
+272	4	unidades	4	U			t	33	19
+273	4	unidades	4	U	coxa de frango fatiada ou qualquer outra carne/marisco		t	103	19
+274	1	canecas	1	c	basmati e jasmin tambem funcionam, só não usar grão curto como risotto, sushi ou carolino		t	133	20
+275	6	unidades	6	U			t	33	20
+276	2	unidades	2	U			t	109	20
+277	8	dentes	8	U			t	15	20
+278	3	unidades	3	U			t	42	20
+279	1	colher de sopa	1	tbsp			t	107	20
+280	1	cubos	1	U			f	43	20
+281	2	polegar	2	U			t	41	20
+282	1	unidades	1	U			t	134	20
+283	2	colher de sopa	2	tbsp	oleo vegetal é OK		t	135	20
+284	1	colher de sopa	1	tbsp			f	132	20
+285	1	canecas	1	c	jasmin ou agulha	pessoalmente gosto de misturar agulha e basmati	t	138	21
+286	1	colher de sopa	1	tbsp			t	135	21
+287	2	tsp	2	tsp	molho de peixe ou omitir	cheira muito mal mas é normal	t	136	21
+288	1	unidades	1	U			t	134	21
+289	2	colher de sopa	2	tbsp	molho de soja com açucar mascavado		t	137	21
+290	1	tsp	1	tsp			t	45	21
+291	1	tsp	1	tsp			t	97	21
+292	4	dentes	4	U			t	15	21
+293	1	unidades	1	U			t	16	21
+294	1	cubos	1	U			f	43	21
+295	0.5	unidades	0.5	U			t	92	21
+296	1	unidades	1	U			f	91	21
+297	6	unidades	6	U			f	33	21
+298	1	unidades	1	U			f	124	21
+299	1	qb	1	qb			t	139	21
+300	6	unidades	6	U	coxa de frango fatiada ou peito de frango		t	103	21
+301	750	g	750	g			t	140	22
+302	5	colher de sopa	5	tbsp			t	53	22
+303	1	unidades	1	U			t	141	22
+304	3	unidades	3	U			t	142	22
+305	3	unidades	3	U			t	143	22
+306	3	unidades	3	U			t	144	22
+307	4	unidades	4	U	não é tradicional, mas já substitui por uma raspa de limão e fica bom (mas não igual)		t	145	22
+308	1	canecas	1	c			t	146	22
+309	2	tsp	2	tsp	pode substituir por METADE de concentrado de tamarindo ou tamarindo fresco	não confundir com o concentrado - é muito mais potente o concentrado	t	147	22
+310	6	unidades	6	U	substituir por mais raspa de limão ou a versão seca		t	148	22
+311	6	colher de sopa	6	tbsp			t	149	22
+312	1	qb	1	qb			t	1	22
+313	5	unidades	5	U			t	109	22
+314	5	dentes	5	U			t	15	22
+315	1	polegar	1	U			t	41	22
+316	2	unidades	2	U		ajustar o picante. Incluir sementes para mais picante	t	134	22
+317	12	unidades	12	U	cogumelos brancos		t	150	23
+318	2	unidades	2	U			t	33	23
+319	0.5	unidades	0.5	U			t	16	23
+320	0.5	canecas	0.5	c			t	151	23
+321	0.25	canecas	0.25	c			t	152	23
+322	0.5	tsp	0.5	tsp			t	1	23
+323	0.25	tsp	0.25	tsp	tomilho fresco		f	153	23
+324	0.25	tsp	0.25	tsp			f	9	23
+325	1	colher de sopa	1	tbsp			t	53	23
+326	4	unidades	4	U	qualquer pão fofinho - crocante não funciona bem		t	154	23
+327	0.25	unidades	0.25	U			t	90	23
+328	1	unidades	1	U			f	91	23
+329	2	colher de sopa	2	tbsp			f	155	23
+330	0.5	canecas	0.5	c	panko ou mais farinha		t	156	23
+331	500	g	500	g			t	2	24
+332	1	tsp	1	tsp			t	25	24
+333	1	tsp	1	tsp			t	26	24
+334	2	tsp	2	tsp			t	24	24
+335	1	tsp	1	tsp			t	23	24
+336	1	tsp	1	tsp			t	1	24
+337	1	unidades	1	U	ou meio pimento vermelho (para não picante) ou 1 malagueta vermelha		t	157	24
+338	1	unidades	1	U			t	158	24
+339	0.75	unidades	0.75	U	outra cebola serve		t	159	24
+340	0.33	molhos	0.33	u			t	32	24
+341	0.33	molhos	0.33	g			t	70	24
+342	0.5	unidades	0.5	U			t	86	24
+343	4	unidades	4	U	pode ser em pitas		t	89	24
+344	0.5	unidades	0.5	U			t	90	24
+345	0.5	unidades	0.5	U			t	91	24
+346	1	tsp	1	tsp			t	64	24
+347	0.5	unidades	0.5	U			t	92	24
+348	0.5	canecas	0.5	c			t	79	24
+349	0.5	unidades	0.5	U			t	59	24
+350	1.5	tsp	1.5	tsp			t	93	24
+351	1	colher de sopa	1	tbsp			t	10	24
+352	900	g	900	g			t	94	25
+353	2	unidades	2	U			t	5	25
+354	4	dentes	4	U			t	15	25
+355	1	polegar	1	U			t	41	25
+356	3	colher de sopa	3	tbsp			t	53	25
+357	3	colher de sopa	3	tbsp			t	160	25
+358	1.5	tsp	1.5	tsp			t	1	25
+359	0.5	tsp	0.5	tsp			t	9	25
+360	5	unidades	5	U		quatro se forem muito grandes	t	84	25
+361	400	g	400	g			t	146	25
+362	1	tsp	1	tsp			t	161	25
+363	0.33	molhos	0.33	g			t	70	25
+364	750	g	750	g			t	140	26
+365	3	colher de sopa	3	tbsp	ghee é melhor ainda		t	53	26
+366	2	unidades	2	U			t	16	26
+367	4	dentes	4	U			t	15	26
+368	1	polegar	1	U			t	41	26
+369	2	unidades	2	U		3 se forem pequenos	t	84	26
+370	3	colher de sopa	3	tbsp			t	79	26
+371	1	qb	1	qb			t	1	26
+372	1	unidades	1	U	cardamomo verde		t	162	26
+373	3	unidades	3	U			t	142	26
+374	1	unidades	1	U			t	141	26
+375	1	unidades	1	U			t	163	26
+376	1	tsp	1	tsp			t	23	26
+377	1.5	tsp	1.5	tsp			t	85	26
+378	1	tsp	1	tsp			t	97	26
+379	1.5	tsp	1.5	tsp	gochujaru ou paprika com um pouco de cayena - não é muito picante.	Ajustar picante a gosto	t	164	26
+380	0.5	tsp	0.5	tsp			t	161	26
+381	1	canecas	1	c			t	165	27
+382	1	pedaços	1	U			t	37	27
+383	200	g	200	g			t	51	27
+384	1	colher de sopa	1	tbsp			t	48	27
+385	1	unidades	1	U			t	42	27
+386	4	lombos	4	U			t	72	27
+387	2	colher de sopa	2	tbsp			t	166	27
+388	1	canecas	1	c			t	73	27
+389	0.5	unidades	0.5	U			t	126	27
+390	1	unidades	1	U			t	4	27
+391	1	tsp	1	tsp			t	38	27
+392	0.33	canecas	0.33	c			t	155	28
+393	2	latas	2	g			t	31	28
+394	1	talo	1	U			t	3	28
+395	2	unidades	2	U	cornichons		t	101	28
+396	0.25	unidades	0.25	U			t	125	28
+397	2	colher de sopa	2	tbsp			t	32	28
+398	1	qb	1	qb			t	1	28
+399	1	qb	1	qb			t	9	28
+400	0.5	tsp	0.5	tsp		ajustar o picante	t	108	28
+401	4	colher de sopa	4	tbsp	substitutos de manteiga OK		t	82	28
+402	1	unidades	1	U			t	158	28
+403	8	fatias	8	U			f	151	28
+404	0.5	unidades	0.5	U			t	59	28
+405	8	fatias	8	U			t	87	28
+406	2	tsp	2	tsp			f	27	28
+407	2	tsp	2	tsp			f	167	28
+408	1	colher de sopa	1	tbsp		ajustar o picante	t	168	29
+409	2	unidades	2	U			t	109	29
+410	1	colher de sopa	1	tbsp			t	160	29
+411	5	dentes	5	U			t	15	29
+412	400	g	400	g			t	146	29
+413	1	litro	1	ML			t	43	29
+414	4	unidades	4	U			t	103	29
+415	1	unidades	1	U		não é tradicional, para uma versao mais tradicional procurar bolos de peixe malaios	f	75	29
+416	150	g	150	g			f	104	29
+417	1	colher de sopa	1	tbsp		cheira mal mas sem medo	t	169	29
+418	2	unidades	2	U			t	34	29
+419	1	colher de sopa	1	tbsp			t	53	29
+420	1	qb	1	qb			t	70	29
+421	1	unidades	1	U			t	124	29
+422	1	unidades	1	U			t	125	30
+423	5	unidades	5	U		eu uso de cacho	t	158	30
+424	2	colher de sopa	2	tbsp	ou ghee é melhor ainda		t	53	30
+425	5	dentes	5	U			t	15	30
+426	2	tsp	2	tsp			t	161	30
+427	2	tsp	2	tsp	guchujaru ou paprika+cayena		t	164	30
+428	2	tsp	2	tsp			t	97	30
+429	1.5	tsp	1.5	tsp			t	23	30
+430	1.5	tsp	1.5	tsp			t	85	30
+431	0.5	tsp	0.5	tsp			t	160	30
+432	1.5	tsp	1.5	tsp			t	1	30
+433	0.5	tsp	0.5	tsp			t	20	30
+434	2	colher de sopa	2	tbsp			t	79	30
+435	2	unidades	2	U	fica melhor com um de peito, um de coxa		t	94	30
+436	0.33	molhos	0.33	g			t	70	30
+437	6	unidades	6	U			t	170	31
+438	2	dentes	2	U			t	15	31
+439	0.75	canecas	0.75	c			t	79	31
+440	0.25	tsp	0.25	tsp			t	97	31
+441	2	tsp	2	tsp	paprika		t	164	31
+442	0.75	tsp	0.75	tsp			t	99	31
+443	2	colher de sopa	2	tbsp			t	1	31
+444	0.5	unidades	0.5	U			t	171	31
+445	2	tsp	2	tsp			t	59	31
+446	1	colher de sopa	1	tbsp			t	139	31
+447	1.5	canecas	1.5	c			t	138	31
+448	3	unidades	3	U			t	162	31
+449	3	unidades	3	U			t	143	31
+450	1	unidades	1	U			t	163	31
+451	4	unidades	4	U			t	141	31
+452	15	unidades	15	U			t	144	31
+453	2.5	colher de sopa	2.5	tbsp		de preferencia pretos	t	172	31
+454	3	tsp	3	tsp			t	142	31
+455	2	colher de sopa	2	tbsp			t	53	31
+456	50	g	50	g			t	13	31
+457	1	qb	1	qb	substituir por curcuma que é muito mais barato		t	173	31
+458	0.25	canecas	0.25	c			t	70	31
+459	0.33	canecas	0.33	c			t	174	31
+460	0.33	unidades	0.33	U			t	59	31
+461	3	colher de sopa	3	tbsp	ghee é melhor ainda		t	82	31
+462	0.25	canecas	0.25	c			t	175	31
+463	2	tsp	2	tsp			t	176	31
+464	1	tsp	1	tsp			t	9	31
+465	1	qb	1	qb			t	179	31
+466	1	kg	1	g			t	103	32
+467	1	unidades	1	U			t	124	32
+468	1	qb	1	qb			t	9	32
+469	1	qb	1	qb			t	1	32
+470	1	kg	1	g			t	177	32
+471	1	unidades	1	U			t	163	32
+472	3	unidades	3	U			t	16	32
+473	400	g	400	g			t	146	32
+474	400	g	400	g			t	18	32
+475	1	unidades	1	U			t	17	32
+476	1	molhos	1	u			t	32	32
+477	2	colher de sopa	2	tbsp			t	10	33
+478	2	unidades	2	U	mais coxas de frango		t	94	33
+479	2	unidades	2	U	mais peitos de frango		t	96	33
+480	1	unidades	1	U			t	125	33
+481	1	qb	1	qb			t	1	33
+482	1	unidades	1	U			t	5	33
+483	1.5	tsp	1.5	tsp			t	23	33
+484	1.5	tsp	1.5	tsp			t	85	33
+485	1	tsp	1	tsp			t	24	33
+486	1.5	tsp	1.5	tsp	por mais paprika fumada + flocos de malagueta		f	120	33
+487	4	dentes	4	U			t	15	33
+488	0.5	molhos	0.5	g			t	70	33
+489	4	unidades	4	U			t	89	33
+490	400	g	400	g			t	18	33
+491	4	colher de sopa	4	tbsp	vache que ri		t	79	33
+492	1	tsp	1	tsp			t	1	34
+493	1	tsp	1	tsp			t	27	34
+494	1	tsp	1	tsp			t	26	34
+495	2	tsp	2	tsp			t	23	34
+496	2	tsp	2	tsp			t	24	34
+497	2	tsp	2	tsp	1 tsp de cayena ou outro picante em pó		t	120	34
+498	0.5	colher de sopa	0.5	tbsp			t	10	34
+499	0.25	tsp	0.25	tsp			t	9	34
+500	2	tsp	2	tsp			t	15	34
+501	1	unidades	1	U			t	125	34
+502	500	g	500	g			t	2	34
+503	2	colher de sopa	2	tbsp			t	7	34
+504	0.5	unidades	0.5	U	couve rouxa		t	180	34
+505	0.5	canecas	0.5	c			t	181	34
+506	1	lata pequena	1	g			t	66	34
+507	3	unidades	3	U			t	158	34
+508	1	qb	1	qb			f	70	34
+509	1	canecas	1	c			t	133	34
+510	150	g	150	g			f	122	34
+511	1	unidades	1	U			t	17	34
+512	3	unidades	3	U			t	182	35
+513	1	unidades	1	U			t	5	35
+514	5	unidades	5	U			t	33	35
+515	3	canecas	3	c		depende do tamanho da frigideira	t	10	35
+516	16	unidades	16	U			t	103	36
+517	8	dentes	8	U			t	15	36
+518	4	unidades	4	U			t	183	36
+519	0.33	copo	0.33	c			t	110	36
+520	1	qb	1	qb			t	1	36
+521	0.5	unidades	0.5	U	ou outro pão artesanal		t	184	36
+522	0.33	copo	0.33	c			t	10	36
+523	1	kg	1	g			t	104	37
+524	6	dentes	6	U			t	15	37
+525	1	molhos	1	g			t	70	37
+526	0.5	copo	0.5	c			t	110	37
+527	1.5	colher de sopa	1.5	tbsp			t	10	37
+528	1	qb	1	qb		eu ponho metade de um limão mal espremido e provo. Depois corrijo se quiser mais	t	59	37
+529	6	fatias	6	U	de preferencia rustico e fatiado mas algo como baguette pode funcionar		t	87	37
+530	1	qb	1	qb			t	1	37
+531	1	qb	1	qb			t	9	37
+532	60	g	60	g			t	185	38
+533	26	g	26	g	eu uso caju porque sou alergico a pinhão		t	186	38
+534	0.5	tsp	0.5	tsp			t	1	38
+535	0.25	tsp	0.25	tsp			t	9	38
+536	2	dentes	2	U			t	15	38
+537	0.25	canecas	0.25	c			t	10	38
+538	20	g	20	g			t	187	38
+539	2	doses	2	g	ou outra massa. Massa curta funciona melhor mas até esparguete serve		t	188	38
+540	650	g	650	g			t	152	39
+541	1	colher de sopa	1	tbsp			t	1	39
+542	1.3	colher de sopa	1.3	tbsp			t	20	39
+543	1	colher de sopa	1	tbsp			t	189	39
+544	4	colher de sopa	4	tbsp			t	10	39
+545	800	g	800	g			t	18	39
+546	2	tsp	2	tsp			t	27	39
+547	5	unidades	5	U			t	190	39
+548	32	g	32	g			t	187	39
+549	40	g	40	g			t	185	39
+550	250	g	250	g			t	138	40
+551	1	kg	1	g			t	191	40
+552	1	qb	1	qb			t	1	40
+553	5	dentes	5	U			t	15	40
+554	1	unidades	1	U			t	16	40
+555	2	unidades	2	U			t	163	40
+556	1	unidades	1	U			t	84	40
+557	0.5	colher de sopa	0.5	tbsp			t	7	40
+558	1	qb	1	qb			t	9	40
+559	1	qb	1	qb			t	10	40
+560	1	kg	1	g			t	87	41
+561	800	g	800	g			t	103	41
+562	1	qb	1	qb			t	70	41
+563	0.2	tsp	0.2	tsp		não é para ser picante!!	t	108	41
+564	4	dentes	4	U			t	15	41
+565	2	unidades	2	U			t	33	41
+566	1	qb	1	qb			t	10	41
+567	1	unidades	1	U			t	84	41
+568	0.5	colher de sopa	0.5	tbsp			t	7	41
+569	1	qb	1	qb			t	9	41
+570	1	qb	1	qb			t	1	41
+571	250	g	250	g			t	192	42
+572	2	tsp	2	tsp			t	165	42
+573	1	latas	1	g			t	31	42
+574	8	filetes	8	U			t	113	42
+575	2	unidades	2	U			t	84	42
+576	1	colher de sopa	1	tbsp			t	7	42
+577	1	qb	1	qb			t	10	42
+578	2	dentes	2	U			t	15	42
+579	1	unidades	1	U			t	125	42
+580	1	talo	1	U			t	3	42
+581	0.5	tsp	0.5	tsp			t	27	42
+582	2	colher de sopa	2	tbsp			t	13	42
+583	1	colher de sopa	1	tbsp	sementes de coentros em pó,		t	175	43
+584	1	dentes	1	U			t	15	43
+585	1	qb	1	qb			t	1	43
+586	1.5	unidades	1.5	U			t	59	43
+587	1	colher de sopa	1	tbsp			t	24	43
+588	1	colher de sopa	1	tbsp			t	153	43
+589	1	qb	1	qb			t	9	43
+590	100	ml	100	ML			t	10	43
+591	600	g	600	g			t	96	43
+592	0.5	unidades	0.5	U			t	90	43
+593	0.5	unidades	0.5	U			t	91	43
+594	1	tsp	1	tsp			t	64	43
+595	0.5	unidades	0.5	U			t	92	43
+596	0.5	canecas	0.5	c			t	79	43
+597	1.5	tsp	1.5	tsp			t	93	43
+598	3	unidades	3	U			t	89	43
+599	2	unidades	2	U			t	182	43
+600	200	g	200	g			t	193	44
+601	2	unidades	2	U			t	42	44
+602	1	unidades	1	U			t	109	44
+603	2	colher de sopa	2	tbsp	açucar de cana		t	194	44
+604	2.5	colher de sopa	2.5	tbsp			t	169	44
+605	2	colher de sopa	2	tbsp	concentrado de tamarindo mas metade ou tamarindo fresco		t	147	44
+606	0.5	colher de sopa	0.5	tbsp			t	45	44
+607	2	unidades	2	U			t	96	44
+608	6	unidades	6	U			t	103	44
+609	1	canecas	1	c			t	128	44
+610	2	colher de sopa	2	tbsp			t	195	44
+611	4	unidades	4	U	pode substituir 2 por tofu		t	33	44
+612	420	g	420	g			t	178	2
+613	2	postas	2	U			t	196	46
+614	500	g	500	g			t	197	47
+615	3000	g	3000	g			t	198	47
+616	450	g	450	g			t	199	47
+617	2	unidades	2	u			t	5	47
+618	1	unidades	1	u		grande	t	41	47
+619	1	unidades	1	u			t	141	47
+620	4	unidades	4	u			t	143	47
+621	5	unidades	5	u			t	142	47
+622	20	g	20	g			t	175	47
+623	2	colheres de sopa	2	tbsp			t	169	47
+624	30	g	30	g			t	20	47
+625	1	qb	1	qb			t	70	47
+626	1	unidades	1	u			t	134	47
+627	1	tsp	1	tsp			t	176	47
+628	2	unidades	2	u			t	144	47
+629	2	unidades	1	u			t	162	47
+630	2	tbsp	2	tbsp			t	53	47
+631	0.5	cups	0.5	c			f	128	47
+632	1	unidades	1	u			f	124	47
+633	1	unidades	1	u			f	159	47
+634	2	unidades	2	u			f	94	48
+635	1	unidades	1	u			f	121	48
+636	1	unidades	1	u			f	17	48
+637	200	ml	200	ml			f	18	48
+638	1	unidades	1	u	outra cebola serve		f	125	48
+639	4	unidades	4	u			f	15	48
+640	1	tbsp	1	tbsp			f	25	48
+641	1	tbsp	1	tbsp			f	26	48
+642	1	tsp	1	tsp			f	27	48
+643	1	tbsp	1	tbsp			f	24	48
+644	1	tbsp	1	tbsp			f	22	48
+645	1	tbsp	1	tbsp			f	23	48
+646	6	unidades	6	u			f	89	48
+647	1	qb	1	qb			f	122	48
+648	1	tbsp	1	tbsp			f	119	48
+649	2	tbsp	1	tbsp			f	120	48
+650	1	unidades	1	u			f	124	48
+651	4	doses	4	u			f	115	49
+652	3	unidades	3	u			f	84	49
+653	1	unidades	1	u			f	3	49
+654	1	unidades	1	u			f	4	49
+655	1	unidades	1	u			f	5	49
+656	1	tbsp	1	tbsp			f	7	49
+657	1	lata	1	u			f	31	49
+658	2	unidades	2	u			f	57	50
+659	600	g	600	g			f	200	51
+660	500	g	500	g			f	140	52
+661	330	ml	330	ml			f	201	52
+662	2	unidades	2	u			f	5	52
+663	1	unidades	1	u			f	142	52
+664	1	fatias	1	u			f	87	52
+665	1	tbsp	1	tbsp			f	202	52
+666	1	tbsp	1	tbsp			f	58	52
+667	2	unidades	2	u			f	163	52
+668	1	tsp	1	tsp			f	153	52
+669	2	unidades	2	u			f	15	52
+670	2	tbsp	2	tbsp			f	82	52
+671	2	tbsp	2	tbsp			f	19	52
+672	1	quadrado	1	u			f	29	52
+673	650	g	650	g			t	152	55
+674	1	colher de sopa	1	tbsp			t	1	55
+675	1.3	colher de sopa	1.3	tbsp			t	20	55
+676	1	colher de sopa	1	tbsp			t	189	55
+677	4	colher de sopa	4	tbsp			t	10	55
+678	800	g	800	g			t	18	55
+679	2	tsp	2	tsp			t	27	55
+680	5	unidades	5	U			t	190	55
+681	32	g	32	g			t	187	55
+682	2	latas	2	u			f	31	55
+683	1	unidades	1	u			f	125	55
+684	1	tbsp	1	tbsp			f	9	54
+685	0.5	tbsp	0.5	tbsp			f	46	54
+686	2	unidades	2	u			f	57	54
+687	0.25	tbsp	0.25	tbsp			f	203	54
+688	0.5	tbsp	0.5	tbsp			f	204	54
+689	1	tsp	1	tsp			f	1	54
+690	2	tbsp	2	tbsp			f	82	54
+691	1	unidades	1	u			f	109	54
+692	1	tsp	1	tsp			f	202	54
+693	0.5	cups	0.5	c	cream		f	13	54
+694	0.25	cups	0.25	c			f	205	54
+695	2	tbsp	2	tbsp			f	53	54
+696	20	unidades	8	u	pode substituir 6 por lagostins		f	103	53
+697	200	g	200	g			f	200	53
+698	100	g	100	g			f	104	53
+699	3	unidades	2	u			f	15	53
+700	1	unidades	1	u			f	5	53
+701	20	g	20	g			f	32	53
+702	1	unidades	1	u			f	84	53
+703	1	unidades	1	u	pode substituir por outro pimento seco		f	206	53
+704	1	qb	1	qb			f	1	53
+705	2	tbsp	2	tbsp			f	10	53
+706	320	g	320	g			f	102	53
+707	3	cups	3	c			f	111	53
+708	1	qb	1	qb			t	1	56
+709	400	g	400	g			t	2	56
+710	60	g	60	g			t	3	56
+711	60	g	60	g			t	4	56
+712	60	g	60	g			t	5	56
+713	150	g	150	g	Bacon		t	6	56
+714	1	colher de sopa	1	tbsp			t	7	56
+715	1	copo	1	c			t	8	56
+716	1	qb	1	qb			t	9	56
+717	3	colher de sopa	3	tbsp			t	10	56
+718	200	g	200	g	eu gosto de substituir por 3 ou 4 tomates frescos passados num blender		t	11	56
+719	200	g	200	g			t	12	56
+720	100	ml	100	ml			t	13	56
+721	500	g	500	g			f	207	56
+722	400	ml	400	ml			f	208	56
+723	2	cups	2	c			f	122	56
+724	1	kg	1000	g			f	104	57
+725	1	unidades	1	u			f	15	57
+726	1	tbsp	1	tbsp			f	10	57
+727	1	qb	1	qb			f	1	57
+728	1	qb	1	qb			f	9	57
+729	1	molhos	1	u			f	32	57
+730	1	bunch	1	u			f	185	58
+731	250	g	250	g			f	84	58
+732	400	g	400	g			f	17	58
+733	1	qb	1	qb			f	9	58
+734	1	qb	1	qb			f	1	58
+735	1	qb	1	qb			f	10	58
+736	1	unidades	1	u			f	15	58
+737	320	g	320	g			f	192	58
+738	2	unidades	2	u			f	94	59
+739	3	tbsp	3	tbsp			f	53	59
+740	1	unidades	1	u			f	33	59
+741	0.5	cups	0.5	c			f	55	59
+742	0.5	tsp	0.5	tsp			f	1	59
+743	1	unidades	1	u			f	209	59
+744	2	dentes	2	u			f	15	59
+745	0.5	unidades	0.5	u			f	159	59
+746	1	unidades	1	u			f	17	59
+747	3	unidades	3	u	pode substituir por outra massa de trigo		f	34	60
+748	1	tbsp	1	tbsp			f	53	60
+749	250	g	250	g			f	54	60
+750	2	tbsp	2	tbsp			f	52	60
+751	2.5	tbsp	2.5	tbsp			f	44	60
+752	0.5	tsp	0.5	tsp			f	45	60
+753	1	tbsp	1	tbsp			f	195	60
+754	1	unidades	1	u			f	210	60
+755	3	tsp	3	tsp			f	211	60
+756	1	tbsp	1	tbsp			f	212	60
+757	2	dentes	2	u			f	15	60
+758	1	tsp	1	tsp			f	50	60
+759	1	tsp	1	tsp			f	52	61
+760	1	unidades	1	u			f	33	61
+761	1.5	tbsp	1.5	tbsp			f	55	61
+762	3	tbsp	1	tbsp			f	53	61
+763	1	tbsp	1	tbsp			f	44	61
+764	1	tsp	1	tsp			f	45	61
+765	1	tbsp	1	tbsp			f	130	61
+766	1	tsp	1	tsp			f	132	61
+767	0.5	tsp	0.5	tsp			f	20	61
+768	2	unidades	2	u			f	94	61
+769	1	unidades	1	u			f	4	61
+770	1	unidades	1	u			f	5	61
+771	2	unidades	2	u			f	15	61
+772	5	unidades	5	u			f	214	61
+773	0.5	cups	0.5	c			f	43	61
+774	1	unidades	1	u			f	17	61
+775	250	g	250	g			f	54	62
+776	250	g	150	g		e so 150 em carne camarao	f	103	62
+777	0.5	tbsp	0.5	tbsp			f	52	62
+778	1	qb	1	qb			f	46	62
+779	1	tsp	1	tsp			f	20	62
+780	1	tbsp	1	tbsp			f	55	62
+781	4	unidades	4	u			f	40	62
+782	1	tsp	1	tsp			f	215	62
+783	1	tbsp	1	tbsp			f	132	62
+784	20	unidades	20	u			f	216	62
+785	1	tbsp	1	tbsp			f	44	62
+786	1	tbsp	1	tbsp			f	212	62
+787	1	tbsp	1	tbsp			f	213	62
+788	10	unidades	10	u			f	217	63
+789	1	cups	1	c			f	73	63
+790	1	folha	1	u			f	47	63
+791	0.5	tsp	0.5	tsp			f	220	63
+792	3	tbsp	3	tbsp			f	219	63
+793	1	tsp	1	tsp			f	44	63
+794	1	qb	1	qb			f	132	63
+795	2	tsp	2	tsp			f	76	63
+796	1	unidades	1	u			f	42	63
+797	1	tbsp	1	tbsp			f	38	63
+798	1	unidades	1	U			f	84	64
+799	1	unidades	1	u			f	42	64
+800	0.25	tsp	0.25	tsp			f	25	64
+801	0.25	tsp	0.25	tsp			f	9	64
+802	4	fatias	4	u			f	221	64
+803	2	tsp	2	tsp			f	82	64
+804	4	folhas	60	g			f	90	64
+805	120	g	120	g			f	222	64
+806	0.5	unidades	0.5	u			f	67	64
+807	4	fatias	4	u			f	224	64
+808	1	tbsp	1	tbsp		o molho nao leva mas fica melhor	f	223	65
+809	0.25	cups	0.25	c			f	155	65
+810	0.5	unidades	0.5	u			f	5	65
+811	1	tsp	1	tsp			f	225	65
+812	0.5	tsp	0.5	tsp			f	226	65
+813	0.5	tsp	0.5	tsp			f	20	65
+814	0.5	tsp	0.5	tsp			f	22	65
+815	0.125	tsp	0.125	tsp			f	1	65
+816	0.125	tsp	0.125	tsp			f	25	65
+817	0.125	tsp	0.125	tsp			f	26	65
+818	2	unidades	2	u			f	154	65
+819	2	unidades	2	u	ou carne picada		f	227	65
+820	2	unidades	2	u			f	101	65
+821	0.5	unidades	0.5	u			f	84	65
+822	2	folhas	30	g			f	90	65
+823	1	cups	1	c			f	79	66
+824	3	tsp	3	tsp			f	1	66
+825	2	tsp	2	tsp			f	22	66
+826	2.25	tbsp	2.25	tbsp			f	161	66
+827	8	dentes	8	u			f	15	66
+828	2	tbsp	2	tbsp			f	41	66
+829	900	g	900	g	ou coxas		f	94	66
+830	3	tbsp	3	tbsp			f	53	66
+831	2	tsp	2	tsp			f	20	66
+832	425	g	425	g			f	18	66
+833	240	ml	240	ml			f	228	66
+834	1	qb	1	qb			f	70	66
+835	4	unidades	4	u			f	229	67
+836	8	fatias	8	u			f	230	67
+837	6	unidades	6	u			f	69	67
+838	120	g	120	g			f	231	67
+839	2	unidades	2	u			f	94	68
+840	100	g	100	g		tem de ser em oleo	f	232	68
+841	5	dentes	5	u			f	15	68
+842	1	tbsp	1	tbsp			f	202	68
+843	250	ml	250	ml			f	228	68
+844	1	tbsp	1	tbsp			f	10	68
+845	2	cups	2	c			f	233	68
+846	0.5	cups	0.5	c			f	187	68
+847	30	g	30	g			f	10	70
+848	1	dentes	1	u			f	15	70
+849	1	qb	1	qb			f	1	70
+850	1	bunch	1	u			f	185	70
+851	500	g	500	g			f	234	70
+852	800	g	800	g			f	18	70
+853	2	unidades	2	u			f	235	71
+854	240	g	240	g			f	61	71
+855	300	g	300	g		crua, deve perder peso depois de cozida	f	236	71
+856	2	unidades	2	u			f	33	71
+857	2	unidades	2	u			f	4	71
+858	1	qb	1	qb			f	10	71
+859	1	unidades	1	u			f	235	72
+860	5	unidades	5	u			f	33	72
+861	2	unidades	2	u		1 se for muito grande	f	5	72
+862	4	unidades	4	u			f	15	72
+863	1	tbsp	1	tbsp			f	114	72
+864	1	qb	1	qb			f	32	72
+865	200	g	200	g			f	237	72
+866	24	unidades	24	u			f	238	73
+867	3	unidades	3	u			f	84	73
+868	1	tbsp	1	tbsp			f	7	73
+869	1.5	tbsp	1.5	tbsp			f	22	73
+870	1	unidades	1	u			f	5	73
+871	4	unidades	4	u			f	15	73
+872	0.25	cups	0.25	c	mais agulha		f	138	73
+873	0.5	cups	0.5	c			f	133	73
+874	0.25	cups	0.25	c	mais agulha		f	239	73
+875	1.5	tbsp	1.5	tbsp			f	10	73
+876	500	g	500	g		devem ser 4 mimos	f	75	74
+877	2	cups	2	c			f	240	74
+878	1	qb	1	qb		de preferencia spray	f	53	74
+879	4	fatias	4	u			f	241	74
+880	4	unidades	4	u			f	242	74
+881	1	unidades	1	u			f	33	74
+882	1	tbsp	1	tbsp			f	202	74
+883	1	tbsp	1	tbsp			f	152	74
+884	0.75	tsp	0.75	tsp			f	1	74
+885	1	qb	1	qb			f	9	74
+886	220	g	220	g			f	155	74
+887	1	pickle grande	1	u			f	101	74
+888	1	tsp	1	tsp			f	32	74
+889	1	tsp	1	tsp			f	112	74
+890	1.5	tbsp	1.5	tbsp			f	59	74
+891	1	tsp	1	tsp			f	226	74
+892	2	unidades	2	u			f	57	75
+893	2	tbsp	2	tbsp			f	82	75
+894	1	qb	1	qb			f	10	75
+895	3	unidades	3	u			f	15	75
+896	1	qb	1	qb			f	110	75
+897	3	unidades	3	u			f	163	75
+898	1	tbsp	1	tbsp			f	225	75
+899	2	unidades	2	u			f	33	75
+900	2	unidades	2	u			f	182	75
+901	1	cups	1	c			f	19	75
+902	1	qb	1	qb			f	1	75
+903	500	g	500	g			f	2	76
+904	1	unidades	1	u			f	5	76
+905	1	unidades	0.5	u			f	17	76
+906	1	unidades	1	u			f	32	76
+907	6	unidades	6	u			f	89	76
+908	1	unidades	1	u			f	123	76
+909	1	tsp	1	tsp			f	243	76
+910	1	tsp	1	tsp			f	172	76
+911	1	tsp	1	tsp			f	175	76
+912	1	tsp	1	tsp			f	22	76
+913	1	tsp	1	tsp			f	24	76
+914	1	tsp	1	tsp			f	120	76
+915	1	tsp	1	tsp			f	65	76
+916	2	unidades	2	u			f	15	76
+917	1	tsp	1	tsp			f	1	76
+918	0.5	unidades	0.5	u			f	86	76
+919	4	unidades	4	u			f	94	69
+920	200	ml	200	ml			f	228	69
+921	1	unidades	1	u			f	244	69
+922	1	unidades	1	u			f	245	69
+923	250	g	250	g			f	152	77
+924	1	g	1	g			f	189	77
+925	1	qb	1	qb			f	1	77
+926	250	g	250	g			f	2	77
+927	1	unidades	1	u			f	5	77
+928	1	unidades	1	u			f	246	77
+929	1	unidades	1	u			f	32	77
+930	2	g	2	g			f	153	77
+931	1	unidades	1	u		grande	f	158	77
+932	0.5	cups	0.5	c			f	133	78
+933	0.5	cups	0.5	c			f	138	78
+934	0.75	cups	0.75	c			f	118	78
+935	0.5	cups	0.5	c			f	10	78
+936	1	unidades	1	u			f	141	78
+937	1	tsp	1	tsp			f	175	78
+938	0.5	tsp	0.5	tsp			f	97	78
+939	0.25	tsp	0.25	tsp			f	9	78
+940	1.5	unidades	1.5	u			f	5	78
+941	1	tbsp	1	tbsp			f	226	78
+942	1	tbsp	1	tbsp			f	59	78
+943	1	bunch	1	u			f	70	78
+944	2	tbsp	2	tbsp			f	247	78
+945	2	tbsp	2	tbsp			f	248	78
+946	1	qb	1	qb			f	53	79
+947	0.5	cups	0.5	c			f	248	79
+948	2	unidades	2	u			f	4	79
+949	1	unidades	1	u			f	141	79
+950	3	unidades	3	u			f	163	79
+951	2	unidades	2	u			f	249	79
+952	4	unidades	4	u			f	170	79
+953	4	unidades	4	u			f	250	79
+954	1	tsp	1	tsp			f	172	79
+955	1	tsp	1	tsp			f	175	79
+956	2	unidades	2	u			f	158	79
+957	1	tsp	1	tsp			f	97	79
+958	3	tsp	3	tsp			f	1	79
+959	1	unidades	1	u			f	43	79
+960	2	tbsp	2	tbsp			f	7	79
+961	2	unidades	2	u			f	80	80
+962	1	qb	1	qb			f	10	80
+963	0.5	tsp	0.5	tsp			f	24	80
+964	1	qb	1	qb			f	1	80
+965	180	g	180	g		drained	f	61	80
+966	0.5	tsp	0.5	tsp			f	172	80
+967	0.5	tsp	0.5	tsp			f	175	80
+968	1	qb	1	qb			f	9	80
+969	3	unidades	3	u			f	95	80
+970	1	cups	1	c			f	79	80
+971	1.5	tbsp	1.5	tbsp			f	63	80
+972	1	unidades	1	u			f	15	80
+973	0.5	unidades	0.5	u			f	59	80
+974	1	qb	1	qb			f	251	80
+975	1	unidades	1	u			f	252	80
+976	1	tsp	1	tsp			f	64	80
+977	8	unidades	8	u			f	247	80
+978	500	g	500	g		pode ser peito	f	96	81
+979	4	tbsp	4	tbsp			f	10	81
+980	1	tbsp	1	tbsp			f	79	81
+981	2	unidades	2	u			f	15	81
+982	1	tsp	1	tsp			f	172	81
+983	1	tsp	1	tsp			f	175	81
+984	1	tsp	1	tsp			f	22	81
+985	0.5	tsp	0.5	tsp			f	97	81
+986	0.5	tsp	0.5	tsp			f	141	81
+987	0.5	tsp	0.5	tsp			f	9	81
+988	0.5	tsp	0.5	tsp			f	1	81
+989	1.5	unidades	1.5	u			f	59	81
+990	2	unidades	2	u			f	80	81
+991	2	tbsp	2	tbsp			f	63	81
+992	1	qb	1	qb			f	251	81
+993	4	unidades	4	u			f	229	82
+994	3	unidades	3	u			f	190	82
+995	1	bunch	1	u			f	185	82
+996	1	qb	1	qb			f	10	82
+997	1	tbsp	1	tbsp			f	232	82
+998	6	unidades	6	u			f	69	82
+999	1	tsp	1	tsp			f	9	45
+1000	4	unidades	4	u		mais coxas	f	170	45
+1001	4	unidades	4	u		mais pernas	f	250	45
+1002	0.3	cups	0.3	c			f	44	45
+1003	3	unidades	3	u			f	163	45
+1004	0.25	cups	0.25	c			f	226	45
+1005	1	unidades	1	u			f	42	45
+1006	3	unidades	3	u			f	15	45
+1007	2.5	tbsp	2.5	tbsp	mascavado, amarelo ou cana de preferencia		f	20	45
+1008	1	unidades	1	u	grande		f	16	45
 \.
 
 
@@ -4063,7 +3055,7 @@ SELECT pg_catalog.setval('public.meals_ingredientunitconversion_id_seq', 2094, t
 -- Name: meals_mealingredient_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.meals_mealingredient_id_seq', 6902, true);
+SELECT pg_catalog.setval('public.meals_mealingredient_id_seq', 1008, true);
 
 
 --

@@ -1,6 +1,7 @@
 import csv
 import os
 from django.core.management.base import BaseCommand
+from django.db import connection
 from meals.models import Meal, Ingredient, MealIngredient
 
 class Command(BaseCommand):
@@ -13,6 +14,16 @@ class Command(BaseCommand):
         if not os.path.exists(csv_path):
             self.stderr.write(self.style.ERROR(f'CSV file not found at: {csv_path}'))
             return
+
+        # Clear existing meal-ingredient relationships
+        self.stdout.write('Deleting existing meal-ingredient relationships...')
+        MealIngredient.objects.all().delete()
+        
+        # Reset the auto-increment sequence
+        with connection.cursor() as cursor:
+            cursor.execute("ALTER SEQUENCE meals_mealingredient_id_seq RESTART WITH 1;")
+        
+        self.stdout.write(self.style.SUCCESS('Cleared existing data. Starting import...'))
 
         created = 0
         with open(csv_path, newline='', encoding='utf-8') as csvfile:
