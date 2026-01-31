@@ -120,7 +120,7 @@ class IngredientInRecipeSerializer(serializers.Serializer):
     id = serializers.CharField(source='ingredient.id')
     name = serializers.CharField(source='ingredient.name')
     image = serializers.SerializerMethodField()
-    quantity = serializers.CharField(source='u_quantity')
+    quantity = serializers.FloatField(source='u_quantity')
     unit = serializers.CharField(source='u_desc')
 
     def get_image(self, obj):
