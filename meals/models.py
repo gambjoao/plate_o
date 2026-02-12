@@ -20,7 +20,7 @@ class Ingredient(models.Model):
 class Meal(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
-    instructions = models.TextField()
+    instructions = models.JSONField(default=list)
     serves = models.PositiveIntegerField()
     overnight_prep = models.BooleanField(default=False)
     time = models.PositiveIntegerField(help_text="Time in minutes")

@@ -1,11 +1,48 @@
 import csv
 import os
+import re
 from django.core.management.base import BaseCommand
 from django.db import transaction
 from meals.models import Meal
 
 class Command(BaseCommand):
     help = 'Import recipes from a hardcoded CSV file into the Recipe model'
+
+    def parse_instructions(self, instructions_text):
+        """
+        Parse instructions from '1 - text || 2 - text || ...' format
+        into JSON array: [{"step": 1, "instruction": "text"}, ...]
+        """
+        if not instructions_text or instructions_text.strip() == '':
+            return []
+        
+        # Split by ||
+        steps = instructions_text.split('||')
+        parsed_instructions = []
+        
+        for step_text in steps:
+            step_text = step_text.strip()
+            if not step_text:
+                continue
+            
+            # Match pattern: "number - instruction text"
+            # Using regex to extract step number and instruction
+            match = re.match(r'^(\d+)\s*-\s*(.+)$', step_text)
+            
+            if match:
+                step_num = int(match.group(1))
+                instruction = match.group(2).strip()
+                parsed_instructions.append({
+                    "step": step_num,
+                    "instruction": instruction
+                })
+            else:
+                # If format doesn't match, log warning but continue
+                self.stderr.write(self.style.WARNING(
+                    f'Could not parse step format: "{step_text[:50]}..."'
+                ))
+        
+        return parsed_instructions
 
     def handle(self, *args, **kwargs):
         base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -39,11 +76,14 @@ class Command(BaseCommand):
                             # Parse boolean value
                             overnight_prep = row.get('overnight_prep?', '').strip().lower() in ['true', '1', 'yes']
 
+                            # Parse instructions from text to JSON
+                            instructions_json = self.parse_instructions(row.get('instructions', ''))
+
                             meal = Meal(
                                 id=int(row['id']),
                                 name=row['name'],
                                 description=row.get('description', ''),
-                                instructions=row.get('instructions', ''),
+                                instructions=instructions_json,  # Now a list of dicts
                                 serves=int(row['serves']),
                                 overnight_prep=overnight_prep,
                                 time=int(row['time']),
