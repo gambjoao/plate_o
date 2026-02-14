@@ -145,7 +145,7 @@ class RecipeSerializer(serializers.ModelSerializer):
     tokens = serializers.SerializerMethodField()
     ingredients = serializers.SerializerMethodField()
     tags = serializers.SerializerMethodField()
-    instructions = serializers.SerializerMethodField()
+    instructions = serializers.JSONField()
 
     class Meta:
         model = Meal
@@ -180,41 +180,3 @@ class RecipeSerializer(serializers.ModelSerializer):
             {"id": "1", "name": "tag 1"},
             {"id": "2", "name": "tag 2"}
         ]
-
-    def get_instructions(self, obj):
-        # Parse instructions field - split by pattern like "1 - ", "2 - ", etc.
-        instructions_text = obj.instructions or "1 - placeholder"
-        
-        steps = []
-        lines = instructions_text.split('\n')
-        
-        for line in lines:
-            line = line.strip()
-            if not line:
-                continue
-            
-            # Check if line starts with "number - "
-            parts = line.split(' - ', 1)
-            if len(parts) == 2 and parts[0].strip().isdigit():
-                step_num = int(parts[0].strip())
-                instruction_text = parts[1].strip()
-                steps.append({
-                    "step": step_num,
-                    "instruction": instruction_text
-                })
-            else:
-                # If no pattern found, treat as step 1
-                if not steps:
-                    steps.append({
-                        "step": 1,
-                        "instruction": line
-                    })
-        
-        # If still empty, add placeholder
-        if not steps:
-            steps.append({
-                "step": 1,
-                "instruction": "placeholder"
-            })
-        
-        return steps
