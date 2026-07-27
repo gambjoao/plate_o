@@ -19,9 +19,16 @@ def optimize_meal_plan(
     starting_recipe: a Recipe object to use as first meal (optional)
     forbidden_ids: set of recipe IDs to avoid repeats
     """
-    print(f"!!!!!!!!!!!!!!!!!!Optimizing meal plan for {total_meals} meals with heat {heat}")
     forbidden_ids = set(forbidden_ids) if forbidden_ids else set()
     available_recipes = [r for r in recipes if r.id not in forbidden_ids]
+
+    pool_size = len({r.id for r in available_recipes})
+    if starting_recipe and starting_recipe.id not in {r.id for r in available_recipes}:
+        pool_size += 1
+    if total_meals > pool_size:
+        raise ValueError(
+            f"Cannot build a plan of {total_meals} meals: only {pool_size} distinct recipes available."
+        )
 
     if starting_recipe:
         meal_plan = [starting_recipe]
@@ -35,6 +42,9 @@ def optimize_meal_plan(
 
     for step in range(1, total_meals):
         candidates = [r for r in recipes if r.id not in forbidden_ids]
+        # Shuffle so that candidates with tied scores (e.g. when rules is
+        # empty) aren't always picked in recipe/DB order.
+        random.shuffle(candidates)
 
         scored = []
         for recipe in candidates:
@@ -45,10 +55,7 @@ def optimize_meal_plan(
         # Sort by score (lower is better)
         scored.sort(key=lambda x: x[1])
         top_n = scored[:min(heat, len(scored))]
-        #print(top_n)
         selected = random.choice(top_n)[0]
-        #print(selected.name)
-        #print(selected.token_profile)
 
         meal_plan.append(selected)
         token_progress = _merge_token_profiles(token_progress, selected.token_profile)
@@ -56,10 +63,6 @@ def optimize_meal_plan(
 
     if debug:
         return meal_plan, token_progress
-    #print(token_progress)
-    print("Final meal plan:")
-    for meal in meal_plan:
-        print(f"- {meal.name}")
     return meal_plan
 
 

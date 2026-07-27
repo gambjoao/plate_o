@@ -174,22 +174,27 @@ class GenerateMenuView(APIView):
     POST endpoint to generate a new optimized menu for a household.
     """
 
+    MAX_DAYS = 30
+
     def post(self, request, *args, **kwargs):
-        print("----------Got asked for new Menu----------")
-        print(request.data)
-        
         household_id = 1  # TODO: replace with real household logic
         days = int(request.data.get("days", 7))
         meals = request.data.get("meals", [2])  # default to lunch only
         rules = request.data.get("tokens", {})
-        
+
         # Validate meals list
         if not meals or not isinstance(meals, list):
             return Response(
-                {"error": "meals must be a non-empty list"}, 
+                {"error": "meals must be a non-empty list"},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
+        if days < 1 or days > self.MAX_DAYS:
+            return Response(
+                {"error": f"days must be between 1 and {self.MAX_DAYS}"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
         total_meals = days * len(meals)
 
         # Step 1: deactivate old menus
@@ -205,12 +210,15 @@ class GenerateMenuView(APIView):
             adapter._meal = meal  # keep reference to real Meal object
             recipes.append(adapter)
 
-        meal_plan = optimize_meal_plan(
-            recipes=recipes,
-            rules=rules,
-            total_meals=total_meals,
-            heat=3,
-        )
+        try:
+            meal_plan = optimize_meal_plan(
+                recipes=recipes,
+                rules=rules,
+                total_meals=total_meals,
+                heat=3,
+            )
+        except ValueError as e:
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
         # Step 3: create new menu & insert menu meals
         with transaction.atomic():
