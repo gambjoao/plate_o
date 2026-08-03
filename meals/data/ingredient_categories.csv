@@ -1,0 +1,256 @@
+ingredient_id,category_path
+1,Mercearia >> Especiarias e Temperos
+2,Carnes e Aves >> Carne de Vaca
+3,Frescos >> Vegetais
+4,Frescos >> Vegetais
+5,Frescos >> Vegetais
+6,Carnes e Aves >> Carne de Porco e Enchidos
+7,Mercearia >> Conservas e Enlatados
+8,Bebidas
+9,Mercearia >> Especiarias e Temperos
+10,Mercearia >> Óleos e Vinagres
+11,Mercearia >> Conservas e Enlatados
+12,Mercearia >> Caldos e Sopas
+13,Laticínios e Ovos
+14,"Mercearia >> Grãos, Massa e Arroz"
+15,Frescos >> Ervas e Aromáticos
+16,Frescos >> Vegetais
+17,Frescos >> Vegetais
+18,Mercearia >> Conservas e Enlatados
+19,Mercearia >> Caldos e Sopas
+20,Mercearia >> Farinhas e Pastelaria
+21,Mercearia >> Especiarias e Temperos
+22,Mercearia >> Especiarias e Temperos
+23,Mercearia >> Especiarias e Temperos
+24,Mercearia >> Especiarias e Temperos
+25,Mercearia >> Especiarias e Temperos
+26,Mercearia >> Especiarias e Temperos
+27,Mercearia >> Especiarias e Temperos
+28,Bebidas
+29,Mercearia >> Farinhas e Pastelaria
+30,Mercearia >> Leguminosas
+31,Mercearia >> Conservas e Enlatados
+32,Frescos >> Ervas e Aromáticos
+33,Laticínios e Ovos
+34,"Cozinha Asiática >> Arroz, Massa e Wraps"
+35,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+36,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+37,Cozinha Asiática >> Outros
+38,Mercearia >> Especiarias e Temperos
+39,Cozinha Asiática >> Outros
+40,Cozinha Asiática >> Outros
+41,Frescos >> Ervas e Aromáticos
+42,Frescos >> Ervas e Aromáticos
+43,Mercearia >> Caldos e Sopas
+44,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+45,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+46,Mercearia >> Especiarias e Temperos
+47,Cozinha Asiática >> Outros
+48,Cozinha Asiática >> Outros
+49,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+50,Mercearia >> Especiarias e Temperos
+51,Cozinha Asiática >> Outros
+52,Cozinha Asiática >> Outros
+53,Mercearia >> Óleos e Vinagres
+54,Carnes e Aves >> Carne de Porco e Enchidos
+55,Mercearia >> Farinhas e Pastelaria
+56,Mercearia >> Especiarias e Temperos
+57,Carnes e Aves >> Carne de Vaca
+58,Mercearia >> Óleos e Vinagres
+59,Frescos >> Frutas
+60,Frescos >> Vegetais
+61,Mercearia >> Leguminosas
+62,Frescos >> Vegetais
+63,Mercearia >> Molhos e Condimentos
+64,Mercearia >> Especiarias e Temperos
+65,Frescos >> Vegetais
+66,Mercearia >> Leguminosas
+67,Frescos >> Frutas
+68,"Mercearia >> Grãos, Massa e Arroz"
+69,Frescos >> Vegetais
+70,Frescos >> Ervas e Aromáticos
+71,Mercearia >> Óleos e Vinagres
+72,Peixe e Marisco >> Peixe Fresco
+73,"Cozinha Asiática >> Arroz, Massa e Wraps"
+74,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+75,Peixe e Marisco >> Peixe Fresco
+76,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+77,Laticínios e Ovos
+78,Frescos >> Ervas e Aromáticos
+79,Laticínios e Ovos
+80,Frescos >> Vegetais
+81,Mercearia >> Molhos e Condimentos
+82,Laticínios e Ovos
+83,Mercearia >> Farinhas e Pastelaria
+84,Frescos >> Vegetais
+85,Mercearia >> Especiarias e Temperos
+86,Laticínios e Ovos
+87,Padaria
+88,Mercearia >> Leguminosas
+89,Padaria
+90,Frescos >> Vegetais
+91,Frescos >> Vegetais
+92,Frescos >> Vegetais
+93,Frescos >> Ervas e Aromáticos
+94,Carnes e Aves >> Aves
+95,Padaria
+96,Carnes e Aves >> Aves
+97,Mercearia >> Especiarias e Temperos
+98,Mercearia >> Especiarias e Temperos
+99,Mercearia >> Especiarias e Temperos
+100,Mercearia >> Especiarias e Temperos
+101,Mercearia >> Conservas e Enlatados
+102,"Mercearia >> Grãos, Massa e Arroz"
+103,Peixe e Marisco >> Marisco
+104,Peixe e Marisco >> Marisco
+105,Peixe e Marisco >> Marisco
+106,Peixe e Marisco >> Marisco
+107,Mercearia >> Especiarias e Temperos
+108,Mercearia >> Especiarias e Temperos
+109,Frescos >> Vegetais
+110,Bebidas
+111,Mercearia >> Caldos e Sopas
+112,Mercearia >> Conservas e Enlatados
+113,Mercearia >> Conservas e Enlatados
+114,Mercearia >> Conservas e Enlatados
+115,"Mercearia >> Grãos, Massa e Arroz"
+116,Laticínios e Ovos
+117,Carnes e Aves >> Carne de Porco e Enchidos
+118,Mercearia >> Leguminosas
+119,Mercearia >> Óleos e Vinagres
+120,Mercearia >> Especiarias e Temperos
+121,Mercearia >> Conservas e Enlatados
+122,Laticínios e Ovos
+123,Frescos >> Vegetais
+124,Frescos >> Frutas
+125,Frescos >> Vegetais
+126,Frescos >> Vegetais
+127,"Cozinha Asiática >> Arroz, Massa e Wraps"
+128,Frescos >> Vegetais
+129,Cozinha Asiática >> Outros
+130,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+131,Frescos >> Frutas
+132,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+133,"Mercearia >> Grãos, Massa e Arroz"
+134,Frescos >> Vegetais
+135,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+136,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+137,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+138,"Mercearia >> Grãos, Massa e Arroz"
+139,Mercearia >> Especiarias e Temperos
+140,Carnes e Aves >> Carne de Vaca
+141,Mercearia >> Especiarias e Temperos
+142,Mercearia >> Especiarias e Temperos
+143,Mercearia >> Especiarias e Temperos
+144,Mercearia >> Especiarias e Temperos
+145,Frescos >> Ervas e Aromáticos
+146,Mercearia >> Conservas e Enlatados
+147,Mercearia >> Molhos e Condimentos
+148,Frescos >> Ervas e Aromáticos
+149,Mercearia >> Farinhas e Pastelaria
+150,Frescos >> Vegetais
+151,Laticínios e Ovos
+152,Mercearia >> Farinhas e Pastelaria
+153,Mercearia >> Especiarias e Temperos
+154,Padaria
+155,Mercearia >> Molhos e Condimentos
+156,Mercearia >> Farinhas e Pastelaria
+157,Frescos >> Vegetais
+158,Frescos >> Vegetais
+159,Frescos >> Vegetais
+160,Mercearia >> Especiarias e Temperos
+161,Mercearia >> Especiarias e Temperos
+162,Mercearia >> Especiarias e Temperos
+163,Mercearia >> Especiarias e Temperos
+164,Mercearia >> Especiarias e Temperos
+165,Cozinha Asiática >> Outros
+166,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+167,Mercearia >> Especiarias e Temperos
+168,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+169,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+170,Carnes e Aves >> Aves
+171,Frescos >> Vegetais
+172,Mercearia >> Especiarias e Temperos
+173,Mercearia >> Especiarias e Temperos
+174,Frescos >> Ervas e Aromáticos
+175,Mercearia >> Especiarias e Temperos
+176,Mercearia >> Especiarias e Temperos
+177,Frescos >> Vegetais
+178,Mercearia >> Leguminosas
+179,Mercearia >> Especiarias e Temperos
+180,Frescos >> Vegetais
+181,Frescos >> Vegetais
+182,Frescos >> Vegetais
+183,Mercearia >> Especiarias e Temperos
+184,Padaria
+185,Frescos >> Ervas e Aromáticos
+186,Mercearia >> Frutos Secos e Passas
+187,Laticínios e Ovos
+188,"Mercearia >> Grãos, Massa e Arroz"
+189,Mercearia >> Farinhas e Pastelaria
+190,Laticínios e Ovos
+191,Peixe e Marisco >> Marisco
+192,"Mercearia >> Grãos, Massa e Arroz"
+193,"Cozinha Asiática >> Arroz, Massa e Wraps"
+194,Cozinha Asiática >> Outros
+195,Mercearia >> Frutos Secos e Passas
+196,Peixe e Marisco >> Peixe Fresco
+197,"Cozinha Asiática >> Arroz, Massa e Wraps"
+198,Carnes e Aves >> Carne de Vaca
+199,Carnes e Aves >> Carne de Vaca
+200,Peixe e Marisco >> Marisco
+201,Bebidas
+202,Mercearia >> Molhos e Condimentos
+203,Mercearia >> Especiarias e Temperos
+204,Mercearia >> Especiarias e Temperos
+205,Bebidas
+206,Mercearia >> Especiarias e Temperos
+207,"Mercearia >> Grãos, Massa e Arroz"
+208,Mercearia >> Molhos e Condimentos
+209,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+210,Frescos >> Vegetais
+211,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+212,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+213,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+214,Frescos >> Vegetais
+215,Mercearia >> Caldos e Sopas
+216,"Cozinha Asiática >> Arroz, Massa e Wraps"
+217,Congelados
+218,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+219,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+220,"Cozinha Asiática >> Molhos, Pastas e Óleos"
+221,Padaria
+222,Carnes e Aves >> Carne de Porco e Enchidos
+223,Mercearia >> Molhos e Condimentos
+224,Laticínios e Ovos
+225,Mercearia >> Molhos e Condimentos
+226,Mercearia >> Óleos e Vinagres
+227,Carnes e Aves >> Carne de Vaca
+228,Laticínios e Ovos
+229,Padaria
+230,Peixe e Marisco >> Peixe Fresco
+231,Laticínios e Ovos
+232,Mercearia >> Conservas e Enlatados
+233,Frescos >> Vegetais
+234,"Mercearia >> Grãos, Massa e Arroz"
+235,Peixe e Marisco >> Peixe Fresco
+236,Frescos >> Vegetais
+237,Mercearia >> Conservas e Enlatados
+238,Congelados
+239,"Mercearia >> Grãos, Massa e Arroz"
+240,Mercearia >> Farinhas e Pastelaria
+241,Laticínios e Ovos
+242,Padaria
+243,Mercearia >> Especiarias e Temperos
+244,Bebidas
+245,Mercearia >> Caldos e Sopas
+246,Frescos >> Vegetais
+247,Mercearia >> Frutos Secos e Passas
+248,Mercearia >> Frutos Secos e Passas
+249,Mercearia >> Especiarias e Temperos
+250,Carnes e Aves >> Aves
+251,Mercearia >> Molhos e Condimentos
+252,Frescos >> Frutas
+255,Padaria
+256,Laticínios e Ovos
+257,Cozinha Asiática >> Outros

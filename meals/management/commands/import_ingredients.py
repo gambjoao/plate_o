@@ -23,8 +23,8 @@ class Command(BaseCommand):
             cursor.execute("ALTER SEQUENCE meals_ingredientnutritiontoken_id_seq RESTART WITH 1;")
 
         token_column_map = {
-            'red meat tokens': 'red meat',
-            'white meat tokens': 'white meat',
+            'red_meat tokens': 'red_meat',
+            'white_meat tokens': 'white_meat',
             'fish tokens': 'fish',
             'seafish tokens': 'seafood',
             'veggies tokens': 'veggies',

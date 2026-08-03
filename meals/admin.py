@@ -4,11 +4,13 @@ from django.utils.html import format_html, format_html_join
 
 from .models import (
     Ingredient,
+    IngredientCategory,
     IngredientMeasure,
     IngredientNutritionToken,
     Meal,
     MealIngredient,
     NutritionToken,
+    Tag,
 )
 from .services.token_calculator import compute_token_profile
 from .services.recipe_import import normalize_meal_ingredient_fields, measure_exists
@@ -27,17 +29,33 @@ class IngredientNutritionTokenInline(admin.TabularInline):
     fields = ("token", "quantity")
 
 
+@admin.register(IngredientCategory)
+class IngredientCategoryAdmin(admin.ModelAdmin):
+    list_display = ("name", "parent")
+    list_filter = ("parent",)
+    search_fields = ("name",)
+    autocomplete_fields = ("parent",)
+
+
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
-    list_display = ("name", "base_unit", "portion_description")
-    list_filter = ("base_unit",)
+    list_display = ("name", "base_unit", "portion_description", "category")
+    list_filter = ("base_unit", "category")
     search_fields = ("name",)
+    autocomplete_fields = ("category",)
     inlines = [IngredientMeasureInline, IngredientNutritionTokenInline]
 
 
 @admin.register(NutritionToken)
 class NutritionTokenAdmin(admin.ModelAdmin):
     list_display = ("name", "description")
+    search_fields = ("name",)
+
+
+@admin.register(Tag)
+class TagAdmin(admin.ModelAdmin):
+    list_display = ("name", "category")
+    list_filter = ("category",)
     search_fields = ("name",)
 
 
@@ -98,6 +116,7 @@ class MealAdmin(admin.ModelAdmin):
     search_fields = ("name",)
     inlines = [MealIngredientInline]
     readonly_fields = ("token_profile_display",)
+    filter_horizontal = ("tags",)
     fieldsets = (
         (
             None,
@@ -110,6 +129,7 @@ class MealAdmin(admin.ModelAdmin):
                     "overnight_prep",
                     "nuisance_factor",
                     "image",
+                    "tags",
                 )
             },
         ),

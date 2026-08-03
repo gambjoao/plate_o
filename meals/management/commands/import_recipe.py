@@ -10,6 +10,7 @@ from meals.models import (
     Meal,
     MealIngredient,
     NutritionToken,
+    Tag,
 )
 from meals.services.recipe_import import measure_exists, normalize_meal_ingredient_fields
 from meals.services.token_calculator import compute_token_profile
@@ -39,6 +40,15 @@ class Command(BaseCommand):
         except KeyError as e:
             raise CommandError(f"Payload is missing required field: {e}")
 
+        tags_data = payload.get("tags", [])
+        valid_categories = {choice[0] for choice in Tag.CATEGORY_CHOICES}
+        for tag_item in tags_data:
+            if tag_item.get("category") not in valid_categories:
+                raise CommandError(
+                    f'Tag "{tag_item.get("name")}" has missing/invalid "category" '
+                    f'(must be one of {sorted(valid_categories)}).'
+                )
+
         if Meal.objects.filter(name__iexact=name).exists():
             raise CommandError(
                 f'A meal named "{name}" already exists. Refusing to import a duplicate — '
@@ -50,6 +60,7 @@ class Command(BaseCommand):
             "reused_ingredients": [],
             "new_measures": [],
             "new_tokens": [],
+            "new_tags": [],
         }
 
         with transaction.atomic():
@@ -111,6 +122,17 @@ class Command(BaseCommand):
                 nuisance_factor=nuisance_factor,
             )
 
+            tag_objects = []
+            for tag_item in tags_data:
+                tag_name = tag_item["name"].strip()
+                tag = Tag.objects.filter(name__iexact=tag_name).first()
+                if tag is None:
+                    tag = Tag.objects.create(name=tag_name, category=tag_item["category"])
+                    report["new_tags"].append(f"{tag_name} ({tag_item['category']})")
+                tag_objects.append(tag)
+            if tag_objects:
+                meal.tags.set(tag_objects)
+
             for item in ingredients_data:
                 ing_name = item["name"].strip()
                 ingredient = ingredients_by_name[ing_name.lower()]
@@ -158,8 +180,14 @@ class Command(BaseCommand):
             self.stdout.write(self.style.WARNING("NEEDS REVIEW - new unit ratios created:"))
             for n in report["new_measures"]:
                 self.stdout.write(f"  - {n}")
+        if report["new_tags"]:
+            self.stdout.write(self.style.WARNING("NEEDS REVIEW - new tags created:"))
+            for n in report["new_tags"]:
+                self.stdout.write(f"  - {n}")
         if report["reused_ingredients"]:
             self.stdout.write(f'Reused existing ingredients: {", ".join(report["reused_ingredients"])}')
+        if tag_objects:
+            self.stdout.write(f'Tags applied: {", ".join(t.name for t in tag_objects)}')
 
         totals = compute_token_profile(meal)
         self.stdout.write("Computed token profile for this recipe:")

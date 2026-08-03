@@ -1,5 +1,36 @@
 from django.db import models
 
+class IngredientCategory(models.Model):
+    """Self-referential so the pantry can group ingredients into an
+    arbitrary-depth aisle/category tree (e.g. Frescos > Peixes > Peixes
+    Frescos) instead of the backend hardcoding fixed level names."""
+
+    name = models.CharField(max_length=100)
+    parent = models.ForeignKey(
+        'self',
+        null=True,
+        blank=True,
+        related_name='children',
+        on_delete=models.CASCADE,
+    )
+
+    class Meta:
+        verbose_name_plural = 'Ingredient categories'
+        unique_together = ('name', 'parent')
+
+    def __str__(self):
+        return ' >> '.join(self.path_names())
+
+    def path_names(self):
+        """Category names from root to this node, e.g. ['Frescos', 'Peixes']."""
+        names = []
+        node = self
+        while node is not None:
+            names.append(node.name)
+            node = node.parent
+        return list(reversed(names))
+
+
 class Ingredient(models.Model):
     name = models.CharField(max_length=255)
     base_unit = models.CharField(
@@ -12,11 +43,33 @@ class Ingredient(models.Model):
     )
     portion_description = models.CharField(max_length=100, null=True, blank=True)
     icon = models.ImageField(upload_to='ingredient_icons/', null=True, blank=True)
+    category = models.ForeignKey(
+        IngredientCategory,
+        null=True,
+        blank=True,
+        related_name='ingredients',
+        on_delete=models.SET_NULL,
+    )
 
     def __str__(self):
         return self.name
-    
-    
+
+
+class Tag(models.Model):
+    CATEGORY_CHOICES = [
+        ('country', 'Country'),
+        ('region', 'Region'),
+        ('diet', 'Diet'),
+        ('spice_level', 'Spice level'),
+    ]
+
+    name = models.CharField(max_length=100, unique=True)
+    category = models.CharField(max_length=20, choices=CATEGORY_CHOICES)
+
+    def __str__(self):
+        return f"{self.name} ({self.get_category_display()})"
+
+
 class Meal(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
@@ -31,10 +84,15 @@ class Meal(models.Model):
         through='MealIngredient',
         related_name='meals'
     )
+    tags = models.ManyToManyField(
+        Tag,
+        related_name='meals',
+        blank=True,
+    )
 
     def __str__(self):
         return self.name
-    
+
 class MealIngredient(models.Model):
     meal = models.ForeignKey(Meal, on_delete=models.CASCADE)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
@@ -78,6 +136,7 @@ class IngredientNutritionToken(models.Model):
 
 class Household(models.Model):
     name = models.CharField(max_length=255, default="Default Household")
+    number_of_members = models.PositiveIntegerField(default=2)
 
     def __str__(self):
         return self.name
@@ -145,6 +204,10 @@ class MenuMeal(models.Model):
         choices=MEAL_TYPE_CHOICES,
         default=3  # Dinner as default
     )
+    portions_multiplier = models.PositiveIntegerField(
+        default=1,
+        help_text="How many times this meal's yield was doubled/tripled to cover the household for this slot"
+    )
 
     class Meta:
         constraints = [
@@ -153,12 +216,19 @@ class MenuMeal(models.Model):
                 fields=["menu", "day_number", "meal_type"],
                 name="unique_meal_per_day_and_slot"
             ),
-            # avoid duplicates of the same meal in the same menu
-            models.UniqueConstraint(
-                fields=["menu", "meal"],
-                name="unique_meal_per_menu"
-            ),
+            # NOTE: the same meal can now appear in multiple slots within a menu
+            # (leftovers covering more than one occasion), so there is no longer
+            # a uniqueness constraint on (menu, meal).
         ]
 
     def __str__(self):
         return f"Day {self.day_number} {self.get_meal_type_display()} - {self.meal.name} ({self.get_state_display()})"
+
+
+class MenuFreezeEntry(models.Model):
+    menu = models.ForeignKey(Menu, on_delete=models.CASCADE, related_name="freeze_entries")
+    meal = models.ForeignKey(Meal, on_delete=models.CASCADE)
+    portions = models.PositiveIntegerField()
+
+    def __str__(self):
+        return f"{self.menu} - freeze {self.portions}x {self.meal.name}"
